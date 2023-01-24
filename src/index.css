@@ -3,3 +3,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body,
+#root,
+.app  {
+	height: 100%;
+	background-color: #fffff0;
+	@apply text-black;
+}
+
+.dark {
+	background-color: #111827;
+	@apply text-white;
+}
