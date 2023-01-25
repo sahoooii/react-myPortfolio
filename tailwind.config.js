@@ -33,6 +33,7 @@ module.exports = {
 				opensans: ['Open Sans', 'sans-serif'],
 				patric: ['Patrick Hand', 'cursive'],
 				signature: ['Great Vibes', 'cursive'],
+				solitreo: ['Solitreo', 'cursive'],
 			},
 			content: {
 				brush: "url('./assets/brush.png')",
@@ -42,6 +43,15 @@ module.exports = {
 			xs: '480px',
 			sm: '768px',
 			md: '1060px',
+		},
+		animation: {
+			wiggle: 'wiggle 8s ease-in-out infinite',
+		},
+		keyframes: {
+			wiggle: {
+				'0%, 100%': { 'border-radius': '60% 40% 30% 70%/60% 30% 70% 40%' },
+				'50%': { 'border-radius': '30% 60% 70% 40%/50% 60% 30% 60%' },
+			},
 		},
 	},
 	plugins: [],
