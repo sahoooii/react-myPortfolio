@@ -20,7 +20,7 @@ module.exports = {
 				'gradient-night-sky':
 					'linear-gradient(to bottom, #5433ff, #20bdff, #a5fecb)',
 				'gradient-day-sky':
-					'linear-gradient(to right, #40e0d0, #ff8c00, #ff0080)',
+					'linear-gradient(to bottom, #40e0d0, #ff8c00, #ff0080)',
 				'gradient-purple-pink-orange':
 					'linear-gradient(331deg, #4e6cf9 0%, #d664cc 46%, #FFCC70 100%)',
 				'gradient-pink-orange':

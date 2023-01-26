@@ -91,14 +91,19 @@ const Profile = ({ setSelectedPage }) => {
 					>
 						Contact Me
 					</AnchorLink>
-					<AnchorLink className='rounded-r-sm bg-gradient-purple-pink-orange py-0.5 pr-0.5'>
+					<a
+						href='/sample.jpg'
+						rel='noreferrer'
+						download={true}
+						className='rounded-r-sm bg-gradient-purple-pink-orange py-0.5 pr-0.5'
+					>
 						<div className='dark:bg-bluish-black bg-whitish hover:text-vivid-pink transition duration-500 w-full h-full flex items-center justify-center px-8 font-playfair group'>
 							Resume
 							<span className='group-hover:rotate-90 duration-300'>
 								<MdOutlineKeyboardArrowRight size={25} className='ml-1' />
 							</span>
 						</div>
-					</AnchorLink>
+					</a>
 				</motion.div>
 			</div>
 		</section>
