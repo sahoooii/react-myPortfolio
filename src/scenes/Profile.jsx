@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Typical from 'react-typical';
+import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
 import useMediaQuery from '../hooks/useMediaQuery';
 
@@ -14,7 +15,7 @@ const Profile = ({ setSelectedPage }) => {
 			className='md:flex md:justify-between md:items-center md:h-full gap-16 py-10'
 		>
 			{/* Image section */}
-			<div className='md:order-2 flex justify-center basis-3/5 z-10 mt-20 md:mt-10'>
+			<div className='md:order-2 flex justify-center basis-3/5 z-10 mt-24'>
 				{isAboveMediumScreens ? (
 					<div className='relative z-0 ml-20'>
 						<img
@@ -32,7 +33,7 @@ const Profile = ({ setSelectedPage }) => {
 				)}
 			</div>
 			{/* Main section */}
-			<div className='z-30 basis-2/5 mt-12 md:mt-32'>
+			<div className='z-30 basis-2/5 mt-14'>
 				{/* Heading */}
 				<motion.div
 					initial='hidden'
@@ -51,24 +52,53 @@ const Profile = ({ setSelectedPage }) => {
 							Nishio
 						</span>
 					</p>
-					<p className='mt-16 mb-7 text-sm text-center md:text-start font-solitreo'>
+					<p className='mt-16 mb-7 text-lg text-center md:text-start font-solitreo'>
 						I'm &nbsp;
 						<Typical
-							className='mt-10 mb-7 text-lg text-center md:text-start text-light-blue font-solitreo'
+							className='mt-10 mb-7 text-xl text-center md:text-start text-light-blue font-solitreo'
 							loop={5}
 							wrapper='b'
 							steps={[
-								'doing Frontend 💻',
+								'doing Frontend 💻 ',
 								2000,
-								'doing Backend 🖥',
+								'doing Backend 🖥 ',
 								2000,
-								'a fashionista 🕺🕶',
+								'a fashionista 🕺🕶 ',
 								2000,
-								'a open minded 🍻',
+								'a open minded 🍻 ',
 								2000,
 							]}
 						/>
 					</p>
+				</motion.div>
+
+				{/* Contact Button */}
+				<motion.div
+					className='flex mt-5 justify-center md:justify-start'
+					initial='hidden'
+					whileInView='visible'
+					viewport={{ once: true, amount: 0.5 }}
+					transition={{ delay: 0.2, duration: 1 }}
+					variants={{
+						hidden: { opacity: 0, x: -50 },
+						visible: { opacity: 1, x: 0 },
+					}}
+				>
+					<AnchorLink
+						className='bg-gradient-rainbow py-3 px-7 text-opaque-black rounded-sm font-semibold hover:bg-light-blue hover:text-white transition duration-500 font-opensans'
+						onClick={() => setSelectedPage('contact')}
+						href='#contact'
+					>
+						Contact Me
+					</AnchorLink>
+					<AnchorLink className='rounded-r-sm bg-gradient-purple-pink-orange py-0.5 pr-0.5'>
+						<div className='dark:bg-bluish-black bg-whitish hover:text-vivid-pink transition duration-500 w-full h-full flex items-center justify-center px-8 font-playfair group'>
+							Resume
+							<span className='group-hover:rotate-90 duration-300'>
+								<MdOutlineKeyboardArrowRight size={25} className='ml-1' />
+							</span>
+						</div>
+					</AnchorLink>
 				</motion.div>
 			</div>
 		</section>

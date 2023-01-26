@@ -5,7 +5,6 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 import useMediaQuery from '../hooks/useMediaQuery';
 
-// 42min gradation配色
 const links = [
 	{
 		id: 1,
@@ -51,16 +50,18 @@ const Navbar = ({
 }) => {
 	const [isMenuToggled, setIsMenuToggled] = useState(false); //hamburger Menu
 	const isAboveSmallScreens = useMediaQuery('(min-width: 768px)');
-	const navbarBackground = isTopOfPage ? '' : 'bg-gradient-purple-pink-orange';
+	const navbarBackground = isTopOfPage
+		? ''
+		: 'dark:bg-gradient-night-sky bg-gradient-day-sky';
 
 	return (
 		<nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
 			<div className='flex items-center justify-between mx-auto w-5/6'>
-				<div className='flex items-center'>
+				<div className='flex items-center justify-between gap-6'>
 					<h4 className='font-signature text-3xl font-bold'>Saho</h4>
 					<BsFillMoonStarsFill
 						onClick={() => setDarkMode(!darkMode)}
-						className='cursor-pointer text-3x ml-8 dark:text-light-blue text-yellow-500 hover:scale-110 transition duration-500'
+						className='cursor-pointer text-3x dark:text-light-blue text-vivid-yellow hover:scale-110 transition duration-500'
 					/>
 				</div>
 
