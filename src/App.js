@@ -7,6 +7,7 @@ import SocialLinks from './scenes/SocialLinks';
 function App() {
 	const [selectedPage, setSelectedPage] = useState('home');
 	const [darkMode, setDarkMode] = useState(true);
+	const [isJp, setIsJp] = useState(false); //to Japanese
 	const [isTopOfPage, setIsTopOfPage] = useState(true);
 	const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
 
@@ -25,6 +26,8 @@ function App() {
 			<Navbar
 				isTopOfPage={isTopOfPage}
 				darkMode={darkMode}
+				isJp={isJp}
+				setIsJp={setIsJp}
 				setDarkMode={setDarkMode}
 				selectedPage={selectedPage}
 				setSelectedPage={setSelectedPage}

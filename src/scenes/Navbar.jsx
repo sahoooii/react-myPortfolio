@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 import useMediaQuery from '../hooks/useMediaQuery';
 
@@ -45,24 +46,44 @@ const Navbar = ({
 	isTopOfPage,
 	darkMode,
 	setDarkMode,
+	isJp,
+	setIsJp,
 	selectedPage,
 	setSelectedPage,
 }) => {
 	const [isMenuToggled, setIsMenuToggled] = useState(false); //hamburger Menu
 	const isAboveSmallScreens = useMediaQuery('(min-width: 768px)');
+	const isChangedLang = isJp ? 'justify-end' : '';
 	const navbarBackground = isTopOfPage
 		? ''
-		: 'dark:bg-gradient-night-sky bg-gradient-day-sky';
+		: 'dark:bg-gradient-night-sky bg-gradient-pink-orange';
 
 	return (
 		<nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
 			<div className='flex items-center justify-between mx-auto w-5/6'>
-				<div className='flex items-center justify-between gap-6'>
+				<div className='flex items-center justify-between md:gap-4 gap-2'>
 					<h4 className='font-signature text-3xl font-bold'>Saho</h4>
 					<BsFillMoonStarsFill
 						onClick={() => setDarkMode(!darkMode)}
-						className='cursor-pointer text-3x dark:text-light-blue text-vivid-yellow hover:scale-110 transition duration-500'
+						className='cursor-pointer text-3x dark:text-light-blue text-yellow-500 hover:scale-110 transition duration-500'
 					/>
+					<div className='flex items-center'>
+						<h2 className='font-patric md:text-lg dark:text-vivid-yellow'>
+							EN
+						</h2>
+						<div
+							className={`${isChangedLang} md:w-14 w-10 md:h-6 h-4 dark:bg-whitish bg-bluish-black opacity-60 flex items-center justify-start rounded-3xl p-1 cursor-pointer mr-2 ml-2`}
+							onClick={() => setIsJp(!isJp)}
+						>
+							<motion.div
+								className='md:w-6 md:h-6 w-4 h-4 rounded-[50%] dark:bg-bluish-black bg-white'
+								transition={{ type: 'spring', duration: 1 }}
+							/>
+						</div>
+						<h2 className='font-patric md:text-lg dark:text-vivid-yellow'>
+							JP
+						</h2>
+					</div>
 				</div>
 
 				{/* DeskTop Nav ver. */}

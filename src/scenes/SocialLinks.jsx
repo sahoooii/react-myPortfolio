@@ -49,7 +49,7 @@ const SocialLinks = () => {
 
 	// motion divつける
 	return (
-		<div className='hidden md:flex flex-col top-[70%] left-0 fixed'>
+		<div className='hidden md:flex flex-col top-[72%] left-0 fixed'>
 			<ul>
 				{links.map(({ id, child, href, style, download }) => (
 					<motion.div
