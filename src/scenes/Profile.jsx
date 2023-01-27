@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Typical from 'react-typical';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import { BiDownload } from 'react-icons/bi';
 
 import useMediaQuery from '../hooks/useMediaQuery';
 
@@ -56,7 +57,7 @@ const Profile = ({ setSelectedPage }) => {
 						I'm &nbsp;
 						<Typical
 							className='mt-10 mb-7 text-xl text-center md:text-start text-light-blue font-solitreo'
-							loop={5}
+							loop={3}
 							wrapper='b'
 							steps={[
 								'doing Frontend 💻 ',
@@ -85,11 +86,16 @@ const Profile = ({ setSelectedPage }) => {
 					}}
 				>
 					<AnchorLink
-						className='bg-gradient-rainbow py-3 px-7 text-opaque-black rounded-sm font-semibold hover:bg-light-blue hover:text-white transition duration-500 font-opensans'
+						className='bg-gradient-rainbow py-3 px-7 text-opaque-black rounded-sm font-semibold hover:bg-light-blue hover:text-white transition duration-500 font-opensans group'
 						onClick={() => setSelectedPage('contact')}
 						href='#contact'
 					>
-						Contact Me
+						<div className='flex items-center justify-center'>
+							Contact Me
+							<span className='group-hover:rotate-90 duration-300'>
+								<MdOutlineKeyboardArrowRight size={25} className='ml-1' />
+							</span>
+						</div>
 					</AnchorLink>
 					<a
 						href='/sample.jpg'
@@ -99,8 +105,8 @@ const Profile = ({ setSelectedPage }) => {
 					>
 						<div className='dark:bg-bluish-black bg-whitish hover:text-vivid-pink transition duration-500 w-full h-full flex items-center justify-center px-8 font-playfair group'>
 							Resume
-							<span className='group-hover:rotate-90 duration-300'>
-								<MdOutlineKeyboardArrowRight size={25} className='ml-1' />
+							<span className='group-hover:translate-y-1 duration-300'>
+								<BiDownload size={25} className='ml-1' />
 							</span>
 						</div>
 					</a>
