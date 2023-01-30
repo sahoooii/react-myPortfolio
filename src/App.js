@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import useMediaQuery from './hooks/useMediaQuery';
+import About from './scenes/About';
+import LineGradient from './components/LineGradient';
 import Navbar from './scenes/Navbar';
 import Profile from './scenes/Profile';
 import SocialLinks from './scenes/SocialLinks';
@@ -35,7 +37,14 @@ function App() {
 			<div className='w-5/6 mx-auto md:h-full'>
 				<Profile setSelectedPage={setSelectedPage} />
 			</div>
+
 			<SocialLinks />
+			<LineGradient />
+			{/* <div className='bg-bluish-black'> */}
+			<div className='w-5/6 mx-auto md:h-full'>
+				<About />
+			</div>
+			{/* </div> */}
 		</div>
 	);
 }

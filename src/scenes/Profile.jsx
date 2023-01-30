@@ -13,7 +13,7 @@ const Profile = ({ setSelectedPage }) => {
 	return (
 		<section
 			id='home'
-			className='md:flex md:justify-between md:items-center md:h-full gap-16 py-10'
+			className='md:flex md:justify-between md:items-center md:h-full gap-14 py-8'
 		>
 			{/* Image section */}
 			<div className='md:order-2 flex justify-center basis-3/5 z-10 mt-24'>
@@ -34,7 +34,7 @@ const Profile = ({ setSelectedPage }) => {
 				)}
 			</div>
 			{/* Main section */}
-			<div className='z-30 basis-2/5 mt-14'>
+			<div className='z-30 basis-2/5 md:mt-[-40px] mt-14'>
 				{/* Heading */}
 				<motion.div
 					initial='hidden'
@@ -48,7 +48,7 @@ const Profile = ({ setSelectedPage }) => {
 				>
 					<p className='md:text-7xl text-6xl font-signature z-10 text-center md:text-start'>
 						Saho{' '}
-						<span className='xs:relative dark:xs:text-opaque-black dark:text-vivid-pink text-mint-green xs:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[25px] before:-top-[110px] before:z-[-1]'>
+						<span className='xs:relative dark:xs:text-opaque-black dark:text-vivid-pink text-mint-green xs:font-semibold z-20 sm:before:content-brush before:absolute before:-left-[25px] before:-top-[110px] before:z-[-1]'>
 							{' '}
 							Nishio
 						</span>

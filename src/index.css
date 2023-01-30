@@ -8,12 +8,13 @@ html,
 body,
 #root,
 .app  {
-	height: 100%;
+	//height: 100%;
 	background-color: #fffff0;
 	@apply text-black;
 }
 
 .dark {
+	height: 100%;
 	background-color: #111827;
 	@apply text-white;
 }

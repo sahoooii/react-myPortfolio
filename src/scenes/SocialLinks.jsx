@@ -47,12 +47,13 @@ const SocialLinks = () => {
 		},
 	];
 
-	// motion divつける
+	// width paddingの幅を考える
 	return (
-		<div className='hidden md:flex flex-col top-[72%] left-0 fixed'>
+		<div className='hidden md:flex flex-col top-[68%] left-0 fixed'>
 			<ul>
 				{links.map(({ id, child, href, style, download }) => (
 					<motion.div
+						key={id}
 						initial='hidden'
 						whileInView='visible'
 						viewport={{ once: true, amount: 0.5 }}
@@ -63,8 +64,7 @@ const SocialLinks = () => {
 						}}
 					>
 						<li
-							key={id}
-							className={`${style} flex justify-between items-center w-40 h-14 px-4 dark:bg-gradient-night-sky bg-gradient-day-sky ml-[-90px] hover:ml-[-5px] hover:rounded-md duration-300 text-white`}
+							className={`${style} flex justify-between items-center w-40 h-14 px-2 dark:bg-gradient-night-sky bg-gradient-day-sky ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 text-white`}
 						>
 							<a
 								className='flex justify-between items-center w-full px-2'
