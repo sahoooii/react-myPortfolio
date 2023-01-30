@@ -20,14 +20,14 @@ const Profile = ({ setSelectedPage }) => {
 				{isAboveMediumScreens ? (
 					<div className='relative z-0 ml-20'>
 						<img
-							className='rounded-2xl hover:filter hover:saturate-200 transition duration-500 z-10 md:w-full max-w-[400px] md:max-w-[600px] shadow-md dark:shadow-white shadow-opaque-black animate-wiggle'
+							className='rounded-2xl mb-6 hover:filter hover:saturate-200 transition duration-500 z-10 md:w-full max-w-[400px] md:max-w-[600px] shadow-md dark:shadow-white shadow-opaque-black animate-wiggle'
 							src='../assets/profile_img.jpg'
 							alt='Profile_picture'
 						/>
 					</div>
 				) : (
 					<img
-						className='rounded-t-[400px] hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]'
+						className='rounded-t-[400px] mb-4 hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]'
 						src='../assets/profile_img.jpg'
 						alt='Profile_picture'
 					/>
@@ -48,15 +48,15 @@ const Profile = ({ setSelectedPage }) => {
 				>
 					<p className='md:text-7xl text-6xl font-signature z-10 text-center md:text-start'>
 						Saho{' '}
-						<span className='xs:relative dark:xs:text-opaque-black dark:text-vivid-pink text-mint-green xs:font-semibold z-20 sm:before:content-brush before:absolute before:-left-[25px] before:-top-[110px] before:z-[-1]'>
+						<span className='xs:relative dark:xs:text-opaque-black dark:text-vivid-pink text-mint-green xs:font-semibold z-20 sm:before:content-brush xs:before:content-brush_xs before:absolute md:before:-left-[25px] xs:before:-left-[35px] sm:before:-top-[110px] xs:before:-top-[100px] before:z-[-1]'>
 							{' '}
 							Nishio
 						</span>
 					</p>
-					<p className='mt-16 mb-7 text-lg text-center md:text-start font-solitreo'>
+					<p className='xs:mt-20 xs:mb-8 mt-8 mb-4 text-lg text-center md:text-start font-solitreo'>
 						I'm &nbsp;
 						<Typical
-							className='mt-10 mb-7 text-xl text-center md:text-start text-light-blue font-solitreo'
+							className='xs:mt-10 xs:mb-8 mt-8 mb-4 text-xl text-center md:text-start text-light-blue font-solitreo'
 							loop={3}
 							wrapper='b'
 							steps={[
@@ -64,7 +64,7 @@ const Profile = ({ setSelectedPage }) => {
 								2000,
 								'doing Backend 🖥 ',
 								2000,
-								'a fashionista 🕺🕶 ',
+								'a very responsible person 🧐💨 ',
 								2000,
 								'a open minded 🍻 ',
 								2000,
@@ -73,9 +73,11 @@ const Profile = ({ setSelectedPage }) => {
 					</p>
 				</motion.div>
 
+				{/* 390px以下の時のbutton */}
+
 				{/* Contact Button */}
 				<motion.div
-					className='flex mt-5 justify-center md:justify-start'
+					className='flex mt-5 mb-4 justify-center md:justify-start'
 					initial='hidden'
 					whileInView='visible'
 					viewport={{ once: true, amount: 0.5 }}
@@ -86,7 +88,7 @@ const Profile = ({ setSelectedPage }) => {
 					}}
 				>
 					<AnchorLink
-						className='bg-gradient-rainbow py-3 px-7 text-opaque-black rounded-sm font-semibold hover:bg-light-blue hover:text-white transition duration-500 font-opensans group'
+						className='bg-gradient-rainbow py-3 xs:px-7 px-4 text-opaque-black rounded-sm font-semibold hover:bg-light-blue hover:text-white transition duration-500 font-opensans group'
 						onClick={() => setSelectedPage('contact')}
 						href='#contact'
 					>
@@ -103,7 +105,7 @@ const Profile = ({ setSelectedPage }) => {
 						download={true}
 						className='rounded-r-sm bg-gradient-purple-pink-orange py-0.5 pr-0.5'
 					>
-						<div className='dark:bg-bluish-black bg-whitish hover:text-vivid-pink transition duration-500 w-full h-full flex items-center justify-center px-8 font-playfair group'>
+						<div className='dark:bg-bluish-black bg-whitish font-semibold hover:text-vivid-pink transition duration-500 w-full h-full flex items-center justify-center xs:px-8 px-6 font-playfair group'>
 							Resume
 							<span className='group-hover:translate-y-1 duration-300'>
 								<BiDownload size={25} className='ml-1' />

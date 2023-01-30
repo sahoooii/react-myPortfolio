@@ -37,6 +37,7 @@ module.exports = {
 			},
 			content: {
 				brush: "url('./assets/brush.png')",
+				brush_xs: "url('./assets/brush_xs.png')",
 			},
 		},
 		screens: {
