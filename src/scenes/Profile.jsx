@@ -61,13 +61,13 @@ const Profile = ({ setSelectedPage }) => {
 							wrapper='b'
 							steps={[
 								'doing Frontend 💻 ',
-								2000,
+								3000,
 								'doing Backend 🖥 ',
-								2000,
+								3000,
 								'a very responsible person 🧐💨 ',
-								2000,
-								'a open minded 🍻 ',
-								2000,
+								3000,
+								'an open-minded 🍻 ',
+								3000,
 							]}
 						/>
 					</p>

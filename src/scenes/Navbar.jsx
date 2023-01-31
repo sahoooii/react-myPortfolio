@@ -68,9 +68,15 @@ const Navbar = ({
 						className='cursor-pointer text-3x dark:text-light-blue text-yellow-500 hover:scale-110 transition duration-500'
 					/>
 					<div className='flex items-center'>
-						<h2 className='font-patric md:text-lg dark:text-vivid-yellow'>
-							EN
-						</h2>
+						{isJp ? (
+							<h2 className='font-patric md:text-lg dark:text-white font-semibold'>
+								EN
+							</h2>
+						) : (
+							<h2 className='font-patric md:text-lg dark:text-vivid-yellow text-light-blue font-semibold scale-125'>
+								EN
+							</h2>
+						)}
 						<div
 							className={`${isChangedLang} md:w-14 w-10 md:h-6 h-4 dark:bg-whitish bg-bluish-black opacity-60 flex items-center justify-start rounded-3xl p-1 cursor-pointer mr-2 ml-2`}
 							onClick={() => setIsJp(!isJp)}
@@ -80,9 +86,15 @@ const Navbar = ({
 								transition={{ type: 'spring', duration: 1 }}
 							/>
 						</div>
-						<h2 className='font-patric md:text-lg dark:text-vivid-yellow'>
-							JP
-						</h2>
+						{isJp ? (
+							<h2 className='font-patric md:text-lg dark:text-vivid-yellow text-light-blue  font-semibold scale-125'>
+								JP
+							</h2>
+						) : (
+							<h2 className='font-patric md:text-lg dark:text-white font-semibold'>
+								JP
+							</h2>
+						)}
 					</div>
 				</div>
 

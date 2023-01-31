@@ -34,15 +34,15 @@ function App() {
 				selectedPage={selectedPage}
 				setSelectedPage={setSelectedPage}
 			/>
-			<div className='w-5/6 mx-auto md:h-full'>
+			<div className='w-[80%] mx-auto md:h-full'>
 				<Profile setSelectedPage={setSelectedPage} />
 			</div>
 
 			<SocialLinks />
 			<LineGradient />
 			{/* <div className='bg-bluish-black'> */}
-			<div className='w-5/6 mx-auto md:h-full'>
-				<About />
+			<div className='w-[80%] mx-auto md:h-full'>
+				<About isJp={isJp} setIsJp={setIsJp} />
 			</div>
 			{/* </div> */}
 		</div>

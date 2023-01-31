@@ -59,7 +59,7 @@ const SocialLinks = () => {
 	return (
 		<>
 			{isAboveMediumScreens ? (
-				<div className='hidden md:flex flex-col top-[68%] left-0 fixed'>
+				<div className='hidden md:flex flex-col top-[70%] left-0 absolute'>
 					<ul>
 						{links.map(({ id, name, icon, href, style, download }) => (
 							<motion.div

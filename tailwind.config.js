@@ -34,6 +34,7 @@ module.exports = {
 				patric: ['Patrick Hand', 'cursive'],
 				signature: ['Great Vibes', 'cursive'],
 				solitreo: ['Solitreo', 'cursive'],
+				jp: ['Kiwi Maru', 'serif'],
 			},
 			content: {
 				brush: "url('./assets/brush.png')",
