@@ -10,7 +10,7 @@ const projects = [
 		title: 'Shopping site',
 		subtitle: 'JavaScript × Bootstrap',
 		src: '../assets/project-1.jpeg',
-		describeEn: 'Created shopping site. Create later',
+		describeEn: 'Create shopping site. Create later',
 		describeJp: 'ショッピングサイト。あとで作る',
 		code: 'https://github.com/sahoooii',
 	},
@@ -38,7 +38,7 @@ const projects = [
 		id: 4,
 		title: 'Social Media App',
 		subtitle: 'PHP × CSS × MySQL',
-		src: '../assets/project-4.jpeg',
+		src: '../assets/chill.jpg',
 		describeEn:
 			"It's my first original Backend piece, not using any libraries and frameworks. I use MySQL for a database. I know that the design is not good. I created it, the very first beginning. But fully responsive! You can use it like Twitter. Create your account and post something. What you thought or your favorite picture!",
 		describeJp:
@@ -49,7 +49,7 @@ const projects = [
 		id: 5,
 		title: 'Dating App',
 		subtitle: 'Laravel × Bootstrap × MySQL',
-		src: '../assets/project-5.jpeg',
+		src: '../assets/tinder.jpg',
 		describeEn:
 			"Created like Tinder App. Used Laravel and MySQL. It's my first piece using the framework and adding some dummy data so you can swipe it like Tinder. You can set your situation in your relationship, like something casual or serious relationships. Also, If you match someone, you can see the profile. Yes, literally Tinder!",
 		describeJp:
@@ -105,7 +105,7 @@ const Portfolio = ({ isJp }) => {
 
 				{isJp ? (
 					<div>
-						<p className='mt-10 mb-10 tracking-wide md:text-lg leading-7 font-jp'>
+						<p className='mt-10 mb-14 tracking-wide md:text-lg leading-7 font-jp'>
 							いくつかの言語を使って作ったポートフォリオです。
 							<br />
 							Frontend and Backend.
@@ -113,7 +113,7 @@ const Portfolio = ({ isJp }) => {
 					</div>
 				) : (
 					<div>
-						<p className='mt-10 mb-10 tracking-wide md:text-lg leading-7 font-opensans'>
+						<p className='mt-10 mb-14 tracking-wide md:text-lg leading-7 font-opensans'>
 							Here's my portfolio using multiple languages.
 							<br />
 							Frontend and Backend.
@@ -132,7 +132,7 @@ const Portfolio = ({ isJp }) => {
 					variants={container}
 				>
 					{/* Row 1 */}
-					<div className='flex justify-center items-center p-10 bg-gradient-purple-pink-orange max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold'>
+					<div className='flex justify-center items-center p-10 bg-gradient-purple-pink-orange max-w-[400px] max-h-[400px] text-3xl font-playfair font-semibold'>
 						Frontend
 					</div>
 
@@ -200,7 +200,7 @@ const Portfolio = ({ isJp }) => {
 						</>
 					)}
 
-					<div className='flex justify-center items-center p-10 bg-gradient-green-blue max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold'>
+					<div className='flex justify-center items-center p-10 bg-gradient-green-blue max-w-[400px] max-h-[400px] text-3xl font-playfair font-semibold'>
 						Backend
 					</div>
 				</motion.div>
