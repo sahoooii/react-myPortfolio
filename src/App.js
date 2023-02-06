@@ -5,6 +5,7 @@ import LineGradient from './components/LineGradient';
 import Navbar from './scenes/Navbar';
 import Profile from './scenes/Profile';
 import SocialLinks from './scenes/SocialLinks';
+import Portfolio from './scenes/Portfolio';
 
 function App() {
 	const [selectedPage, setSelectedPage] = useState('home');
@@ -37,14 +38,17 @@ function App() {
 			<div className='w-[80%] mx-auto md:h-full'>
 				<Profile setSelectedPage={setSelectedPage} />
 			</div>
-
 			<SocialLinks />
+
 			<LineGradient />
-			{/* <div className='bg-bluish-black'> */}
 			<div className='w-[80%] mx-auto md:h-full'>
-				<About isJp={isJp} setIsJp={setIsJp} />
+				<About isJp={isJp} />
 			</div>
-			{/* </div> */}
+
+			<LineGradient />
+			<div className='w-[80%] mx-auto'>
+				<Portfolio isJp={isJp} />
+			</div>
 		</div>
 	);
 }

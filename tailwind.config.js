@@ -25,6 +25,8 @@ module.exports = {
 					'linear-gradient(331deg, #4e6cf9 0%, #d664cc 46%, #FFCC70 100%)',
 				'gradient-pink-orange':
 					'linear-gradient(32deg, #FBDA61 0%, #FF5ACD 100%)',
+				'gradient-green-blue':
+					'linear-gradient(90deg, rgba(144, 245, 154, 1), rgba(4, 202, 255, 1))',
 				'gradient-rainbow':
 					'linear-gradient(90deg, rgba(255,255,17,1) 17%, rgba(255,54,127,1) 46%, rgba(19,111,255,1) 91%)',
 			}),

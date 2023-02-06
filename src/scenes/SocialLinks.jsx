@@ -91,7 +91,7 @@ const SocialLinks = () => {
 					</ul>
 				</div>
 			) : (
-				<div className='flex justify-center mb-10'>
+				<div className='flex justify-center mb-20'>
 					<ul className='flex gap-7'>
 						{links.map(({ id, icon, href, download }) => (
 							<motion.div

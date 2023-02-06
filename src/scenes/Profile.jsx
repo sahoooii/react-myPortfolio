@@ -13,7 +13,7 @@ const Profile = ({ setSelectedPage }) => {
 	return (
 		<section
 			id='home'
-			className='md:flex md:justify-between md:items-center md:h-full gap-14 py-8'
+			className='md:flex md:justify-between md:items-center md:h-full gap-14 py-8 sm:mb-20'
 		>
 			{/* Image section */}
 			<div className='md:order-2 flex justify-center basis-3/5 z-10 mt-24'>

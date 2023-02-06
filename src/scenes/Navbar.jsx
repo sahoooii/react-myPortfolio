@@ -123,7 +123,7 @@ const Navbar = ({
 
 				{/* Mobile Menu ver. */}
 				{!isAboveSmallScreens && isMenuToggled && (
-					<div className='fixed right-0 bottom-0 h-full dark:bg-gradient-purple-pink-orange bg-gradient-pink-orange w-full text-white'>
+					<div className='fixed right-0 bottom-0 h-full dark:bg-gradient-green-blue bg-gradient-pink-orange w-full text-white'>
 						{/* Close Icon */}
 						<div className='flex justify-end p-12'>
 							<FaTimes
