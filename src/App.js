@@ -6,6 +6,7 @@ import Navbar from './scenes/Navbar';
 import Profile from './scenes/Profile';
 import SocialLinks from './scenes/SocialLinks';
 import Portfolio from './scenes/Portfolio';
+import Skills from './scenes/Skills';
 
 function App() {
 	const [selectedPage, setSelectedPage] = useState('home');
@@ -48,6 +49,11 @@ function App() {
 			<LineGradient />
 			<div className='w-[80%] mx-auto'>
 				<Portfolio isJp={isJp} />
+			</div>
+
+			<LineGradient />
+			<div className='w-[80%] mx-auto md:h-full'>
+				<Skills isJp={isJp} />
 			</div>
 		</div>
 	);
