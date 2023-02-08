@@ -52,7 +52,7 @@ function App() {
 			</div>
 
 			<LineGradient />
-			<div className='w-[80%] mx-auto md:h-full'>
+			<div className='w-[85%] mx-auto md:h-full'>
 				<Skills isJp={isJp} />
 			</div>
 		</div>

@@ -82,7 +82,7 @@ const Portfolio = ({ isJp }) => {
 	];
 
 	return (
-		<section id='portfolio' className='pt-40 pb-40'>
+		<section id='portfolio' className='sm:pt-40 pt-20 pb-40'>
 			{/* Heading */}
 			<motion.div
 				className='md:w-1/2 m-auto text-center'
