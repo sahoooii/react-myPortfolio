@@ -186,7 +186,7 @@ const Skills = ({ isJp }) => {
 										alt={name}
 										className='mx-auto w-14 hover:rotate-45 duration-50'
 									/>
-									<p className='md:text-sm text-xs text-center text-whitish font-opensans'>
+									<p className='md:text-sm text-xs text-center font-semibold text-whitish font-opensans'>
 										{name}
 									</p>
 								</motion.li>
@@ -218,7 +218,9 @@ const Skills = ({ isJp }) => {
 										alt={name}
 										className='mx-auto w-14 hover:rotate-45 duration-50'
 									/>
-									<p className='text-sm text-whitish font-opensans'>{name}</p>
+									<p className='text-sm font-semibold text-whitish font-opensans'>
+										{name}
+									</p>
 								</motion.li>
 							))}
 						</motion.ul>

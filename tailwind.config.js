@@ -9,6 +9,7 @@ module.exports = {
 				whitish: '#FFFFF0',
 				grey: '#ededed',
 				purple: '#9057FF',
+				'contact-white': '#F2F3EB',
 				'bluish-black': '#111827',
 				'opaque-black': 'rgba(0,0,0,35)',
 				'light-blue': '#136FFF',
@@ -36,6 +37,7 @@ module.exports = {
 				patric: ['Patrick Hand', 'cursive'],
 				signature: ['Great Vibes', 'cursive'],
 				solitreo: ['Solitreo', 'cursive'],
+				montserrat: ['Montserrat Alternates', 'sans-serif'],
 				jp: ['Kiwi Maru', 'serif'],
 			},
 			content: {
