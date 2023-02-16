@@ -42,73 +42,65 @@ const ContactForm = () => {
 					/>
 				</div>
 
-				<form
-					action='#'
-					method='post'
-					className='mt-10
-				'
-				>
-					<div className='md:grid md:grid-cols-2 md:gap-x-10 grid gap-y-6'>
-						<div className='border-b-2 border-slate-500 md:w-full w-2/3 mx-auto'>
+				<form action='#' method='post' className='mt-10'>
+					<div className='md:grid md:grid-cols-2 grid gap-y-6'>
+						<div className='border-b-2 border-slate-500 mx-auto md:w-[80%] sm:w-[90%] w-full'>
 							<label for='name'></label>
 							<input
 								type='text'
 								placeholder='My name is'
 								name='name'
-								id='name_input'
-								className='dark:bg-bluish-black bg-whitish p-2 outline-none'
+								className='dark:bg-bluish-black bg-whitish p-2 outline-none font-opensans  placeholder:uppercase'
 								required
 							/>
 						</div>
-						<div className='border-b-2 border-slate-500 md:w-full w-2/3 mx-auto'>
+						<div className='border-b-2 border-slate-500 md:w-[80%] sm:w-[90%] w-full mx-auto'>
 							<label for='name'></label>
 							<input
-								type='number'
+								type='text'
 								placeholder='My number is'
 								name='telephone'
-								id='telephone_input'
-								className='dark:bg-bluish-black bg-whitish p-2 outline-none'
+								className='dark:bg-bluish-black bg-whitish p-2 outline-none font-opensans placeholder:uppercase'
 								required
 							/>
 						</div>
 					</div>
 
 					<div className='mt-6'>
-						<div className='border-b-2 border-slate-500 md:w-full w-2/3 mx-auto'>
+						<div className='border-b-2 border-slate-500 sm:w-[90%] w-full mx-auto'>
 							<label for='email'></label>
 							<input
 								type='email'
 								placeholder='My e-mail is'
 								name='email'
-								id='email_input'
-								className='dark:bg-bluish-black bg-whitish p-2 outline-none'
+								className='dark:bg-bluish-black bg-whitish p-2 outline-none font-opensans placeholder:uppercase'
 								required
 							/>
 						</div>
 
-						<div className=''>
+						<div className='mt-6 border-b-2 border-slate-500 sm:w-[90%] w-full mx-auto'>
 							<label for='subject'></label>
 							<select
-								className='dark:bg-bluish-black bg-whitish p-2 outline-none'
+								className='dark:bg-bluish-black bg-whitish p-2 outline-none w-[95%] text-slate-400 font-opensans placeholder:capitalize'
 								placeholder='Subject line'
 								name='subject'
-								id='subject_input'
 								required
 							>
 								<option disabled hidden selected>
-									Subject line
+									SUBJECT LINE
 								</option>
 								<option>I'd like to offer you a job</option>
 								<option>I'd like to ask a question</option>
 								<option>I'd like to have a casual interview with you.</option>
 							</select>
 						</div>
-						<div class='message'>
+
+						<div className='mt-6 border-b-2 border-slate-500 sm:w-[90%] w-full mx-auto'>
 							<label for='message'></label>
 							<textarea
 								name='message'
 								placeholder="I'd like to chat about"
-								id='message_input'
+								className='dark:bg-bluish-black bg-whitish p-2 outline-none w-full font-opensans placeholder:uppercase'
 								cols='30'
 								rows='5'
 								required
@@ -116,8 +108,12 @@ const ContactForm = () => {
 						</div>
 					</div>
 
-					<div class='submit'>
-						<input type='submit' value='Send Message' id='form_button' />
+					<div className='m-12 rounded-sm md:w-[45%] w-full mx-auto bg-gradient-purple-pink-orange p-0.5'>
+						<input
+							type='submit'
+							value='SEND MESSAGE'
+							className='dark:bg-bluish-black bg-whitish font-semibold hover:text-vivid-pink transition duration-500 w-full h-full flex items-center justify-center py-3 font-playfair group cursor-pointer'
+						/>
 					</div>
 				</form>
 			</div>
