@@ -8,6 +8,7 @@ import SocialLinks from './scenes/SocialLinks';
 import Portfolio from './scenes/Portfolio';
 import Skills from './scenes/Skills';
 import ContactForm from './scenes/ContactForm';
+import Footer from './scenes/Footer';
 
 function App() {
 	const [selectedPage, setSelectedPage] = useState('home');
@@ -61,6 +62,8 @@ function App() {
 			<div className='w-[85%] mx-auto'>
 				<ContactForm />
 			</div>
+
+			<Footer />
 		</div>
 	);
 }

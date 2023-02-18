@@ -22,7 +22,7 @@ const container = {
 		scale: 1,
 		transition: {
 			delayChildren: 1.0,
-			staggerChildren: 0.3,
+			staggerChildren: 0.2,
 		},
 	},
 };

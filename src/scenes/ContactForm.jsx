@@ -76,12 +76,12 @@ const ContactForm = () => {
 				>
 					<div className='md:grid md:grid-cols-2 grid gap-y-6'>
 						<div className='border-b-2 border-slate-500 mx-auto md:w-[80%] sm:w-[90%] w-full'>
-							<label for='name'></label>
+							<label htmlFor='name'></label>
 							<input
 								type='text'
 								placeholder='My name is'
 								name='name'
-								className='dark:bg-bluish-black bg-whitish p-2 outline-none font-opensans  placeholder:uppercase'
+								className='dark:bg-bluish-black bg-whitish w-full p-2 outline-none font-opensans  placeholder:uppercase'
 								{...register('name', {
 									required: true,
 									maxLength: 100,
@@ -96,12 +96,12 @@ const ContactForm = () => {
 							)}
 						</div>
 						<div className='border-b-2 border-slate-500 md:w-[80%] sm:w-[90%] w-full mx-auto'>
-							<label for='phone'></label>
+							<label htmlFor='phone'></label>
 							<input
 								type='text'
 								placeholder='My number is'
 								name='phone'
-								className='dark:bg-bluish-black bg-whitish p-2 outline-none font-opensans placeholder:uppercase'
+								className='dark:bg-bluish-black bg-whitish w-full p-2 outline-none font-opensans placeholder:uppercase'
 								{...register('phone', {
 									required: true,
 									pattern: /^0\d{9,10}$/,
@@ -119,12 +119,12 @@ const ContactForm = () => {
 
 					<div className='mt-6'>
 						<div className='border-b-2 border-slate-500 sm:w-[90%] w-full mx-auto'>
-							<label for='email'></label>
+							<label htmlFor='email'></label>
 							<input
 								type='email'
 								placeholder='My e-mail is'
 								name='email'
-								className='dark:bg-bluish-black bg-whitish p-2 outline-none font-opensans placeholder:uppercase'
+								className='dark:bg-bluish-black bg-whitish w-full p-2 outline-none font-opensans placeholder:uppercase'
 								{...register('email', {
 									required: true,
 									pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -140,16 +140,17 @@ const ContactForm = () => {
 						</div>
 
 						<div className='mt-6 border-b-2 border-slate-500 sm:w-[90%] w-full mx-auto'>
-							<label for='subject'></label>
+							<label htmlFor='subject'></label>
 							<select
 								className='dark:bg-bluish-black bg-whitish p-2 outline-none w-[95%] text-slate-400 font-opensans placeholder:capitalize'
 								placeholder='Subject line'
+								defaultValue={'DEFAULT'}
 								name='subject'
 								{...register('subject', {
 									required: true,
 								})}
 							>
-								<option disabled hidden selected value=''>
+								<option disabled hidden value={'DEFAULT'}>
 									SUBJECT LINE
 								</option>
 								<option value='offer'>I'd like to offer you a job</option>
@@ -167,7 +168,7 @@ const ContactForm = () => {
 						</div>
 
 						<div className='mt-6 border-b-2 border-slate-500 sm:w-[90%] w-full mx-auto'>
-							<label for='message'></label>
+							<label htmlFor='message'></label>
 							<textarea
 								name='message'
 								placeholder="I'd like to chat about"
