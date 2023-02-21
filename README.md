@@ -1,8 +1,13 @@
 # react-myPortfolio
 
-"react-myPortfolio" build is React and Tailwind. Also, using some frameworks for a bunch of animations. You get to know what kind of person I am and see my skills.
+"react my portfolio" build is React and Tailwind. And, Using some frameworks for a bunch of animations. I also add the "Dark Mode" and "Day Mode" systems. You can choose whatever you want. And pick languages English or Japanese. Of cource, fully responsive design. fully responsive design.<br />
+The demo is down below.<br />
+If you see this portfolio, you know what kind of person I am, And see my skills.
 
-"react-myPortfolio" はReactとTailwindを使用して作成しました。アニメーションを追加するにあたり、いくつかのフレームワークも使用しました。このポートフォリオを見て頂ければ、私のことや、使える言語などが簡単に分かっていただけると思います。
+
+"react-myPortfolio" はReactとTailwindを使用して作成しました。アニメーションを追加するにあたり、いくつかのフレームワークも使用しました。さらにダークモードとデイモード機能を追加してるのでお好みで、選ぶことができます。また、英語か日本語も選択できます。全てレスポンシブデザインです。<br />
+デモは下記にあります。<br />
+このポートフォリオを見て頂ければ、私のことや、使える言語などが簡単に分かっていただけると思います。
 
 
 ## Demo
