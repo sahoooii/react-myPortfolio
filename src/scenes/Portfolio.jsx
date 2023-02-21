@@ -31,7 +31,7 @@ const Portfolio = ({ isJp }) => {
 		{
 			id: 2,
 			title: 'Weather App',
-			subtitle: 'React × Tailwind',
+			subtitle: 'React × API × Tailwind',
 			src: '../assets/weatherApp.jpg',
 			describeEn:
 				'Using Weather API, Get current weather data and three hourly forecast data from OpenWeather API. I struggled that get data and restructure it into what I just needed. Also, Search for the city or country wherever you want. You can set the Celsius and Fahrenheit easily.',
@@ -133,7 +133,7 @@ const Portfolio = ({ isJp }) => {
 					variants={container}
 				>
 					{/* Row 1 */}
-					<div className='flex justify-center items-center p-10 bg-gradient-purple-pink-orange max-w-[400px] max-h-[400px] text-3xl font-playfair font-semibold'>
+					<div className='flex justify-center items-center p-10 bg-gradient-purple-pink-orange max-w-[400px] max-h-[400px] text-whitish text-3xl font-playfair font-semibold'>
 						Frontend
 					</div>
 
@@ -203,7 +203,7 @@ const Portfolio = ({ isJp }) => {
 						</>
 					)}
 
-					<div className='flex justify-center items-center p-10 bg-gradient-green-blue max-w-[400px] max-h-[400px] text-3xl font-playfair font-semibold'>
+					<div className='flex justify-center items-center p-10 bg-gradient-green-blue max-w-[400px] max-h-[400px] text-whitish text-3xl font-playfair font-semibold'>
 						Backend
 					</div>
 				</motion.div>

@@ -54,7 +54,6 @@ const ContactForm = () => {
 					visible: { opacity: 1, y: 0 },
 				}}
 			>
-				{/* <div className='border-2 border-slate-500 w-[85%] max-w-[750px] mx-auto p-10'> */}
 				<h1 className='font-montserrat sm:text-4xl text-2xl text-center sm:pt-10 pt-5 sm:pb-6 pb-2'>
 					&bull; Keep in Touch &bull;
 				</h1>
@@ -199,7 +198,6 @@ const ContactForm = () => {
 						/>
 					</div>
 				</form>
-				{/* </div> */}
 			</motion.div>
 		</section>
 	);

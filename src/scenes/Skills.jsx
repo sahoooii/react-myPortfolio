@@ -63,7 +63,7 @@ const Skills = ({ isJp }) => {
 			id: 5,
 			src: sass,
 			name: 'Sass',
-			style: 'shadow-pink-400',
+			style: 'shadow-pink-500',
 		},
 		{
 			id: 6,
@@ -81,7 +81,7 @@ const Skills = ({ isJp }) => {
 			id: 8,
 			src: react,
 			name: 'React',
-			style: 'shadow-slate-800',
+			style: 'shadow-slate-900',
 		},
 	];
 
@@ -96,19 +96,19 @@ const Skills = ({ isJp }) => {
 			id: 2,
 			src: laravel,
 			name: 'Laravel',
-			style: 'shadow-orange-500',
+			style: 'shadow-orange-600',
 		},
 		{
 			id: 3,
 			src: sql,
 			name: 'MySQL',
-			style: 'shadow-blue-500',
+			style: 'shadow-blue-600',
 		},
 		{
 			id: 4,
 			src: github,
 			name: 'GitHub',
-			style: 'shadow-slate-800',
+			style: 'shadow-slate-900',
 		},
 	];
 
