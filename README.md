@@ -1,3 +1,28 @@
+# react-myPortfolio
+
+"react-myPortfolio" build is React and Tailwind. Also, using some frameworks for a bunch of animations. You get to know what kind of person I am and see my skills.
+
+"react-myPortfolio" はReactとTailwindを使用して作成しました。アニメーションを追加するにあたり、いくつかのフレームワークも使用しました。このポートフォリオを見て頂ければ、私のことや、使える言語などが簡単に分かっていただけると思います。
+
+
+## Dependency
+
+ * @testing-library/jest-dom@5.16.5
+ * @testing-library/react@13.4.0
+ * @testing-library/user-event@13.5.0
+ * autoprefixer@10.4.13
+ * framer-motion@8.5.0
+ * react-anchor-link-smooth-scroll@1.0.12
+ * react-dom@18.2.0
+ * react-hook-form@7.43.1
+ * react-icons@4.7.1
+ * react-scripts@5.0.1
+ * react-typical@0.1.3
+ * react@18.2.0
+ * tailwindcss@3.2.4
+ * web-vitals@2.1.4
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +93,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# react-myPortfolio
