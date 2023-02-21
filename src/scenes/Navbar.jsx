@@ -2,38 +2,16 @@ import React, { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 import useMediaQuery from '../hooks/useMediaQuery';
 
-// 42min gradation配色
-const links = [
-	{
-		id: 1,
-		link: 'home',
-	},
-	{
-		id: 2,
-		link: 'about',
-	},
-	{
-		id: 3,
-		link: 'portfolio',
-	},
-	{
-		id: 4,
-		link: 'skills',
-	},
-	{
-		id: 5,
-		link: 'contact',
-	},
-];
 const Link = ({ page, selectedPage, setSelectedPage }) => {
 	return (
 		<AnchorLink
 			className={`${
 				selectedPage === page ? 'dark:text-mint-green text-light-blue' : ''
-			} dark:hover:text-vivid-yellow hover:text-mint-green transition duration-500`}
+			} dark:hover:text-vivid-yellow hover:text-pink-800 transition duration-500`}
 			href={`#${page}`}
 			onClick={() => setSelectedPage(page)}
 		>
@@ -46,24 +24,79 @@ const Navbar = ({
 	isTopOfPage,
 	darkMode,
 	setDarkMode,
+	isJp,
+	setIsJp,
 	selectedPage,
 	setSelectedPage,
 }) => {
 	const [isMenuToggled, setIsMenuToggled] = useState(false); //hamburger Menu
 	const isAboveSmallScreens = useMediaQuery('(min-width: 768px)');
-	const navbarBackground = isTopOfPage ? '' : 'bg-gradient-purple-pink-orange';
+	const isChangedLang = isJp ? 'justify-end' : '';
+	const navbarBackground = isTopOfPage
+		? ''
+		: 'dark:bg-gradient-night-sky bg-gradient-pink-orange';
+
+	const links = [
+		{
+			id: 1,
+			link: 'home',
+		},
+		{
+			id: 2,
+			link: 'about',
+		},
+		{
+			id: 3,
+			link: 'portfolio',
+		},
+		{
+			id: 4,
+			link: 'skills',
+		},
+		{
+			id: 5,
+			link: 'contact',
+		},
+	];
 
 	return (
 		<nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
 			<div className='flex items-center justify-between mx-auto w-5/6'>
-				<div className='flex items-center'>
-					<h4 className='font-signature text-3xl font-bold'>
-						Saho
-					</h4>
+				<div className='flex items-center justify-between md:gap-4 gap-2'>
+					<h4 className='font-signature text-3xl font-bold'>Saho</h4>
 					<BsFillMoonStarsFill
 						onClick={() => setDarkMode(!darkMode)}
-						className='cursor-pointer text-3x ml-8 dark:text-light-blue text-vivid-pink hover:scale-110 transition duration-500'
+						className='cursor-pointer text-3x dark:text-light-blue text-vivid-yellow hover:scale-125 transition duration-500'
 					/>
+					<div className='flex items-center'>
+						{isJp ? (
+							<h2 className='font-patric md:text-lg dark:text-white font-semibold'>
+								EN
+							</h2>
+						) : (
+							<h2 className='font-patric md:text-lg dark:text-vivid-yellow text-light-blue font-semibold scale-125'>
+								EN
+							</h2>
+						)}
+						<div
+							className={`${isChangedLang} md:w-14 w-10 md:h-6 h-4 dark:bg-whitish bg-bluish-black opacity-60 flex items-center justify-start rounded-3xl p-1 cursor-pointer mr-2 ml-2`}
+							onClick={() => setIsJp(!isJp)}
+						>
+							<motion.div
+								className='md:w-6 md:h-6 w-4 h-4 rounded-[50%] dark:bg-bluish-black bg-white'
+								transition={{ type: 'spring', duration: 1 }}
+							/>
+						</div>
+						{isJp ? (
+							<h2 className='font-patric md:text-lg dark:text-vivid-yellow text-light-blue  font-semibold scale-125'>
+								JP
+							</h2>
+						) : (
+							<h2 className='font-patric md:text-lg dark:text-white font-semibold'>
+								JP
+							</h2>
+						)}
+					</div>
 				</div>
 
 				{/* DeskTop Nav ver. */}
@@ -85,13 +118,13 @@ const Navbar = ({
 					</div>
 				) : (
 					<button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-						<FaBars size={28} />{' '}
+						<FaBars size={28} />
 					</button>
 				)}
 
 				{/* Mobile Menu ver. */}
 				{!isAboveSmallScreens && isMenuToggled && (
-					<div className='fixed right-0 bottom-0 h-full bg-gradient-pink-orange w-full text-white'>
+					<div className='fixed right-0 bottom-0 h-full dark:bg-gradient-night-sky bg-gradient-pink-orange w-full text-white'>
 						{/* Close Icon */}
 						<div className='flex justify-end p-12'>
 							<FaTimes
