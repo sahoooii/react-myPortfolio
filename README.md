@@ -1,9 +1,12 @@
 # react-myPortfolio
 
+### Describe English
+
 "react my portfolio" build is React and Tailwind. And, Using some frameworks for a bunch of animations. I also add the "Dark Mode" and "Day Mode" systems. You can choose whatever you want. And pick languages English or Japanese. Of cource, fully responsive design. fully responsive design.<br />
 The demo is down below.<br />
 If you see this portfolio, you know what kind of person I am, And see my skills.
 
+### Describe Japanese
 
 "react-myPortfolio" はReactとTailwindを使用して作成しました。アニメーションを追加するにあたり、いくつかのフレームワークも使用しました。さらにダークモードとデイモード機能を追加してるのでお好みで、選ぶことができます。また、英語か日本語も選択できます。全てレスポンシブデザインです。<br />
 デモは下記にあります。<br />
