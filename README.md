@@ -5,6 +5,10 @@
 "react-myPortfolio" はReactとTailwindを使用して作成しました。アニメーションを追加するにあたり、いくつかのフレームワークも使用しました。このポートフォリオを見て頂ければ、私のことや、使える言語などが簡単に分かっていただけると思います。
 
 
+## Demo
+
+![myPortfoio](https://user-images.githubusercontent.com/75118062/220282792-cf582fac-1af5-4d0f-9669-81d4479ebb05.gif)
+
 ## Dependency
 
  * @testing-library/jest-dom@5.16.5
