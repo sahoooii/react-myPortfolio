@@ -7,7 +7,14 @@
 
 ## Demo
 
+### Dark Mode
+
 ![myPortfoio](https://user-images.githubusercontent.com/75118062/220282792-cf582fac-1af5-4d0f-9669-81d4479ebb05.gif)
+
+### Day Mode
+
+![myPortfolioDay](https://user-images.githubusercontent.com/75118062/220292706-251e4c41-2418-41dc-bf4e-19b25970f840.gif)
+
 
 ## Dependency
 
