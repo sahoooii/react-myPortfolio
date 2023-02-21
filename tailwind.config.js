@@ -9,6 +9,7 @@ module.exports = {
 				whitish: '#FFFFF0',
 				grey: '#ededed',
 				purple: '#9057FF',
+				'contact-white': '#F2F3EB',
 				'bluish-black': '#111827',
 				'opaque-black': 'rgba(0,0,0,35)',
 				'light-blue': '#136FFF',
@@ -36,6 +37,7 @@ module.exports = {
 				patric: ['Patrick Hand', 'cursive'],
 				signature: ['Great Vibes', 'cursive'],
 				solitreo: ['Solitreo', 'cursive'],
+				montserrat: ['Montserrat Alternates', 'sans-serif'],
 				jp: ['Kiwi Maru', 'serif'],
 			},
 			content: {
@@ -50,13 +52,37 @@ module.exports = {
 		},
 		animation: {
 			wiggle: 'wiggle 8s ease-in-out infinite',
+			heartbeat: 'heartbeat 1.8s ease  infinite both',
 		},
 		keyframes: {
 			wiggle: {
 				'0%, 100%': { 'border-radius': '60% 40% 30% 70%/60% 30% 70% 40%' },
 				'50%': { 'border-radius': '30% 60% 70% 40%/50% 60% 30% 60%' },
 			},
+			heartbeat: {
+				'0%': {
+					transform: 'scale(1)',
+					'transform-origin': 'center center',
+					'animation-timing-function': 'ease-out',
+				},
+				'10%': {
+					transform: 'scale(.91)',
+					'animation-timing-function': 'ease-in',
+				},
+				'17%': {
+					transform: 'scale(.98)',
+					'animation-timing-function': 'ease-out',
+				},
+				'33%': {
+					transform: 'scale(.87)',
+					'animation-timing-function': 'ease-in',
+				},
+				'45%': {
+					transform: 'scale(1)',
+					'animation-timing-function': 'ease-out',
+				},
+			},
 		},
 	},
-	plugins: [],
+	plugins: [require('tailwindcss'), require('autoprefixer')],
 };

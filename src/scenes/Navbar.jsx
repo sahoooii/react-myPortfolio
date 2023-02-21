@@ -6,34 +6,12 @@ import { motion } from 'framer-motion';
 
 import useMediaQuery from '../hooks/useMediaQuery';
 
-const links = [
-	{
-		id: 1,
-		link: 'home',
-	},
-	{
-		id: 2,
-		link: 'about',
-	},
-	{
-		id: 3,
-		link: 'portfolio',
-	},
-	{
-		id: 4,
-		link: 'skills',
-	},
-	{
-		id: 5,
-		link: 'contact',
-	},
-];
 const Link = ({ page, selectedPage, setSelectedPage }) => {
 	return (
 		<AnchorLink
 			className={`${
 				selectedPage === page ? 'dark:text-mint-green text-light-blue' : ''
-			} dark:hover:text-vivid-yellow hover:text-purple transition duration-500`}
+			} dark:hover:text-vivid-yellow hover:text-pink-800 transition duration-500`}
 			href={`#${page}`}
 			onClick={() => setSelectedPage(page)}
 		>
@@ -58,6 +36,29 @@ const Navbar = ({
 		? ''
 		: 'dark:bg-gradient-night-sky bg-gradient-pink-orange';
 
+	const links = [
+		{
+			id: 1,
+			link: 'home',
+		},
+		{
+			id: 2,
+			link: 'about',
+		},
+		{
+			id: 3,
+			link: 'portfolio',
+		},
+		{
+			id: 4,
+			link: 'skills',
+		},
+		{
+			id: 5,
+			link: 'contact',
+		},
+	];
+
 	return (
 		<nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
 			<div className='flex items-center justify-between mx-auto w-5/6'>
@@ -65,7 +66,7 @@ const Navbar = ({
 					<h4 className='font-signature text-3xl font-bold'>Saho</h4>
 					<BsFillMoonStarsFill
 						onClick={() => setDarkMode(!darkMode)}
-						className='cursor-pointer text-3x dark:text-light-blue text-yellow-500 hover:scale-110 transition duration-500'
+						className='cursor-pointer text-3x dark:text-light-blue text-vivid-yellow hover:scale-125 transition duration-500'
 					/>
 					<div className='flex items-center'>
 						{isJp ? (
@@ -117,13 +118,13 @@ const Navbar = ({
 					</div>
 				) : (
 					<button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-						<FaBars size={28} />{' '}
+						<FaBars size={28} />
 					</button>
 				)}
 
 				{/* Mobile Menu ver. */}
 				{!isAboveSmallScreens && isMenuToggled && (
-					<div className='fixed right-0 bottom-0 h-full dark:bg-gradient-green-blue bg-gradient-pink-orange w-full text-white'>
+					<div className='fixed right-0 bottom-0 h-full dark:bg-gradient-night-sky bg-gradient-pink-orange w-full text-white'>
 						{/* Close Icon */}
 						<div className='flex justify-end p-12'>
 							<FaTimes

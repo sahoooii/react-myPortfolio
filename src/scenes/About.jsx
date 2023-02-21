@@ -58,7 +58,7 @@ const About = ({ isJp }) => {
 							languages step by step. I can also use several libraries and
 							frameworks. Like Laravel, Vue.js, and React. I'm working on React
 							project now. So I built that portfolio with React and Tailwind.
-							And I used other languages, so please see the below "Portfolio"
+							Also I used other languages, so please see the below Portfolio
 							section. I have strong communication skills, I'm an open-minded
 							person, and I have an ALOHA spirit. I'm looking forward to working
 							with you!
