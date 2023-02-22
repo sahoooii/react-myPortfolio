@@ -32,7 +32,7 @@ const Portfolio = ({ isJp }) => {
 			id: 2,
 			title: 'Weather App',
 			subtitle: 'React × API × Tailwind',
-			src: '../assets/weatherApp.jpg',
+			src: '../assets/weatherApp.gif',
 			describeEn:
 				'Using Weather API, Get current weather data and three hourly forecast data from OpenWeather API. I struggled that get data and restructure it into what I just needed. Also, Search for the city or country wherever you want. You can set the Celsius and Fahrenheit easily.',
 			describeJp:
@@ -52,7 +52,7 @@ const Portfolio = ({ isJp }) => {
 			id: 4,
 			title: 'Social Media App',
 			subtitle: 'PHP × CSS × MySQL',
-			src: '../assets/chill.jpg',
+			src: '../assets/chill.gif',
 			describeEn:
 				"It's my first original Backend piece, not using any libraries and frameworks. I use MySQL for a database. I know that the design is not good. I created it, the very first beginning. But fully responsive! You can use it like Twitter. Create your account and post something. What you thought or your favorite picture!",
 			describeJp:
@@ -140,7 +140,7 @@ const Portfolio = ({ isJp }) => {
 					{isJp ? (
 						<>
 							{projects.map(
-								({ id, title, subtitle, src, describeJp, code }) => (
+								({ id, title, subtitle, src, demo, describeJp, code }) => (
 									<motion.div
 										variants={projectVariants}
 										className='relative'
