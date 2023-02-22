@@ -1,14 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaPlayCircle } from 'react-icons/fa';
 
 import LineGradient from '../components/LineGradient';
-
 
 const container = {
 	hidden: {},
 	visible: {
-		transition: { staggerChildren: 0.2 },
+		transition: { staggerChildren: 0.3 },
 	},
 };
 
@@ -26,7 +25,8 @@ const Portfolio = ({ isJp }) => {
 			src: '../assets/project-1.jpeg',
 			describeEn: 'Create shopping site. Create later',
 			describeJp: 'ショッピングサイト。あとで作る',
-			code: 'https://github.com/sahoooii',
+			code: '',
+			demo: '',
 		},
 		{
 			id: 2,
@@ -37,7 +37,8 @@ const Portfolio = ({ isJp }) => {
 				'Using Weather API, Get current weather data and three hourly forecast data from OpenWeather API. I struggled that get data and restructure it into what I just needed. Also, Search for the city or country wherever you want. You can set the Celsius and Fahrenheit easily.',
 			describeJp:
 				'OpenWeather APIを使って作成したお天気アプリ。好きな都市や国で検索して、現在の天気や3時間毎の天気情報を取得できる。必要なデータだけを取得し、再構築して配列にまとめていくのに苦労した。摂氏、華氏表示も簡単に変更できる。',
-			code: 'https://github.com/sahoooii/react-weatherApp-responsive',
+			code: 'https://github.com/sahoooii/react-weatherApp-3houley',
+			demo: '../assets/weatherApp.gif',
 		},
 		{
 			id: 3,
@@ -46,7 +47,8 @@ const Portfolio = ({ isJp }) => {
 			src: '../assets/project-3.jpeg',
 			describeEn: 'some web site. Create later',
 			describeJp: 'あとで作る',
-			code: 'https://github.com/sahoooii',
+			code: '',
+			demo: '',
 		},
 		{
 			id: 4,
@@ -57,7 +59,8 @@ const Portfolio = ({ isJp }) => {
 				"It's my first original Backend piece, not using any libraries and frameworks. I use MySQL for a database. I know that the design is not good. I created it, the very first beginning. But fully responsive! You can use it like Twitter. Create your account and post something. What you thought or your favorite picture!",
 			describeJp:
 				'初めて作ったオリジナルのバックエンドSNSアプリ。ライブラリやフレームワークを使わず、生のPHPを使い構築。データベースはMySQLを使用。初期の頃に作ったのでデザインは決して良くないが、レスポンシブにも対応。アカウントを作って、Twitterみたいに適当に何かつぶやいたり、好きな写真をポストしてみよう!',
-			code: 'https://github.com/sahoooii',
+			code: '',
+			demo: '../assets/chill.gif',
 		},
 		{
 			id: 5,
@@ -69,6 +72,7 @@ const Portfolio = ({ isJp }) => {
 			describeJp:
 				'Tinderのようなマッチングアプリ。Laravelを使って作った初めてのアプリ。ダミーデータを追加したり、どんな人を探しているかなど設定して、swipeできるようにした。相手とマッチしたらその人のプロフィールが見られるようになったり、まさにTinder!',
 			code: 'https://github.com/sahoooii/laravel_tinderApp',
+			demo: '../assets/tinder.gif',
 		},
 		{
 			id: 6,
@@ -77,7 +81,8 @@ const Portfolio = ({ isJp }) => {
 			src: '../assets/project-6.jpeg',
 			describeEn: 'Created backend site. later.',
 			describeJp: 'nodeを使ってのちに作る。',
-			code: 'https://github.com/sahoooii',
+			code: '',
+			demo: '',
 		},
 	];
 
@@ -140,7 +145,7 @@ const Portfolio = ({ isJp }) => {
 					{isJp ? (
 						<>
 							{projects.map(
-								({ id, title, subtitle, src, describeJp, code }) => (
+								({ id, title, subtitle, src, describeJp, code, demo }) => (
 									<motion.div
 										variants={projectVariants}
 										className='relative'
@@ -153,15 +158,28 @@ const Portfolio = ({ isJp }) => {
 											<p className='md:text-xl text-md font-playfair font-semibold md:mt-2'>
 												{subtitle}
 											</p>
-											<p className='md:mt-3 mt-1 font-jp'>{describeJp}</p>
-											<a
-												href={code}
-												className='opacity-80 md:mt-4 mt-2 hover:scale-150'
-												target='_blank'
-												rel='noreferrer'
-											>
-												<FaGithub size={30} />
-											</a>
+											<p className='md:mt-3 mt-1  text-sm font-jp'>
+												{describeJp}
+											</p>
+
+											<div className='flex justify-center items-center gap-8 mt-4'>
+												<a
+													href={code}
+													className='opacity-80 hover:scale-150'
+													target='_blank'
+													rel='noreferrer'
+												>
+													<FaGithub size={30} />
+												</a>
+												<a
+													href={demo}
+													className='opacity-80 hover:scale-150'
+													target='_blank'
+													rel='noreferrer'
+												>
+													<FaPlayCircle size={30} />
+												</a>
+											</div>
 										</div>
 										<img src={src} alt={title} />
 									</motion.div>
@@ -171,7 +189,7 @@ const Portfolio = ({ isJp }) => {
 					) : (
 						<>
 							{projects.map(
-								({ id, title, subtitle, src, describeEn, code }) => (
+								({ id, title, subtitle, src, describeEn, code, demo }) => (
 									<motion.div
 										variants={projectVariants}
 										className='relative'
@@ -184,17 +202,27 @@ const Portfolio = ({ isJp }) => {
 											<p className='md:text-xl text-md font-playfair font-semibold md:mt-2'>
 												{subtitle}
 											</p>
-											<p className='md:mt-3 mt-1 md:text-lg text-sm font-opensans'>
+											<p className='md:mt-3 mt-1  md:text-lg text-sm font-opensans'>
 												{describeEn}
 											</p>
-											<a
-												href={code}
-												className='opacity-80 md:mt-4 mt-2 hover:scale-150'
-												target='_blank'
-												rel='noreferrer'
-											>
-												<FaGithub size={30} />
-											</a>
+											<div className='flex justify-center items-center space-x-8 mt-4'>
+												<a
+													href={code}
+													className='opacity-80 hover:scale-150'
+													target='_blank'
+													rel='noreferrer'
+												>
+													<FaGithub size={30} />
+												</a>
+												<a
+													href={demo}
+													className='opacity-80 hover:scale-150'
+													target='_blank'
+													rel='noreferrer'
+												>
+													<FaPlayCircle size={30} />
+												</a>
+											</div>
 										</div>
 										<img src={src} alt={title} />
 									</motion.div>
