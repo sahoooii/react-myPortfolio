@@ -20,13 +20,13 @@ const Portfolio = ({ isJp }) => {
 	const projects = [
 		{
 			id: 1,
-			title: 'Shopping site',
-			subtitle: 'JavaScript × Bootstrap',
+			title: 'Memory Game',
+			subtitle: 'HTML × CSS × JavaScript',
 			src: '../assets/project-1.jpeg',
 			describeEn: 'Create shopping site. Create later',
 			describeJp: 'ショッピングサイト。あとで作る',
-			code: '',
-			demo: '',
+			code: 'https://github.com/sahoooii/js-whereIsMyDog',
+			demo: '../assets/memoryGame.gif',
 		},
 		{
 			id: 2,
