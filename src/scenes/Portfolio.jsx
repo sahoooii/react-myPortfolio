@@ -20,13 +20,13 @@ const Portfolio = ({ isJp }) => {
 	const projects = [
 		{
 			id: 1,
-			title: 'Shopping site',
-			subtitle: 'JavaScript × Bootstrap',
-			src: '../assets/project-1.jpeg',
-			describeEn: 'Create shopping site. Create later',
-			describeJp: 'ショッピングサイト。あとで作る',
-			code: '',
-			demo: '',
+			title: 'Memory Game',
+			subtitle: 'HTML × CSS × JavaScript',
+			src: '../assets/memoryGame.jpg',
+			describeEn: "Create a Memory Game using only JavaScript. The title is Where Is My Dog?. It's literally to find your dog! Add sound effects and timer systems, and the player lives. You can enjoy it like a real game. I particularly about the design looks like real cards and flips. And fully responsive. Enjoy the Game!",
+			describeJp: 'JavaScriptだけで作ったメモリーゲーム。ゲーム名は"Where Is My Dog?" 名前の通り、あなたの犬を探すゲーム。サウンドやタイマー、Player Livesまで設定されているので、本当のゲームのように楽しめる。特にカードと、カードをめくるときのデザインにこだわった、レスポンシブ対応デザイン。それではEnjoy the Game!',
+			code: 'https://github.com/sahoooii/js-whereIsMyDog',
+			demo: '../assets/gif/memoryGame.gif',
 		},
 		{
 			id: 2,
@@ -38,7 +38,7 @@ const Portfolio = ({ isJp }) => {
 			describeJp:
 				'OpenWeather APIを使って作成したお天気アプリ。好きな都市や国で検索して、現在の天気や3時間毎の天気情報を取得できる。必要なデータだけを取得し、再構築して配列にまとめていくのに苦労した。摂氏、華氏表示も簡単に変更できる。',
 			code: 'https://github.com/sahoooii/react-weatherApp-3houley',
-			demo: '../assets/weatherApp.gif',
+			demo: '../assets/gif/weatherApp.gif',
 		},
 		{
 			id: 3,
@@ -60,7 +60,7 @@ const Portfolio = ({ isJp }) => {
 			describeJp:
 				'初めて作ったオリジナルのバックエンドSNSアプリ。ライブラリやフレームワークを使わず、生のPHPを使い構築。データベースはMySQLを使用。初期の頃に作ったのでデザインは決して良くないが、レスポンシブにも対応。アカウントを作って、Twitterみたいに適当に何かつぶやいたり、好きな写真をポストしてみよう!',
 			code: '',
-			demo: '../assets/chill.gif',
+			demo: '../assets/gif/chill.gif',
 		},
 		{
 			id: 5,
@@ -72,7 +72,7 @@ const Portfolio = ({ isJp }) => {
 			describeJp:
 				'Tinderのようなマッチングアプリ。Laravelを使って作った初めてのアプリ。ダミーデータを追加したり、どんな人を探しているかなど設定して、swipeできるようにした。相手とマッチしたらその人のプロフィールが見られるようになったり、まさにTinder!',
 			code: 'https://github.com/sahoooii/laravel_tinderApp',
-			demo: '../assets/tinder.gif',
+			demo: '../assets/gif/tinder.gif',
 		},
 		{
 			id: 6,
