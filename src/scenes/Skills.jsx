@@ -1,18 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import html from '../assets/html.png';
-import css from '../assets/css.png';
-import bootstrap from '../assets/bootstrap.png';
-import sass from '../assets/sass.png';
-import tailwind from '../assets/tailwindcss.png';
-import javascript from '../assets/javascript.png';
-import vue from '../assets/vuejs.png';
-import react from '../assets/react.png';
-import php from '../assets/php.png';
-import laravel from '../assets/laravel.png';
-import sql from '../assets/mysql.png';
-import github from '../assets/github.png';
+import html from '../assets/skills/html.png';
+import css from '../assets/skills/css.png';
+import bootstrap from '../assets/skills/bootstrap.png';
+import sass from '../assets/skills/sass.png';
+import tailwind from '../assets/skills/tailwindcss.png';
+import javascript from '../assets/skills/javascript.png';
+import vue from '../assets/skills/vuejs.png';
+import react from '../assets/skills/react.png';
+import php from '../assets/skills/php.png';
+import laravel from '../assets/skills/laravel.png';
+import sql from '../assets/skills/mysql.png';
+import github from '../assets/skills/github.png';
 import LineGradient from '../components/LineGradient';
 
 const container = {

@@ -41,8 +41,8 @@ module.exports = {
 				jp: ['Kiwi Maru', 'serif'],
 			},
 			content: {
-				brush: "url('./assets/brush.png')",
-				brush_xs: "url('./assets/brush_xs.png')",
+				brush: "url('./assets/profile/brush.png')",
+				brush_xs: "url('./assets/profile/brush_xs.png')",
 			},
 		},
 		screens: {
