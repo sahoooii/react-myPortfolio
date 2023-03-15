@@ -22,9 +22,11 @@ const Portfolio = ({ isJp }) => {
 			id: 1,
 			title: 'Memory Game',
 			subtitle: 'HTML × CSS × JavaScript',
-			src: '../assets/memoryGame.jpg',
-			describeEn: "Create a Memory Game using only JavaScript. The title is Where Is My Dog?. It's literally to find your dog! Add sound effects and timer systems, and the player lives. You can enjoy it like a real game. I particularly about the design looks like real cards and flips. And fully responsive. Enjoy the Game!",
-			describeJp: 'JavaScriptだけで作ったメモリーゲーム。ゲーム名は"Where Is My Dog?" 名前の通り、あなたの犬を探すゲーム。サウンドやタイマー、Player Livesまで設定されているので、本当のゲームのように楽しめる。特にカードと、カードをめくるときのデザインにこだわった、レスポンシブ対応デザイン。それではEnjoy the Game!',
+			src: '../assets/portfolio/memoryGame.jpg',
+			describeEn:
+				"Create a Memory Game using only JavaScript. The title is Where Is My Dog?. It's literally to find your dog! Add sound effects and timer systems, and the player lives. You can enjoy it like a real game. I particularly about the design looks like real cards and flips. And fully responsive. Enjoy the Game!",
+			describeJp:
+				'JavaScriptだけで作ったメモリーゲーム。ゲーム名は"Where Is My Dog?" 名前の通り、あなたの犬を探すゲーム。サウンドやタイマー、Player Livesまで設定されているので、本当のゲームのように楽しめる。特にカードと、カードをめくるときのデザインにこだわった、レスポンシブ対応デザイン。それではEnjoy the Game!',
 			code: 'https://github.com/sahoooii/js-whereIsMyDog',
 			demo: '../assets/gif/memoryGame.gif',
 		},
@@ -32,7 +34,7 @@ const Portfolio = ({ isJp }) => {
 			id: 2,
 			title: 'Weather App',
 			subtitle: 'React × API × Tailwind',
-			src: '../assets/weatherApp.jpg',
+			src: '../assets/portfolio/weatherApp.jpg',
 			describeEn:
 				'Using Weather API, Get current weather data and three hourly forecast data from OpenWeather API. I struggled that get data and restructure it into what I just needed. Also, Search for the city or country wherever you want. You can set the Celsius and Fahrenheit easily.',
 			describeJp:
@@ -54,7 +56,7 @@ const Portfolio = ({ isJp }) => {
 			id: 4,
 			title: 'Social Media App',
 			subtitle: 'PHP × CSS × MySQL',
-			src: '../assets/chill.jpg',
+			src: '../assets/portfolio/chill.jpg',
 			describeEn:
 				"It's my first original Backend piece, not using any libraries and frameworks. I use MySQL for a database. I know that the design is not good. I created it, the very first beginning. But fully responsive! You can use it like Twitter. Create your account and post something. What you thought or your favorite picture!",
 			describeJp:
@@ -66,7 +68,7 @@ const Portfolio = ({ isJp }) => {
 			id: 5,
 			title: 'Dating App',
 			subtitle: 'Laravel × Bootstrap × MySQL',
-			src: '../assets/tinder.jpg',
+			src: '../assets/portfolio/tinder.jpg',
 			describeEn:
 				"Created like Tinder App. Used Laravel and MySQL. It's my first piece using the framework and adding some dummy data so you can swipe it like Tinder. You can set your situation in your relationship, like something casual or serious relationships. Also, If you match someone, you can see the profile. Yes, literally Tinder!",
 			describeJp:
