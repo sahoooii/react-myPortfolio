@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import html from '../assets/skills/html.png';
 import css from '../assets/skills/css.png';
 import bootstrap from '../assets/skills/bootstrap.png';
-import sass from '../assets/skills/sass.png';
+import typescript from '../assets/skills/typescript.png';
 import tailwind from '../assets/skills/tailwindcss.png';
 import javascript from '../assets/skills/javascript.png';
 import vue from '../assets/skills/vuejs.png';
@@ -21,14 +21,14 @@ const container = {
 		opacity: 1,
 		scale: 1,
 		transition: {
-			delayChildren: 1.0,
+			delayChildren: 0.5,
 			staggerChildren: 0.2,
 		},
 	},
 };
 
 const item = {
-	hidden: { y: -1000, opacity: 0 },
+	hidden: { y: -500, opacity: 0 },
 	visible: { y: 0, opacity: 1 },
 };
 
@@ -54,16 +54,15 @@ const Skills = ({ isJp }) => {
 		},
 		{
 			id: 4,
+			src: typescript,
+			name: 'TypeScript',
+			style: 'shadow-blue-500',
+		},
+		{
+			id: 5,
 			src: bootstrap,
 			name: 'Bootstrap',
 			style: 'shadow-purple',
-		},
-
-		{
-			id: 5,
-			src: sass,
-			name: 'Sass',
-			style: 'shadow-pink-500',
 		},
 		{
 			id: 6,

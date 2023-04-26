@@ -44,13 +44,14 @@ const Portfolio = ({ isJp }) => {
 		},
 		{
 			id: 3,
-			title: 'Some frontend',
-			subtitle: 'React × TypeScript',
-			src: '../assets/project-3.jpeg',
-			describeEn: 'some web site. Create later',
-			describeJp: 'あとで作る',
-			code: '',
-			demo: '',
+			title: 'Hotel Resort App',
+			subtitle: 'React × TypeScript × Tailwind',
+			src: '../assets/portfolio/dogation.jpg',
+			describeEn:
+				"Create an original Hotel Resort App. The name is Dogation. Use React TypeScript and Tailwind. I've been working on learning TypeScript, so I used it. I created the logo and design and used a bunch of animation. The theme is Beach Vacations and Dogs. Also, I tried to use Swiper for sliders. And of course fully responsive!",
+			describeJp: 'ReactとTypeScriptとTailwind CSSを使って作った、オリジナルのホテルリゾートアプリ。TypeScriptを習得中なので、初導入。ロゴやデザインも完全にオリジナル、アニメーションも多用。テーマはビーチ、バケーション、犬。デザインと全体の色のバランスにこだわった。今回初めてスライダー作成にSwiperを使用。レスポンシブ対応デザイン。',
+			code: 'https://github.com/sahoooii/ts-react-dogation',
+			demo: '../assets/gif/dogation.gif',
 		},
 		{
 			id: 4,
@@ -160,11 +161,11 @@ const Portfolio = ({ isJp }) => {
 											<p className='md:text-xl text-md font-playfair font-semibold md:mt-2'>
 												{subtitle}
 											</p>
-											<p className='md:mt-3 mt-1  text-sm font-jp'>
+											<p className='md:mt-3 mt-2 md:text-md text-sm font-jp'>
 												{describeJp}
 											</p>
 
-											<div className='flex justify-center items-center gap-8 mt-4'>
+											<div className='flex justify-center items-center gap-8 mt-3 md:mt-5'>
 												<a
 													href={code}
 													className='opacity-80 hover:scale-150'
@@ -204,10 +205,10 @@ const Portfolio = ({ isJp }) => {
 											<p className='md:text-xl text-md font-playfair font-semibold md:mt-2'>
 												{subtitle}
 											</p>
-											<p className='md:mt-3 mt-1  md:text-lg text-sm font-opensans'>
+											<p className='md:mt-3 mt-2 md:text-md text-sm font-opensans'>
 												{describeEn}
 											</p>
-											<div className='flex justify-center items-center space-x-8 mt-4'>
+											<div className='flex justify-center items-center space-x-8 mt-3 md:mt-5'>
 												<a
 													href={code}
 													className='opacity-80 hover:scale-150'

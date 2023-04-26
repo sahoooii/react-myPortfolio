@@ -7,9 +7,9 @@ const About = ({ isJp }) => {
 	return (
 		<section
 			id='about'
-			className='sm:pt-40 pt-10 pb-28 sm:text-start text-center'
+			className='sm:pt-40 pt-10 pb-28 sm:text-start text-center md:h-full'
 		>
-			<div className='w-full h-full'>
+			<div className='w-full'>
 				<motion.div
 					initial='hidden'
 					whileInView='visible'
