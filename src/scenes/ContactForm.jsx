@@ -73,7 +73,7 @@ const ContactForm = () => {
 					method='POST'
 					className='mt-10'
 				>
-					<div className='md:grid md:grid-cols-2 grid gap-y-6'>
+					<div className='md:grid-cols-2 grid gap-y-6'>
 						<div className='border-b-2 border-slate-500 mx-auto md:w-[80%] sm:w-[90%] w-full'>
 							<label htmlFor='name'></label>
 							<input
