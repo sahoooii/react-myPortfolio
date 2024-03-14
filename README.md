@@ -1,16 +1,7 @@
 # react-myPortfolio
 
-### Describe in English
-
-"react -myPortfolio" was built React and Tailwind. And, Using some frameworks for a bunch of animations. I also add the "Dark Mode" and "Day Mode" systems. You can choose whatever you want. And pick languages English or Japanese. Of cource, fully responsive design. <br />
-The demo is down below.<br />
-If you see this portfolio, you know what kind of person I am, And see my skills.
-
-### Describe in Japanese
-
-"react-myPortfolio" は React と Tailwind を使用して作成しました。アニメーションを追加するにあたり、いくつかのフレームワークも使用しました。さらにダークモードとデイモード機能を追加してるので、お好みで選ぶことができます。また、英語か日本語も選択できます。全てレスポンシブデザインです。<br />
-デモは下記にあります。<br />
-このポートフォリオを見て頂ければ、私のことや、使える言語などが簡単に分かっていただけると思います。
+<img src="https://img.shields.io/badge/-React-555.svg?logo=react&style=flat"> <img src="https://img.shields.io/badge/-Motion-0055ff.svg?logo=framer&style=flat-square"> <img src="https://img.shields.io/badge/-Tailwind_CSS-06B6D4.svg?logo=tailwindcss&style=flat&logoColor=ff0">
+<p>etc...</p>
 
 ## Demo
 
@@ -22,29 +13,28 @@ If you see this portfolio, you know what kind of person I am, And see my skills.
 
 ![myPortfolioDay](https://user-images.githubusercontent.com/75118062/220292706-251e4c41-2418-41dc-bf4e-19b25970f840.gif)
 
-## Dependencies
 
-- @testing-library/jest-dom@5.16.5
-- @testing-library/react@13.4.0
-- @testing-library/user-event@13.5.0
-- framer-motion@8.5.0
-- react-anchor-link-smooth-scroll@1.0.12
-- react-dom@18.2.0
-- react-hook-form@7.43.1
-- react-icons@4.7.1
-- react-scripts@5.0.1
-- react-typical@0.1.3
-- react@18.2.0
-- web-vitals@2.1.4
+## Describe
 
-## Dev Dependencies
+"react -myPortfolio" was built React and Tailwind. And, Using some frameworks for a bunch of animations. I also add the "Dark Mode" and "Day Mode" systems. You can choose whatever you want. And pick languages English or Japanese. Of cource, fully responsive design. <br />
+The demo is down below.<br />
+If you see this portfolio, you know what kind of person I am, And see my skills.
 
-* autoprefixer": "^10.4.13"
-* tailwindcss": "^3.2.4"
+"react-myPortfolio" は React と Tailwind を使用して作成しました。アニメーションを追加するにあたり、いくつかのフレームワークも使用しました。さらにダークモードとデイモード機能を追加してるので、お好みで選ぶことができます。また、英語か日本語も選択できます。全てレスポンシブデザインです。<br />
+デモは下記にあります。<br />
+このポートフォリオを見て頂ければ、私のことや、使える言語などが簡単に分かっていただけると思います。
 
+## Features
+- Select languages English/Japanese
+- Select Mode Dark/light
+- Typing Animation
+- Framer Motion Animation
+- My Portfolio
+- My Skills
+- Contact Form
 
 ## src
-* [Icons](https://iconscout.com/)
+* [Icon Scout](https://iconscout.com/)
 * [Images](https://pixabay.com/ja/)
 
 # Getting Started with Create React App

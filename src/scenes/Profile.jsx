@@ -4,7 +4,6 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Typical from 'react-typical';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { BiDownload } from 'react-icons/bi';
-
 import useMediaQuery from '../hooks/useMediaQuery';
 
 const Profile = ({ setSelectedPage }) => {
