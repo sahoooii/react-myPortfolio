@@ -11,7 +11,10 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 		<AnchorLink
 			className={`${
 				selectedPage === page ? 'dark:text-mint-green text-light-blue' : ''
-			} dark:hover:text-vivid-yellow hover:text-pink-800 transition duration-500`}
+			} hover:opacity-60 transition duration-500`}
+			// className={`${
+			// 	selectedPage === page ? 'dark:text-mint-green text-light-blue' : ''
+			// } dark:hover:text-vivid-yellow hover:text-pink-800 transition duration-500`}
 			href={`#${page}`}
 			onClick={() => setSelectedPage(page)}
 		>
@@ -66,15 +69,13 @@ const Navbar = ({
 					<h4 className='font-signature text-3xl font-bold'>Saho</h4>
 					<BsFillMoonStarsFill
 						onClick={() => setDarkMode(!darkMode)}
-						className='cursor-pointer text-3x dark:text-light-blue text-vivid-yellow hover:scale-125 transition duration-500'
+						className='cursor-pointer text-3x text-light-blue dark:text-vivid-yellow hover:scale-125 transition duration-500'
 					/>
 					<div className='flex items-center'>
 						{isJp ? (
-							<h2 className='font-patric md:text-lg dark:text-white font-semibold'>
-								EN
-							</h2>
+							<h2 className='font-patric md:text-lg dark:text-white'>EN</h2>
 						) : (
-							<h2 className='font-patric md:text-lg dark:text-vivid-yellow text-light-blue font-semibold scale-125'>
+							<h2 className='font-patric md:text-lg dark:text-light-blue text-vivid-pink scale-125'>
 								EN
 							</h2>
 						)}
@@ -88,20 +89,18 @@ const Navbar = ({
 							/>
 						</div>
 						{isJp ? (
-							<h2 className='font-patric md:text-lg dark:text-vivid-yellow text-light-blue  font-semibold scale-125'>
+							<h2 className='font-patric md:text-lg dark:text-light-blue text-vivid-pink scale-125'>
 								JP
 							</h2>
 						) : (
-							<h2 className='font-patric md:text-lg dark:text-white font-semibold'>
-								JP
-							</h2>
+							<h2 className='font-patric md:text-lg dark:text-white'>JP</h2>
 						)}
 					</div>
 				</div>
 
 				{/* DeskTop Nav ver. */}
 				{isAboveSmallScreens ? (
-					<div className='flex justify-between gap-16 font-patric text-xl font-semibold'>
+					<div className='flex justify-between gap-16 font-signature text-xl font-semibold'>
 						<ul className='flex justify-between gap-12'>
 							{links.map(({ id, link }) => (
 								<li key={id} className='capitalize hover:scale-105'>
@@ -134,7 +133,7 @@ const Navbar = ({
 						</div>
 
 						{/* Menu Items */}
-						<ul className='flex flex-col justify-center items-center gap-10 mx-auto text-3xl font-patric'>
+						<ul className='flex flex-col justify-center items-center gap-10 mx-auto text-3xl font-signature'>
 							{links.map(({ id, link }) => (
 								<li key={id} className='capitalize hover:scale-105'>
 									<Link
