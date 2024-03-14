@@ -1,18 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
-import html from '../assets/skills/html.png';
-import css from '../assets/skills/css.png';
-import bootstrap from '../assets/skills/bootstrap.png';
-import typescript from '../assets/skills/typescript.png';
-import tailwind from '../assets/skills/tailwindcss.png';
-import javascript from '../assets/skills/javascript.png';
-import vue from '../assets/skills/vuejs.png';
-import react from '../assets/skills/react.png';
-import php from '../assets/skills/php.png';
-import laravel from '../assets/skills/laravel.png';
-import sql from '../assets/skills/mysql.png';
-import github from '../assets/skills/github.png';
+import frontend from '../components/data/frontend';
+import backend from '../components/data/backend';
 import LineGradient from '../components/LineGradient';
 
 const container = {
@@ -33,84 +22,6 @@ const item = {
 };
 
 const Skills = ({ isJp }) => {
-	const frontend = [
-		{
-			id: 1,
-			src: html,
-			name: 'HTML',
-			style: 'shadow-orange-600',
-		},
-		{
-			id: 2,
-			src: css,
-			name: 'CSS',
-			style: 'shadow-blue-500',
-		},
-		{
-			id: 3,
-			src: javascript,
-			name: 'JavaScript',
-			style: 'shadow-yellow-300',
-		},
-		{
-			id: 4,
-			src: typescript,
-			name: 'TypeScript',
-			style: 'shadow-blue-500',
-		},
-		{
-			id: 5,
-			src: bootstrap,
-			name: 'Bootstrap',
-			style: 'shadow-purple',
-		},
-		{
-			id: 6,
-			src: tailwind,
-			name: 'tailwindcss',
-			style: 'shadow-blue-500',
-		},
-		{
-			id: 7,
-			src: vue,
-			name: 'Vue.js',
-			style: 'shadow-green-600',
-		},
-		{
-			id: 8,
-			src: react,
-			name: 'React',
-			style: 'shadow-slate-900',
-		},
-	];
-
-	const backend = [
-		{
-			id: 1,
-			src: php,
-			name: 'php',
-			style: 'shadow-purple',
-		},
-		{
-			id: 2,
-			src: laravel,
-			name: 'Laravel',
-			style: 'shadow-orange-600',
-		},
-		{
-			id: 3,
-			src: sql,
-			name: 'MySQL',
-			style: 'shadow-blue-600',
-		},
-		{
-			id: 4,
-			src: github,
-			name: 'GitHub',
-			style: 'shadow-slate-900',
-		},
-	];
-
 	return (
 		<section id='skills' className='sm:pt-40 pt-20 pb-40'>
 			{/* Heading */}
@@ -156,13 +67,13 @@ const Skills = ({ isJp }) => {
 					initial='hidden'
 					whileInView='visible'
 					viewport={{ once: true, amount: 0.5 }}
-					transition={{ delay: 0.2, duration: 1 }}
+					transition={{ delay: 0.2, duration: 0.8 }}
 					variants={{
 						hidden: { opacity: 0, y: -50 },
 						visible: { opacity: 1, y: 0 },
 					}}
 				>
-					<div className='md:p-10 p-5 md:w-[450px] md:h-[500px] w-[300px] bg-gradient-pink-orange font-playfair font-semibold mt-10 rounded-lg'>
+					<div className='md:p-10 p-5 md:w-[450px] md:h-[500px] w-[300px] font-playfair font-semibold mt-10 rounded-lg'>
 						<div className='text-center text-3xl mb-2'>
 							<h3>Frontend</h3>
 						</div>
@@ -185,7 +96,7 @@ const Skills = ({ isJp }) => {
 										alt={name}
 										className='mx-auto w-14 hover:rotate-45 duration-50'
 									/>
-									<p className='md:text-sm text-xs text-center font-semibold text-whitish font-opensans'>
+									<p className='text-xs md:text-sm text-center font-semibold dark:text-whitish font-opensans'>
 										{name}
 									</p>
 								</motion.li>
@@ -194,13 +105,13 @@ const Skills = ({ isJp }) => {
 					</div>
 
 					{/* Backend */}
-					<div className=' p-10 md:w-[450px] md:h-[500px] w-[300px] bg-gradient-green-blue font-playfair font-semibold mt-10 rounded-lg'>
+					<div className='md:p-10 p-5 md:w-[450px] md:h-[500px] w-[300px] font-playfair font-semibold mt-10 rounded-lg'>
 						<div className='text-center text-3xl mb-2'>
 							<h3>Backend</h3>
 						</div>
 
 						<motion.ul
-							className='items-center justify-center grid grid-cols-2 gap-x-4 gap-y-6 text-center py-4'
+							className='items-center justify-center grid grid-cols-3 md:gap-x-4 gap-x-3 md:gap-y-6 gap-y-8 text-center py-4'
 							variants={container}
 							initial='hidden'
 							viewport={{ once: true, amount: 0.5 }}
@@ -209,7 +120,7 @@ const Skills = ({ isJp }) => {
 							{backend.map(({ id, src, name, style }) => (
 								<motion.li
 									key={id}
-									className={`shadow-md hover:scale-105 duration-500 py-4 rounded-lg ${style} ${item}`}
+									className={`shadow-md md:p-4 p-3 rounded-lg ${style} ${item}`}
 									variants={item}
 								>
 									<img
@@ -217,7 +128,7 @@ const Skills = ({ isJp }) => {
 										alt={name}
 										className='mx-auto w-14 hover:rotate-45 duration-50'
 									/>
-									<p className='text-sm font-semibold text-whitish font-opensans'>
+									<p className='text-xs md:text-sm font-semibold dark:text-whitish font-opensans'>
 										{name}
 									</p>
 								</motion.li>
