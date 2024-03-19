@@ -1,26 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import Dimensions from './Dimensions';
 import Link from './Link';
 
 const MobileMenu = ({ links, selectedPage, setSelectedPage }) => {
 	//hamburger Menu
 	const [isMenuToggled, setIsMenuToggled] = useState(false);
+	const containerRef = useRef(null);
+	const { height } = Dimensions(containerRef);
 
-	const variants = {
-		open: {
-			clipPath: 'circle(1370px at  48px -15px)',
+	const sidebarVariants = {
+		open: (height = 1000) => ({
+			clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
 			transition: {
 				type: 'spring',
-				stiffness: 25,
+				stiffness: 20,
+				restDelta: 2,
 				duration: 0.5,
 			},
-			zIndex: 10,
-		},
+		}),
 		closed: {
-			clipPath: 'circle(10px at 48px -15px)',
+			clipPath: 'circle(10px at 300px -15px)',
 			transition: {
-				delay: 0.3,
+				delay: 0.5,
 				type: 'spring',
 				stiffness: 400,
 				damping: 40,
@@ -30,15 +33,10 @@ const MobileMenu = ({ links, selectedPage, setSelectedPage }) => {
 
 	const linksVariants = {
 		open: {
-			transition: {
-				staggerChildren: 0.1,
-			},
+			transition: { staggerChildren: 0.1, delayChildren: 0.2 },
 		},
 		closed: {
-			transition: {
-				staggerChildren: 0.05,
-				staggerDirection: -1,
-			},
+			transition: { staggerChildren: 0.05, staggerDirection: -1 },
 		},
 	};
 
@@ -50,14 +48,20 @@ const MobileMenu = ({ links, selectedPage, setSelectedPage }) => {
 		closed: {
 			y: 100,
 			opacity: 0,
+			transition: {
+				y: { stiffness: 1000 },
+			},
 		},
 	};
 
 	return (
 		<>
 			<div className='flex items-center w-full justify-end'>
-				<button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-					<FaBars size={24} />
+				<button
+					onClick={() => setIsMenuToggled(!isMenuToggled)}
+					className='dark:bg-white bg-red-300 p-2.5 rounded-full'
+				>
+					<FaBars size={24} className='dark:text-indigo-500 text-white' />
 				</button>
 			</div>
 			{/* overlay */}
@@ -72,58 +76,41 @@ const MobileMenu = ({ links, selectedPage, setSelectedPage }) => {
 			{/* SideBar */}
 			<motion.div
 				className='flex flex-col items-center justify-center'
+				custom={height}
+				ref={containerRef}
 				animate={isMenuToggled ? 'open' : 'closed'}
 			>
 				{/* bg */}
 				<motion.div
-					className='fixed top-0 right-0 bottom-0 dark:bg-gradient-night-sky bg-gradient-pink-orange text-white w-2/3'
-					variants={variants}
+					className='fixed top-0 right-0 bottom-0 dark:bg-indigo-500 bg-red-300 text-white w-2/3 z-10'
+					variants={sidebarVariants}
 					onClick={() => setIsMenuToggled(!isMenuToggled)}
 				>
 					<div className='relative w-full h-full'>
 						<div className='absolute w-full h-full flex overflow-auto flex-col justify-center items-center'>
 							{/* Menu Links */}
-							{/* MenuList = ul */}
-							<ul className='absolute flex flex-col justify-center items-center gap-10 mx-auto text-3xl font-signature'>
-								<motion.div
-									className='absolute flex flex-col justify-center items-center gap-10 mx-auto'
-									variants={linksVariants}
-								>
-									{links.map(({ id, link }) => (
-										<motion.div
-											key={id}
-											variants={itemVariants}
-											whileHover={{ scale: 1.1 }}
-											whileTap={{ scale: 0.7 }}
-											initial='hidden'
-											whileInView='visible'
+							<motion.ul
+								className='absolute flex flex-col justify-center items-center gap-10 mx-auto text-3xl font-signature'
+								variants={linksVariants}
+							>
+								{links.map(({ id, link }) => (
+									<motion.li
+										key={id}
+										className='capitalize hover:scale-105'
+										variants={itemVariants}
+										whileHover={{ scale: 1.1 }}
+										whileTap={{ scale: 0.7 }}
+									>
+										<Link
+											page={link}
+											selectedPage={selectedPage}
+											setSelectedPage={setSelectedPage}
 										>
-											<motion.li
-												// key={id}
-												className='capitalize hover:scale-105'
-												// variants={linksVariants}
-												// whileHover={{ scale: 1.1 }}
-												// whileTap={{ scale: 0.7 }}
-												// initial='hidden'
-												// whileInView='visible'
-											>
-												<Link
-													page={link}
-													selectedPage={selectedPage}
-													setSelectedPage={setSelectedPage}
-													// variants={itemVariants}
-													// whileHover={{ scale: 1.1 }}
-													// whileTap={{ scale: 0.7 }}
-													// initial='hidden'
-													// whileInView='visible'
-												>
-													{link}
-												</Link>
-											</motion.li>
-										</motion.div>
-									))}
-								</motion.div>
-							</ul>
+											{link}
+										</Link>
+									</motion.li>
+								))}
+							</motion.ul>
 						</div>
 
 						<div className='absolute left-1/2 bottom-14'>

@@ -3,6 +3,7 @@ import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import MobileMenu from '../components/nav/MobileMenu';
+import navLinks from '../components/data/navLinks';
 import Link from '../components/nav/Link';
 
 const Navbar = ({
@@ -19,29 +20,6 @@ const Navbar = ({
 	const navbarBackground = isTopOfPage
 		? ''
 		: 'dark:bg-gradient-night-sky bg-gradient-pink-orange';
-
-	const links = [
-		{
-			id: 1,
-			link: 'home',
-		},
-		{
-			id: 2,
-			link: 'about',
-		},
-		{
-			id: 3,
-			link: 'portfolio',
-		},
-		{
-			id: 4,
-			link: 'skills',
-		},
-		{
-			id: 5,
-			link: 'contact',
-		},
-	];
 
 	return (
 		<nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
@@ -83,7 +61,7 @@ const Navbar = ({
 				{isAboveSmallScreens ? (
 					<div className='flex justify-between gap-16 font-signature text-xl font-semibold'>
 						<ul className='flex justify-between gap-12'>
-							{links.map(({ id, link }) => (
+							{navLinks.map(({ id, link }) => (
 								<li key={id} className='capitalize hover:scale-105'>
 									<Link
 										page={link}
@@ -99,7 +77,7 @@ const Navbar = ({
 				) : (
 					<>
 						<MobileMenu
-							links={links}
+							links={navLinks}
 							selectedPage={selectedPage}
 							setSelectedPage={setSelectedPage}
 						/>
