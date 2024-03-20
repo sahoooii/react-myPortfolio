@@ -18,3 +18,25 @@ body,
 	background-color: #111827;
 	@apply text-white;
 }
+
+.dark input:-webkit-autofill,
+.dark input:-webkit-autofill:hover,
+.dark input:-webkit-autofill:focus,
+.dark input:-webkit-autofill:active {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: #fff;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: #000000;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+select:invalid {
+	color: rgb(148 163 184);
+}

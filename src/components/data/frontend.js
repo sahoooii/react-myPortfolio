@@ -5,7 +5,7 @@ import typescript from '../../assets/skills/typescript.png';
 import vue from '../../assets/skills/vuejs.png';
 import react from '../../assets/skills/react.png';
 import bootstrap from '../../assets/skills/bootstrap.png';
-import tailwind from '../../assets/skills/tailwindcss.png';
+import tailwind from '../../assets/skills/tailwind.png';
 import mui from '../../assets/skills/mui.png';
 
 const frontend = [

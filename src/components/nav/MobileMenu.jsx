@@ -59,9 +59,9 @@ const MobileMenu = ({ links, selectedPage, setSelectedPage }) => {
 			<div className='flex items-center w-full justify-end'>
 				<button
 					onClick={() => setIsMenuToggled(!isMenuToggled)}
-					className='dark:bg-white bg-red-300 p-2.5 rounded-full'
+					className='dark:bg-indigo-500 bg-red-300 p-2.5 rounded-full'
 				>
-					<FaBars size={24} className='dark:text-indigo-500 text-white' />
+					<FaBars size={24} className='dark:text-white text-white' />
 				</button>
 			</div>
 			{/* overlay */}

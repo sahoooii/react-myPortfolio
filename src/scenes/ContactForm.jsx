@@ -150,9 +150,11 @@ const ContactForm = () => {
 								})}
 							>
 								<option disabled hidden value={'DEFAULT'}>
-									SUBJECT LINE
+									Please choose from this list
 								</option>
-								<option value='offer'>I'd like to offer you a job</option>
+								<option value='offer'>
+									I'd like to offer you a job
+								</option>
 								<option value='question'>I'd like to ask a question</option>
 								<option value='interview'>
 									I'd like to have a casual interview with you

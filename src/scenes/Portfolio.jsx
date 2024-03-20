@@ -7,7 +7,7 @@ import LineGradient from '../components/LineGradient';
 const container = {
 	hidden: {},
 	visible: {
-		transition: { staggerChildren: 0.3 },
+		transition: { staggerChildren: 0.5 },
 	},
 };
 
