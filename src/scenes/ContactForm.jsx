@@ -54,10 +54,10 @@ const ContactForm = () => {
 					visible: { opacity: 1, y: 0 },
 				}}
 			>
-				<h1 className='font-montserrat sm:text-4xl text-2xl text-center sm:pt-10 pt-5 sm:pb-6 pb-2'>
+				<h1 className='font-montserrat sm:text-4xl text-xl text-center sm:pt-10 pt-5 sm:pb-6 pb-2'>
 					&bull; Keep in Touch &bull;
 				</h1>
-				<div className='border-b-2 border-slate-500 w-[80px] mx-auto'></div>
+				<div className='border-b-2 border-slate-500 sm:w-[300px] w-[150px] mx-auto'></div>
 				<div className='sm:mt-10 mt-5 flex items-center justify-center'>
 					<img
 						src='../assets/phone-icon.png'
@@ -88,7 +88,7 @@ const ContactForm = () => {
 							/>
 							{errors.name && (
 								<p className='text-red-600 mt-1'>
-									{errors.name.type === 'required' && 'This field is required.'}
+									{errors.name.type === 'required' && 'Please enter your name'}
 									{errors.name.type === 'maxLength' &&
 										'Max length is 100 char.'}
 								</p>
@@ -103,13 +103,15 @@ const ContactForm = () => {
 								className='dark:bg-bluish-black bg-whitish w-full p-2 outline-none font-opensans placeholder:uppercase'
 								{...register('phone', {
 									required: true,
-									pattern: /^0\d{9,10}$/,
+									// pattern: /^0\d{9,10}$/,
+									pattern:
+										/^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/i,
 								})}
 							/>
 							{errors.phone && (
 								<p className='text-red-600 mt-1'>
 									{errors.phone.type === 'required' &&
-										'This field is required.'}
+										'Please enter your number'}
 									{errors.phone.type === 'pattern' && 'Invalid phone number.'}
 								</p>
 							)}
@@ -132,7 +134,7 @@ const ContactForm = () => {
 							{errors.email && (
 								<p className='text-red-600 mt-1'>
 									{errors.email.type === 'required' &&
-										'This field is required.'}
+										'Please enter your email'}
 									{errors.email.type === 'pattern' && 'Invalid email address.'}
 								</p>
 							)}
@@ -141,20 +143,18 @@ const ContactForm = () => {
 						<div className='mt-6 border-b-2 border-slate-500 sm:w-[90%] w-full mx-auto'>
 							<label htmlFor='subject'></label>
 							<select
-								className='dark:bg-bluish-black bg-whitish p-2 outline-none w-[95%] text-slate-400 font-opensans placeholder:capitalize'
-								placeholder='Subject line'
+								className='dark:bg-bluish-black bg-whitish p-2 outline-none w-full font-opensans'
 								defaultValue={'DEFAULT'}
 								name='subject'
 								{...register('subject', {
 									required: true,
 								})}
+								required
 							>
-								<option disabled hidden value={'DEFAULT'}>
-									Please choose from this list
+								<option hidden value=''>
+									SELECT FROM HERE
 								</option>
-								<option value='offer'>
-									I'd like to offer you a job
-								</option>
+								<option value='offer'>I'd like to offer you a job</option>
 								<option value='question'>I'd like to ask a question</option>
 								<option value='interview'>
 									I'd like to have a casual interview with you
@@ -172,7 +172,7 @@ const ContactForm = () => {
 							<label htmlFor='message'></label>
 							<textarea
 								name='message'
-								placeholder="I'd like to chat about"
+								placeholder="I'd like to chat about..."
 								className='dark:bg-bluish-black bg-whitish p-2 outline-none w-full font-opensans placeholder:uppercase'
 								cols='50'
 								rows='5'
@@ -184,7 +184,7 @@ const ContactForm = () => {
 							{errors.message && (
 								<p className='text-red-600 mt-1'>
 									{errors.message.type === 'required' &&
-										'This field is required.'}
+										'Please leave some messages'}
 									{errors.message.type === 'maxLength' &&
 										'Max length is 5000 char.'}
 								</p>
