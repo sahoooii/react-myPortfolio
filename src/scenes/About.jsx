@@ -36,10 +36,10 @@ const About = ({ isJp }) => {
 							<br />
 							プログラミングに最初に触れたのは、2019年頃になります。学生時代使っていた古いWindowsのPC片手に、何から始めたらいいかも分からないようなところから独学でスタートしました。
 							<br />
-							JavaScript, PHP, MySQL, TailWind CSS, GitHub
+							JavaScript, Node.js, PHP, MySQL, Mongo DBなどのデータベース。
 							その他のスキルを使うことができます。エンジニアになるため、他の言語も日々勉強しております。Laravel,
-							Vue.js,
-							Reactなどのライブラリやフレームワークも使うことができます。今は特にReactとTailWindを中心に勉強しているので、このポートフォリオはそれらを使って作成しました。他の言語を使って作成したものもあるのでポートフォリオセクションをぜひご覧ください。
+							React, Tailwind CSS, MUI
+							などのライブラリやフレームワークも使うことができます。今は特にReactとTailWindを中心に勉強しているので、このポートフォリオはそれらを使って作成しました。他の言語を使って作成したものもあるのでポートフォリオセクションをぜひご覧ください。
 							<br />
 							私の強みは高いコミュニケーションスキルと、誰に対しても柔軟な考え方、そしてハワイで培った「アロハスピリット」です。みなさんと一緒に働ける日を楽しみにしています!
 						</p>
@@ -53,10 +53,10 @@ const About = ({ isJp }) => {
 							time, I had no idea where to start, Because I was not good at
 							tech. I only had an old Windows laptop. It's the beginning of my
 							journey to become an engineer.
-							<br /> I'm skilled with JavaScript, PHP, MySQL, TailWind CSS,
-							GitHub, and others. I'm trying to learn other programming
-							languages step by step. I can also use several libraries and
-							frameworks. Like Laravel, Vue.js, and React. I'm working on React
+							<br /> I'm skilled with JavaScript, Node.js, PHP, some Database
+							and others. I'm trying to learn other programming languages step
+							by step. I can also use several libraries and frameworks. Like
+							Laravel, React, Tailwind CSS, MUI and others. I'm working on React
 							project now. So I built that portfolio with React and Tailwind.
 							Also I used other languages, so please see the below Portfolio
 							section. I have strong communication skills, I'm an open-minded

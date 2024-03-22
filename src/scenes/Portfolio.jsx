@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaPlayCircle } from 'react-icons/fa';
+import { FaGithub, FaPlayCircle, FaLink } from 'react-icons/fa';
 import projects from '../components/data/projects';
 import LineGradient from '../components/LineGradient';
 
@@ -73,93 +73,74 @@ const Portfolio = ({ isJp }) => {
 						Frontend
 					</div>
 
-					{isJp ? (
-						<>
-							{projects.map(
-								({ id, title, subtitle, src, describeJp, code, demo }) => (
-									<motion.div
-										variants={projectVariants}
-										className='relative'
-										key={id}
-									>
-										<div className='absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 dark:bg-whitish dark:text-bluish-black bg-bluish-black text-whitish z-30 flex flex-col justify-center items-center text-center md:p-10 p-8'>
-											<p className='md:text-3xl text-xl font-playfair font-semibold'>
-												{title}
-											</p>
-											<p className='md:text-xl text-base font-playfair font-semibold md:mt-2'>
-												{subtitle}
-											</p>
-											<p className='md:mt-3 mt-2 md:text-base text-[12px] font-jp'>
-												{describeJp}
-											</p>
-
-											<div className='flex justify-center items-center gap-8 mt-3 md:mt-5'>
-												<a
-													href={code}
-													className='opacity-80 hover:scale-150'
-													target='_blank'
-													rel='noreferrer'
-												>
-													<FaGithub size={30} />
-												</a>
-												<a
-													href={demo}
-													className='opacity-80 hover:scale-150'
-													target='_blank'
-													rel='noreferrer'
-												>
-													<FaPlayCircle size={30} />
-												</a>
-											</div>
-										</div>
-										<img src={src} alt={title} />
-									</motion.div>
-								)
-							)}
-						</>
-					) : (
-						<>
-							{projects.map(
-								({ id, title, subtitle, src, describeEn, code, demo }) => (
-									<motion.div
-										variants={projectVariants}
-										className='relative'
-										key={id}
-									>
-										<div className='absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 dark:bg-whitish dark:text-bluish-black bg-bluish-black text-whitish z-30 flex flex-col justify-center items-center text-center md:p-10 p-8 text-deep-blue'>
-											<p className='md:text-3xl text-xl font-playfair font-semibold'>
-												{title}
-											</p>
-											<p className='md:text-xl text-base font-playfair font-semibold md:mt-2'>
-												{subtitle}
-											</p>
-											<p className='md:mt-3 mt-2 md:text-base text-[12px] font-opensans'>
-												{describeEn}
-											</p>
-											<div className='flex justify-center items-center space-x-8 mt-3 md:mt-5'>
-												<a
-													href={code}
-													className='opacity-80 hover:scale-150'
-													target='_blank'
-													rel='noreferrer'
-												>
-													<FaGithub size={30} />
-												</a>
-												<a
-													href={demo}
-													className='opacity-80 hover:scale-150'
-													target='_blank'
-													rel='noreferrer'
-												>
-													<FaPlayCircle size={30} />
-												</a>
-											</div>
-										</div>
-										<img src={src} alt={title} />
-									</motion.div>
-								)
-							)}
-						</>
+					{projects.map(
+						({
+							id,
+							title,
+							subtitle,
+							src,
+							describeJp,
+							describeEn,
+							code,
+							demo,
+							link,
+						}) => (
+							<motion.div
+								variants={projectVariants}
+								className='relative'
+								key={id}
+							>
+								<div className='absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 dark:bg-whitish dark:text-bluish-black bg-bluish-black text-whitish z-30 flex flex-col justify-center items-center text-center md:p-10 p-8'>
+									<p className='md:text-3xl text-xl font-playfair font-semibold'>
+										{title}
+									</p>
+									<p className='md:text-xl text-base font-playfair font-semibold md:mt-2'>
+										{subtitle}
+									</p>
+									{isJp ? (
+										<p className='md:mt-3 mt-2 md:text-base text-[12px] font-jp'>
+											{describeJp}
+										</p>
+									) : (
+										<p className='md:mt-3 mt-2 md:text-base text-[12px] font-jp'>
+											{describeEn}
+										</p>
+									)}
+									{/* Links */}
+									<div className='flex justify-between gap-8 mt-3 md:mt-5'>
+										<a
+											href={code}
+											className='opacity-80 hover:scale-150'
+											target='_blank'
+											rel='noreferrer'
+										>
+											<FaGithub size={30} />
+										</a>
+										{link === '' ? (
+											<div></div>
+										) : (
+											<a
+												href={link}
+												className='opacity-80 hover:scale-150'
+												target='_blank'
+												rel='noreferrer'
+											>
+												<FaLink size={30} />
+											</a>
+										)}
+										<a
+											href={demo}
+											className='opacity-80 hover:scale-150'
+											target='_blank'
+											rel='noreferrer'
+										>
+											<FaPlayCircle size={30} />
+										</a>
+									</div>
+								</div>
+								<img src={src} alt={title} />
+							</motion.div>
+						)
 					)}
 
 					<div className='flex justify-center items-center p-10 bg-gradient-green-blue max-w-[400px] max-h-[400px] text-whitish text-3xl font-playfair font-semibold'>
