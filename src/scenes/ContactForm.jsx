@@ -78,6 +78,7 @@ const ContactForm = () => {
 							<label htmlFor='name'></label>
 							<input
 								type='text'
+								autoComplete='on'
 								placeholder='My name is'
 								name='name'
 								className='dark:bg-bluish-black bg-whitish w-full p-2 outline-none font-opensans  placeholder:uppercase'
@@ -100,6 +101,7 @@ const ContactForm = () => {
 								type='text'
 								placeholder='My number is'
 								name='phone'
+								autoComplete='on'
 								className='dark:bg-bluish-black bg-whitish w-full p-2 outline-none font-opensans placeholder:uppercase'
 								{...register('phone', {
 									required: true,
@@ -125,6 +127,7 @@ const ContactForm = () => {
 								type='email'
 								placeholder='My e-mail is'
 								name='email'
+								autoComplete='on'
 								className='dark:bg-bluish-black bg-whitish w-full p-2 outline-none font-opensans placeholder:uppercase'
 								{...register('email', {
 									required: true,

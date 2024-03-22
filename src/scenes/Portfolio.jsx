@@ -86,10 +86,10 @@ const Portfolio = ({ isJp }) => {
 											<p className='md:text-3xl text-xl font-playfair font-semibold'>
 												{title}
 											</p>
-											<p className='md:text-xl text-md font-playfair font-semibold md:mt-2'>
+											<p className='md:text-xl text-base font-playfair font-semibold md:mt-2'>
 												{subtitle}
 											</p>
-											<p className='md:mt-3 mt-2 md:text-md text-xs font-jp'>
+											<p className='md:mt-3 mt-2 md:text-base text-[12px] font-jp'>
 												{describeJp}
 											</p>
 
@@ -130,10 +130,10 @@ const Portfolio = ({ isJp }) => {
 											<p className='md:text-3xl text-xl font-playfair font-semibold'>
 												{title}
 											</p>
-											<p className='md:text-xl text-md font-playfair font-semibold md:mt-2'>
+											<p className='md:text-xl text-base font-playfair font-semibold md:mt-2'>
 												{subtitle}
 											</p>
-											<p className='md:mt-3 mt-2  md:text-md text-xs font-opensans'>
+											<p className='md:mt-3 mt-2 md:text-base text-[12px] font-opensans'>
 												{describeEn}
 											</p>
 											<div className='flex justify-center items-center space-x-8 mt-3 md:mt-5'>

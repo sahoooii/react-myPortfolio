@@ -7,7 +7,7 @@ const projects = [
 		describeEn:
 			"Create a Memory Game using only JavaScript. The title is Where Is My Dog?. It's literally to find your dog! Add sound effects and timer systems, and the player lives. You can enjoy it like a real game. I particularly about the design looks like real cards and flips. And fully responsive. Enjoy the Game!",
 		describeJp:
-			'JavaScriptだけで作ったメモリーゲーム。ゲーム名は"Where Is My Dog?" 名前の通り、あなたの犬を探すゲーム。サウンドやタイマー、Player Livesまで設定されているので、本当のゲームのように楽しめる。特にカードと、カードをめくるときのデザインにこだわった、レスポンシブ対応デザイン。それではEnjoy the Game!',
+			'JavaScriptだけで作ったメモリーゲーム。ゲーム名は"Where Is My Dog ?" 名前の通り、あなたの犬を探すゲーム。サウンドやタイマー、Player Livesまで設定されているので、本当のゲームのように楽しめる。特にカードと、カードをめくるときのデザインにこだわった、レスポンシブ対応デザイン。それではEnjoy the Game!',
 		code: 'https://github.com/sahoooii/js-whereIsMyDog',
 		demo: '../../assets/gif/memoryGame.gif',
 	},
@@ -25,13 +25,13 @@ const projects = [
 	},
 	{
 		id: 3,
-		title: 'Hotel Resort Web Service',
+		title: 'Hotel Resort Service',
 		subtitle: 'React × TypeScript × Tailwind',
 		src: '../../assets/portfolio/dogation.jpg',
 		describeEn:
 			"Create an original Hotel Resort App. The name is Dogation. Use React TypeScript and Tailwind. I've been working on learning TypeScript, so I used it. I created the logo and design and used a bunch of animation. The theme is Beach Vacations and Dogs. Also, I tried to use Swiper for sliders. And of course fully responsive!",
 		describeJp:
-			'ReactとTypeScriptとTailwind CSSを使って作った、オリジナルのホテルリゾートweb ページ。TypeScriptを習得中なので、初導入。ロゴやデザインも完全にオリジナル、アニメーションも多用。テーマはビーチ、バケーション、犬。デザインと全体の色のバランスにこだわった。今回初めてスライダー作成にSwiperを使用。レスポンシブ対応デザイン。',
+			'ReactとTypeScriptとTailwind CSSを使って作った、オリジナルのホテルリゾートwebページ。TypeScriptを習得中なので、初導入。ロゴやデザインも完全にオリジナル、アニメーションも多用。テーマはビーチ、バケーション、犬。デザインと全体の色のバランスにこだわった。今回初めてスライダー作成にSwiperを使用。レスポンシブ対応デザイン。',
 		code: 'https://github.com/sahoooii/ts-react-dogation',
 		demo: '../../assets/gif/dogation.gif',
 	},
@@ -63,13 +63,13 @@ const projects = [
 		id: 6,
 		title: 'E-Commerce',
 		subtitle: 'MERN',
-		src: '../assets/project-6.jpeg',
+		src: '../../assets/portfolio/athleisureStyles.jpg',
 		describeEn:
 			'This project is an eCommerce platform built with the MERN stack and Redux and using Material UI. I made the name Athleisure Styles. At first time, I was not used to using MUI, so this was one of the struggling parts. Fully responsive web design. It is a full-featured shopping cart with PayPal and credit/debit payments.',
 		describeJp:
-			'このプロジェクトは、MERNスタックとReduxで構築されマテリアルUIを使用する e コマースプラットフォーム。MERNスタックプロジェクトの初めてのオリジナル作品。初めてマテリアルUIを使用したので、なかなか慣れずここが苦労した部分の一つでもあった。コンセプトはスポーツとファッションのミックススタイルがテーマAthleisure Styles。PayPalとクレジット/デビット支払いを備えたフル機能のショッピングサイト。',
+			'このプロジェクトは、MERNスタックとReduxで構築されマテリアルUIを使用するeコマースプラットフォーム。Athleisure Stylesは、MERNスタックプロジェクトの初めてのオリジナル作品。初めてマテリアルUIを使用したので、なかなか慣れずここが苦労した部分の一つでもあった。PayPalとクレジット/デビット支払いを備えたフル機能のショッピングサイト。',
 		code: 'https://github.com/sahoooii/MERN_AthleisureStyles',
-		demo: '../../gif/athleisureStyles.gif',
+		demo: '../../assets/gif/athleisureStyles.gif',
 	},
 ];
 
