@@ -10,6 +10,7 @@ const projects = [
 			'JavaScriptだけで作ったメモリーゲーム。ゲーム名は"Where Is My Dog ?" 名前の通り、あなたの犬を探すゲーム。サウンドやタイマー、Player Livesまで設定されているので、本当のゲームのように楽しめる。特にカードと、カードをめくるときのデザインにこだわった、レスポンシブ対応デザイン。それではEnjoy the Game!',
 		code: 'https://github.com/sahoooii/js-whereIsMyDog',
 		demo: '../../assets/gif/memoryGame.gif',
+		link: '',
 	},
 	{
 		id: 2,
@@ -22,6 +23,7 @@ const projects = [
 			'OpenWeather APIを使って作成したお天気アプリ。好きな都市や国で検索して、現在の天気や3時間毎の天気情報を取得できる。必要なデータだけを取得し、再構築して配列にまとめていくのに苦労した。摂氏、華氏表示も簡単に変更できる。',
 		code: 'https://github.com/sahoooii/react-weatherApp-3houley',
 		demo: '../../assets/gif/weatherApp.gif',
+		link: '',
 	},
 	{
 		id: 3,
@@ -34,6 +36,7 @@ const projects = [
 			'ReactとTypeScriptとTailwind CSSを使って作った、オリジナルのホテルリゾートwebページ。TypeScriptを習得中なので、初導入。ロゴやデザインも完全にオリジナル、アニメーションも多用。テーマはビーチ、バケーション、犬。デザインと全体の色のバランスにこだわった。今回初めてスライダー作成にSwiperを使用。レスポンシブ対応デザイン。',
 		code: 'https://github.com/sahoooii/ts-react-dogation',
 		demo: '../../assets/gif/dogation.gif',
+		link: '',
 	},
 	{
 		id: 4,
@@ -46,6 +49,7 @@ const projects = [
 			'初めて作ったオリジナルのバックエンドSNSアプリ。ライブラリやフレームワークを使わず、生のPHPを使い構築。データベースはMySQLを使用。初期の頃に作ったのでデザインは決して良くないが、レスポンシブにも対応。アカウントを作って、Twitterみたいに適当に何かつぶやいたり、好きな写真をポストできる。',
 		code: '',
 		demo: '../../assets/gif/chill.gif',
+		link: '',
 	},
 	{
 		id: 5,
@@ -58,6 +62,7 @@ const projects = [
 			'Tinderのようなマッチングアプリ。Laravelを使って作った初めてのアプリ。ダミーデータを追加したり、どんな人を探しているかなど設定して、swipeできるようにした。相手とマッチしたらその人のプロフィールが見られるようになったり、まさにTinderのようなDatingアプリ。',
 		code: 'https://github.com/sahoooii/laravel_tinderApp',
 		demo: '../../assets/gif/tinder.gif',
+		link: '',
 	},
 	{
 		id: 6,
@@ -70,8 +75,8 @@ const projects = [
 			'このプロジェクトは、MERNスタックとReduxで構築されマテリアルUIを使用するeコマースプラットフォーム。Athleisure Stylesは、MERNスタックプロジェクトの初めてのオリジナル作品。初めてマテリアルUIを使用したので、なかなか慣れずここが苦労した部分の一つでもあった。PayPalとクレジット/デビット支払いを備えたフル機能のショッピングサイト。',
 		code: 'https://github.com/sahoooii/MERN_AthleisureStyles',
 		demo: '../../assets/gif/athleisureStyles.gif',
+		link: 'https://athleisurestyles.onrender.com/',
 	},
 ];
-
 
 export default projects;
