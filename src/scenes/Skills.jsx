@@ -60,7 +60,6 @@ const Skills = ({ isJp }) => {
 				)}
 			</motion.div>
 
-			{/* frontend */}
 			<div className='flex justify-center'>
 				<motion.div
 					className='sm:grid sm:grid-cols-2 gap-10'
@@ -73,6 +72,7 @@ const Skills = ({ isJp }) => {
 						visible: { opacity: 1, y: 0 },
 					}}
 				>
+					{/* frontend */}
 					<div className='md:p-10 p-5 md:w-[450px] md:h-[500px] w-[300px] font-playfair font-semibold mt-10 rounded-lg'>
 						<div className='text-center text-3xl mb-2'>
 							<h3>Frontend</h3>

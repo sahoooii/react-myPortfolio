@@ -52,6 +52,7 @@ const Profile = ({ setSelectedPage }) => {
 							Nishio
 						</span>
 					</p>
+					{/* Animation */}
 					<p className='xs:mt-20 xs:mb-8 mt-8 mb-4 text-lg text-center md:text-start font-solitreo'>
 						I'm &nbsp;
 						<Typical
@@ -71,8 +72,6 @@ const Profile = ({ setSelectedPage }) => {
 						/>
 					</p>
 				</motion.div>
-
-				{/* 390px以下の時のbutton */}
 
 				{/* Contact Button */}
 				<motion.div

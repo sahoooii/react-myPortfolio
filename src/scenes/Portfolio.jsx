@@ -97,6 +97,7 @@ const Portfolio = ({ isJp }) => {
 									<p className='md:text-xl text-base font-playfair font-semibold md:mt-2'>
 										{subtitle}
 									</p>
+
 									{isJp ? (
 										<p className='md:mt-3 mt-2 md:text-base text-[12px] font-jp'>
 											{describeJp}
@@ -106,6 +107,7 @@ const Portfolio = ({ isJp }) => {
 											{describeEn}
 										</p>
 									)}
+									
 									{/* Links */}
 									<div className='flex justify-between gap-8 mt-3 md:mt-5'>
 										<a
@@ -142,7 +144,7 @@ const Portfolio = ({ isJp }) => {
 							</motion.div>
 						)
 					)}
-
+					{/* Final Row */}
 					<div className='flex justify-center items-center p-10 bg-gradient-green-blue max-w-[400px] max-h-[400px] text-whitish text-3xl font-playfair font-semibold'>
 						Backend
 					</div>

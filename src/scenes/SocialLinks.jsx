@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
 import { links } from '../components/SocialMediaIcons';
 import useMediaQuery from '../hooks/useMediaQuery';
 
