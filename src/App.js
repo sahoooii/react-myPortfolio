@@ -38,9 +38,11 @@ function App() {
 				selectedPage={selectedPage}
 				setSelectedPage={setSelectedPage}
 			/>
+
 			<div className='w-[80%] mx-auto md:h-full'>
 				<Profile setSelectedPage={setSelectedPage} />
 			</div>
+			
 			<SocialLinks />
 
 			<LineGradient />

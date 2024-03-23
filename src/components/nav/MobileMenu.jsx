@@ -64,7 +64,7 @@ const MobileMenu = ({ links, selectedPage, setSelectedPage }) => {
 					<FaBars size={24} className='dark:text-white text-white' />
 				</button>
 			</div>
-			{/* overlay */}
+			{/* overlay Bg */}
 			{isMenuToggled ? (
 				<div
 					className='fixed opacity-20 w-full h-full left-0 top-0 overflow-auto bg-slate-400'
@@ -96,7 +96,7 @@ const MobileMenu = ({ links, selectedPage, setSelectedPage }) => {
 								{links.map(({ id, link }) => (
 									<motion.li
 										key={id}
-										className='capitalize hover:scale-105'
+										className='capitalize hover:scale-125'
 										variants={itemVariants}
 										whileHover={{ scale: 1.1 }}
 										whileTap={{ scale: 0.7 }}
