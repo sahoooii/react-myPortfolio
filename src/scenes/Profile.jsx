@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Typical from 'react-typical';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { BiDownload } from 'react-icons/bi';
 import useMediaQuery from '../hooks/useMediaQuery';
+import ProfileAnimation from '../components/ProfileAnimation';
 
 const Profile = ({ setSelectedPage }) => {
 	const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
@@ -53,24 +53,7 @@ const Profile = ({ setSelectedPage }) => {
 						</span>
 					</p>
 					{/* Animation */}
-					<p className='xs:mt-20 xs:mb-8 mt-8 mb-4 text-lg text-center md:text-start font-solitreo'>
-						I'm &nbsp;
-						<Typical
-							className='xs:mt-10 xs:mb-8 mt-8 mb-4 text-xl text-center md:text-start text-light-blue font-solitreo'
-							loop={3}
-							wrapper='b'
-							steps={[
-								'doing Frontend 💻 ',
-								3000,
-								'doing Backend 🖥 ',
-								3000,
-								'a very responsible person 🧐💨 ',
-								3000,
-								'an open-minded 🍻 ',
-								3000,
-							]}
-						/>
-					</p>
+					<ProfileAnimation />
 				</motion.div>
 
 				{/* Contact Button */}
