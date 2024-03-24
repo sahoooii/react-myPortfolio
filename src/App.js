@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react';
-// import useMediaQuery from './hooks/useMediaQuery';
-import About from './scenes/About';
 import LineGradient from './components/LineGradient';
 import Navbar from './scenes/Navbar';
 import Profile from './scenes/Profile';
 import SocialLinks from './scenes/SocialLinks';
+import About from './scenes/About';
 import Portfolio from './scenes/Portfolio';
 import Skills from './scenes/Skills';
 import ContactForm from './scenes/ContactForm';
@@ -15,7 +14,6 @@ function App() {
 	const [darkMode, setDarkMode] = useState(true);
 	const [isJp, setIsJp] = useState(false); //to Japanese
 	const [isTopOfPage, setIsTopOfPage] = useState(true);
-	// const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -42,7 +40,6 @@ function App() {
 			<div className='w-[80%] mx-auto md:h-full'>
 				<Profile setSelectedPage={setSelectedPage} />
 			</div>
-			
 			<SocialLinks />
 
 			<LineGradient />
