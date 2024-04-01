@@ -65,14 +65,13 @@ const MobileMenu = ({ links, selectedPage, setSelectedPage }) => {
 				</button>
 			</div>
 			{/* overlay Bg */}
-			{isMenuToggled ? (
-				<div
-					className='fixed opacity-20 w-full h-full left-0 top-0 overflow-auto bg-slate-400'
-					onClick={() => setIsMenuToggled(!isMenuToggled)}
-				/>
-			) : (
-				<div className='hidden' />
-			)}
+			<div
+				className={`${
+					isMenuToggled &&
+					`fixed opacity-20 w-full h-full left-0 top-0 overflow-auto bg-slate-400`
+				}`}
+				onClick={() => setIsMenuToggled(!isMenuToggled)}
+			/>
 			{/* SideBar */}
 			<motion.div
 				className='flex flex-col items-center justify-center'
