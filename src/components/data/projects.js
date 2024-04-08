@@ -36,7 +36,7 @@ const projects = [
 			'ReactとTypeScriptとTailwind CSSを使って作った、オリジナルのホテルリゾートwebページ。TypeScriptを習得中なので、初導入。ロゴやデザインも完全にオリジナル、アニメーションも多用。テーマはビーチ、バケーション、犬。デザインと全体の色のバランスにこだわった。今回初めてスライダー作成にSwiperを使用。レスポンシブ対応デザイン。',
 		code: 'https://github.com/sahoooii/ts-react-dogation',
 		demo: '../../assets/gif/dogation.gif',
-		link: '',
+		link: 'https://dogation.onrender.com',
 	},
 	{
 		id: 4,
