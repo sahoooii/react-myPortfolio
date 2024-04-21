@@ -18,12 +18,12 @@ const projects = [
 		subtitle: 'React × API × Tailwind',
 		src: '../../assets/portfolio/weatherApp.jpg',
 		describeEn:
-			'Using Weather API, Get current weather data and three hourly forecast data from OpenWeather API. I struggled that get data and restructure it into what I just needed. Also, Search for the city or country wherever you want. You can set the Celsius and Fahrenheit easily.',
+			'Using OpenWeather API, Get current weather data and three hourly forecast data. I struggled that get data and restructure it into what I just needed. Also, created an amazing loading animation and background, the Search functionality of city or country, see a three hourly forecast. You can set the Celsius and Fahrenheit easily. Updated to be more user-friendly.',
 		describeJp:
-			'OpenWeather APIを使って作成したお天気アプリ。好きな都市や国で検索して、現在の天気や3時間毎の天気情報を取得できる。必要なデータだけを取得し、再構築して配列にまとめていくのに苦労した。摂氏、華氏表示も簡単に変更できる。',
+			'OpenWeather API を使って作成したお天気アプリ。必要なデータだけを取得し、再構築してまとめていくのに苦労した。ローディング中のアニメーション、気温によって変わる背景カラー、好きな都市や国でのお天気検索機能、現在の天気や 3 時間毎の天気情報を取得でき、 摂氏、華氏表示も簡単に変更できるように、より使いやすくした。',
 		code: 'https://github.com/sahoooii/react-weatherApp-3houley',
 		demo: '../../assets/gif/weatherApp.gif',
-		link: '',
+		link: 'https://react-weatherapp-3hourly.onrender.com',
 	},
 	{
 		id: 3,

@@ -1,6 +1,6 @@
 # react-myPortfolio
 
-<img src="https://img.shields.io/badge/-React-555.svg?logo=react&style=flat"> <img src="https://img.shields.io/badge/-Motion-0055ff.svg?logo=framer&style=flat-square"> <img src="https://img.shields.io/badge/-Tailwind_CSS-06B6D4.svg?logo=tailwindcss&style=flat&logoColor=ff0">
+<img src="https://img.shields.io/badge/-React-555.svg?logo=react&style=flat"> <img src="https://img.shields.io/badge/-Motion-0055ff.svg?logo=framer&style=flat-square"> <img src="https://img.shields.io/badge/-Tailwind_CSS-06B6D4.svg?logo=tailwindcss&style=flat&logoColor=ff0"> <img src="https://img.shields.io/badge/-React_Hook_Form-EC5990.svg?logo=reacthookform&style=flat&logoColor=fff">
 <p>etc...</p>
 
 ## Demo
@@ -29,13 +29,15 @@ If you see this portfolio, you know what kind of person I am, And see my skills.
 - Select Mode Dark/light
 - Typing Animation
 - Framer Motion Animation
+- About Me
 - My Portfolio
 - My Skills
 - Contact Form
 
 ## src
 * [Icon Scout](https://iconscout.com/)
-* [Images](https://pixabay.com/ja/)
+* [React Hook Form](https://react-hook-form.com/)
+
 
 # Getting Started with Create React App
 
