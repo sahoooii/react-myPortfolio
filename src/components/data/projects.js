@@ -5,12 +5,12 @@ const projects = [
 		subtitle: 'HTML × CSS × JavaScript',
 		src: '../../assets/portfolio/memoryGame.jpg',
 		describeEn:
-			"Create a Memory Game using only JavaScript. The title is Where Is My Dog?. It's literally to find your dog! Add sound effects and timer systems, and the player lives. You can enjoy it like a real game. I particularly about the design looks like real cards and flips. And fully responsive. Enjoy the Game!",
+			"Created a Memory Game using HTML, CSS, and JavaScript without any frameworks. The title is Where Is My Dog? It's literally to find your dog using your memory! This game has sound effects and timer systems, and the player lives count system. You can enjoy it like a real game.I particularly about the design of cards and flips. Enjoy the Game!",
 		describeJp:
-			'JavaScriptだけで作ったメモリーゲーム。ゲーム名は"Where Is My Dog ?" 名前の通り、あなたの犬を探すゲーム。サウンドやタイマー、Player Livesまで設定されているので、本当のゲームのように楽しめる。特にカードと、カードをめくるときのデザインにこだわった、レスポンシブ対応デザイン。それではEnjoy the Game!',
+			'フレームワークを使用せずに、HTML,CSS,JavaScriptだけで作ったメモリーゲーム。ゲーム名は"Where Is My Dog?" 名前の通り、記憶力を使ってあなたの犬を探すゲーム。サウンドやタイマー、Player Livesまで設定されているので、本当のゲームのように楽しめる。特にカードと、カードをめくるときのデザインにこだわった、レスポンシブ対応デザイン。Enjoy the Game!',
 		code: 'https://github.com/sahoooii/js-whereIsMyDog',
 		demo: '../../assets/gif/memoryGame.gif',
-		link: '',
+		link: 'https://js-whereismydog.onrender.com/',
 	},
 	{
 		id: 2,
