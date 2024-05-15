@@ -26,7 +26,7 @@ If you see this portfolio, you know what kind of person I am, And see my skills.
 
 ## Features
 - Select languages English/Japanese
-- Select Mode Dark/light
+- Select Dark/light Mode
 - Typing Animation
 - Framer Motion Animation
 - About Me

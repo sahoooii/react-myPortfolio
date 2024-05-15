@@ -41,13 +41,13 @@ const projects = [
 	{
 		id: 4,
 		title: 'Social Media App',
-		subtitle: 'PHP × CSS × MySQL',
+		subtitle: 'PHP × HTML × CSS × MySQL',
 		src: '../../assets/portfolio/chill.jpg',
 		describeEn:
-			"It's my first original Backend piece, not using any libraries and frameworks. I use MySQL for a database. I know that the design is not good. I created it, the very first beginning. But fully responsive! You can use it like Twitter. Create your account and post something. What you thought or your favorite picture!",
+			"It's my first original full-stack project using mainly PHP. Not using any libraries and frameworks. It's a social media app like Twitter. Created CRUD system and an admin system and page. I created it in 2019, but I did refactoring this year. Design and security are better than the first project. But it's all basically the same as the first one. Because I wanted to prove how improved my skills are.",
 		describeJp:
-			'初めて作ったオリジナルのバックエンドSNSアプリ。ライブラリやフレームワークを使わず、生のPHPを使い構築。データベースはMySQLを使用。初期の頃に作ったのでデザインは決して良くないが、レスポンシブにも対応。アカウントを作って、Twitterみたいに適当に何かつぶやいたり、好きな写真をポストできる。',
-		code: '',
+			"最初のオリジナルのフルスタックプロジェクト。ライブラリやフレームワークを使用しないで主にPHPで開発。Twitterのようなソーシャルメディアアプリです。CRUDシステムを搭載し、Adminシステムとページも作成。2019年に作成したものだが、今年にリファクタリングをし、デザインと安全性をより良くした。自分のスキルがどれだけ向上しているかを証明したかったので、基本的にはすべて最初のプロジェクトと同じにしている。Let's Tweet something",
+		code: 'https://github.com/sahoooii/php-chill',
 		demo: '../../assets/gif/chill.gif',
 		link: '',
 	},
