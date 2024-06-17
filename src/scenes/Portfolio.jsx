@@ -140,7 +140,11 @@ const Portfolio = ({ isJp }) => {
 										</a>
 									</div>
 								</div>
-								<img src={src} alt={title} />
+								<img
+									src={src}
+									alt={title}
+									className='w-[300px] h-[300px] sm:w-[325px] sm:h-[325px] md:w-[400px] md:h-[400px] object-cover'
+								/>
 							</motion.div>
 						)
 					)}
