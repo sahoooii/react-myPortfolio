@@ -57,9 +57,9 @@ const projects = [
 		subtitle: 'Laravel × Bootstrap × MySQL',
 		src: '../../assets/portfolio/tinder.jpg',
 		describeEn:
-			"Created like Tinder App. Used Laravel and MySQL. It's my first piece using the framework and adding some dummy data so you can swipe it like Tinder. You can set your situation in your relationship, like something casual or serious relationships. Also, If you match someone, you can see the profile. Yes, literally Tinder!",
+			'I created a dating app like Tinder. Using Laravel  MySQL, Bootstrap, and some more. I created it about two years ago. But I did refactor it and add an admin page. Also, I added some more dummy data so you can swipe it based on your profile. And, you can register own your profile, and set details of your dating status. If you match someone, you can see the profile. Yes, this is a dating App',
 		describeJp:
-			'Tinderのようなマッチングアプリ。Laravelを使って作った初めてのアプリ。ダミーデータを追加したり、どんな人を探しているかなど設定して、swipeできるようにした。相手とマッチしたらその人のプロフィールが見られるようになったり、まさにTinderのようなDatingアプリ。',
+			'TinderのようなDating App。Laravel, MySQL, Bootstrapを主に使用。2年ほど前に作成したが、今回Adminページを追加し、デザインも改善。ダミーデータもさらに追加し、プロフィールの設定に基づいて、swipeできる。自分のプロフィールも詳細に登録することができ、相手を探せる。もしマッチすれば相手のプロフィールも見ることがき、まさにDating App。',
 		code: 'https://github.com/sahoooii/laravel_tinderApp',
 		demo: '../../assets/gif/tinder.gif',
 		link: '',
