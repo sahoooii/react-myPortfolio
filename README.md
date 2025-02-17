@@ -16,13 +16,13 @@
 
 ## Describe
 
-"react -myPortfolio" was built React and Tailwind. And, Using some frameworks for a bunch of animations. I also add the "Dark Mode" and "Day Mode" systems. You can choose whatever you want. And pick languages English or Japanese. Of cource, fully responsive design. <br />
-The demo is down below.<br />
-If you see this portfolio, you know what kind of person I am, And see my skills.
+"react-myPortfolio" was built React and Tailwind. And I used some frameworks for a bunch of animations. I also added the "Dark Mode" and "Day Mode" systems. And you can pick languages English or Japanese. Of course, fully responsive design. <br />
+Particularly noteworthy is the Portfolio section. I created these using many languages and frameworks and took a lot of time. I deployed most of these, so you can see easily and have fun. <br />
+If you see my portfolio, you will get to know my personality and my skills.
 
-"react-myPortfolio" は React と Tailwind を使用して作成しました。アニメーションを追加するにあたり、いくつかのフレームワークも使用しました。さらにダークモードとデイモード機能を追加してるので、お好みで選ぶことができます。また、英語か日本語も選択できます。全てレスポンシブデザインです。<br />
-デモは下記にあります。<br />
-このポートフォリオを見て頂ければ、私のことや、使える言語などが簡単に分かっていただけると思います。
+"react-myPortfolio" はReactとTailwindを使用して作成しました。アニメーションを追加するために、いくつかのフレームワークも使用しました。さらにダークモードとデイモードや英語か日本語なども選択できるので、お好みでご覧ください。全てレスポンシブ対応デザインです。<br />
+特に注目して見ていただきたいのは、ポートフォリオセクションです。色々な言語やフレームワークを多用し、たくさんの時間を費やしました。ほとんどがデプロイしてあるので、簡単にご覧いただけます。<br >
+このポートフォリオを見て頂ければ、私のことや、スキルなどが簡単に分かっていただけると思います。
 
 ## Features
 - Select languages English/Japanese
@@ -38,74 +38,17 @@ If you see this portfolio, you know what kind of person I am, And see my skills.
 * [Icon Scout](https://iconscout.com/)
 * [React Hook Form](https://react-hook-form.com/)
 
+## Getting Started
 
-# Getting Started with Create React App
+To get started, clone the repository and run the following commands:
+```
+npm install
+npm run dev
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Run the Development Server
+```
+npm start
+```
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open http://localhost:3000 with your browser to see the result.

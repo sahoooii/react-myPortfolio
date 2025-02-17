@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import LineGradient from '../components/LineGradient';
+import LineGradient from 'components/LineGradient';
 
 const About = ({ isJp }) => {
 	return (

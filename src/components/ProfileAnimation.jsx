@@ -1,29 +1,29 @@
 import React from 'react';
-import Typical from 'react-typical';
+import { Typewriter } from 'react-simple-typewriter';
 
 const ProfileAnimation = () => {
 	return (
-		<>
-			<p className='xs:mt-20 xs:mb-8 mt-8 mb-4 text-lg text-center md:text-start font-solitreo'>
-				I'm &nbsp;
-				<Typical
-					className='xs:mt-10 xs:mb-8 mt-8 mb-4 text-xl text-center md:text-start text-light-blue font-solitreo'
-					loop={3}
-					wrapper='b'
-					steps={[
-						'working on the Frontend 💻 ',
-						3000,
-						'working on the Backend 🖥 ',
-						3000,
-						'a very responsible person 🧐💨 ',
-						3000,
-						'an open-minded 🍻 ',
-						3000,
-					]}
-				/>
-			</p>
-		</>
+		<div className='App'>
+			<h1 className='xs:mt-20 xs:mb-8 mt-8 mb-4 text-lg text-center md:text-start font-solitreo'>
+				I'm{' '}
+				<span className='xs:mt-10 xs:mb-8 mt-8 mb-4 text-xl text-center md:text-start text-light-blue font-solitreo'>
+					<Typewriter
+						words={[
+							'a programmer with front-end and back-end skills 💻 ',
+							'on my journey to becoming a full-stack developer 💨',
+							'a very responsible person 🧐💨 ',
+							'always pushing forward, step by step 🏃‍♀️',
+						]}
+						loop={5}
+						cursor
+						cursorStyle='_'
+						typeSpeed={70}
+						deleteSpeed={50}
+						delaySpeed={1000}
+					/>
+				</span>
+			</h1>
+		</div>
 	);
 };
-
 export default ProfileAnimation;

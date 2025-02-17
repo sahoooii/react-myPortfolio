@@ -1,10 +1,10 @@
 import React from 'react';
-import useMediaQuery from '../hooks/useMediaQuery';
+import useMediaQuery from 'hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import MobileMenu from '../components/nav/MobileMenu';
-import navLinks from '../components/data/navLinks';
-import Link from '../components/nav/Link';
+import MobileMenu from 'components/nav/MobileMenu';
+import navLinks from 'components/data/navLinks';
+import Link from 'components/nav/Link';
 
 const Navbar = ({
 	isTopOfPage,
@@ -62,7 +62,10 @@ const Navbar = ({
 					<div className='flex justify-between gap-16 font-signature text-xl font-semibold'>
 						<ul className='flex justify-between gap-12'>
 							{navLinks.map(({ id, link }) => (
-								<li key={id} className='capitalize hover:scale-125'>
+								<li
+									key={`${id}-${link}`}
+									className='capitalize hover:scale-125'
+								>
 									<Link
 										page={link}
 										selectedPage={selectedPage}

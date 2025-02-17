@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import frontend from '../components/data/frontend';
-import backend from '../components/data/backend';
-import LineGradient from '../components/LineGradient';
+import frontend from 'components/data/frontend';
+import backend from 'components/data/backend';
+import LineGradient from 'components/LineGradient';
+import SkillsData from 'components/skills/SkillsData';
 
 const container = {
 	hidden: {},
@@ -77,31 +78,11 @@ const Skills = ({ isJp }) => {
 						<div className='text-center text-3xl mb-2'>
 							<h3>Frontend</h3>
 						</div>
-
-						<motion.ul
-							className='items-center justify-center grid grid-cols-3 md:gap-x-4 gap-x-3 md:gap-y-6 gap-y-8 text-center py-4'
-							variants={container}
-							initial='hidden'
-							viewport={{ once: true, amount: 0.5 }}
-							whileInView='visible'
-						>
-							{frontend.map(({ id, src, name, style }) => (
-								<motion.li
-									key={id}
-									className={`shadow-md md:p-4 p-3 rounded-lg ${style} ${item}`}
-									variants={item}
-								>
-									<img
-										src={src}
-										alt={name}
-										className='mx-auto w-14 hover:rotate-45 duration-50'
-									/>
-									<p className='text-xs md:text-sm text-center font-semibold dark:text-whitish font-opensans'>
-										{name}
-									</p>
-								</motion.li>
-							))}
-						</motion.ul>
+						<SkillsData
+							languages={frontend}
+							container={container}
+							item={item}
+						/>
 					</div>
 
 					{/* Backend */}
@@ -109,31 +90,7 @@ const Skills = ({ isJp }) => {
 						<div className='text-center text-3xl mb-2'>
 							<h3>Backend</h3>
 						</div>
-
-						<motion.ul
-							className='items-center justify-center grid grid-cols-3 md:gap-x-4 gap-x-3 md:gap-y-6 gap-y-8 text-center py-4'
-							variants={container}
-							initial='hidden'
-							viewport={{ once: true, amount: 0.5 }}
-							whileInView='visible'
-						>
-							{backend.map(({ id, src, name, style }) => (
-								<motion.li
-									key={id}
-									className={`shadow-md md:p-4 p-3 rounded-lg ${style} ${item}`}
-									variants={item}
-								>
-									<img
-										src={src}
-										alt={name}
-										className='mx-auto w-14 hover:rotate-45 duration-50'
-									/>
-									<p className='text-xs md:text-sm font-semibold dark:text-whitish font-opensans'>
-										{name}
-									</p>
-								</motion.li>
-							))}
-						</motion.ul>
+						<SkillsData languages={backend} container={container} item={item} />
 					</div>
 				</motion.div>
 			</div>
