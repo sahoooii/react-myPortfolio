@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
-import LineGradient from '../components/LineGradient';
+import LineGradient from 'components/LineGradient';
 
 const ContactForm = () => {
 	const {

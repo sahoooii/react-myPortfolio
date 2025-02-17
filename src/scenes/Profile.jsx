@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { BiDownload } from 'react-icons/bi';
-import useMediaQuery from '../hooks/useMediaQuery';
-import ProfileAnimation from '../components/ProfileAnimation';
+import useMediaQuery from 'hooks/useMediaQuery';
+import ProfileAnimation from 'components/ProfileAnimation';
 
 const Profile = ({ setSelectedPage }) => {
 	const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');

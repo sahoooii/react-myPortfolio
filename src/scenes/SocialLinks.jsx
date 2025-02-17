@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { links } from '../components/SocialMediaIcons';
-import useMediaQuery from '../hooks/useMediaQuery';
+import { links } from 'components/SocialMediaIcons';
+import useMediaQuery from 'hooks/useMediaQuery';
 
 const SocialLinks = () => {
 	const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
@@ -13,7 +13,7 @@ const SocialLinks = () => {
 					<ul>
 						{links.map(({ id, name, icon, href, style, download }) => (
 							<motion.div
-								key={id}
+								key={`${id}-${name}`}
 								initial='hidden'
 								whileInView='visible'
 								viewport={{ once: true, amount: 0.5 }}
@@ -43,10 +43,10 @@ const SocialLinks = () => {
 			) : (
 				<div className='flex justify-center mb-20'>
 					<ul className='flex gap-7'>
-						{links.map(({ id, icon, href, download }) => (
+						{links.map(({ id, name, icon, href, download }) => (
 							<motion.div
 								className='flex justify-center'
-								key={id}
+								key={`${id}-${name}`}
 								initial='hidden'
 								whileInView='visible'
 								viewport={{ once: true, amount: 0.5 }}

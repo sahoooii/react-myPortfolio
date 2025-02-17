@@ -1,5 +1,5 @@
 import React from 'react';
-import { links } from '../components/SocialMediaIcons';
+import { links } from 'components/SocialMediaIcons';
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -9,9 +9,9 @@ const Footer = () => {
 			<footer className='h-64 pt-10 dark:bg-gray-800 bg-orange-100'>
 				<div className='w-5/6 mx-auto'>
 					<ul className='flex justify-center items-center gap-7'>
-						{links.map(({ id, icon, href, download }) => (
+						{links.map(({ id, name, icon, href, download }) => (
 							<li
-								key={id}
+								key={`${id}-${name}`}
 								className='flex dark:bg-gradient-night-sky rounded-full p-2 bg-gradient-day-sky duration-300 text-white hover:scale-150'
 							>
 								<a

@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaPlayCircle, FaLink } from 'react-icons/fa';
-import projects from '../components/data/projects';
-import LineGradient from '../components/LineGradient';
+import projects from 'components/data/projects';
+import LineGradient from 'components/LineGradient';
 
 const container = {
 	hidden: {},
@@ -68,11 +68,6 @@ const Portfolio = ({ isJp }) => {
 					viewport={{ once: true, amount: 0.2 }}
 					variants={container}
 				>
-					{/* Row 1 */}
-					<div className='flex justify-center items-center p-10 bg-gradient-purple-pink-orange max-w-[400px] max-h-[400px] text-whitish text-3xl font-playfair font-semibold'>
-						Frontend
-					</div>
-
 					{projects.map(
 						({
 							id,
@@ -88,9 +83,17 @@ const Portfolio = ({ isJp }) => {
 							<motion.div
 								variants={projectVariants}
 								className='relative'
-								key={id}
+								key={`${id}-${title}`}
 							>
-								<div className='absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 dark:bg-whitish dark:text-bluish-black bg-bluish-black text-whitish z-30 flex flex-col justify-center items-center text-center md:p-10 p-8'>
+								<div
+									className={`absolute h-full w-full opacity-0 dark:bg-whitish dark:text-bluish-black bg-bluish-black text-whitish z-30 flex flex-col justify-center items-center text-center md:p-10 p-8 ${
+										id === 1 || id === 5 || id === 8 ? (
+											<></>
+										) : (
+											'hover:opacity-90 transition duration-500'
+										)
+									} `}
+								>
 									<p className='md:text-3xl text-xl font-playfair font-semibold'>
 										{title}
 									</p>
@@ -148,10 +151,6 @@ const Portfolio = ({ isJp }) => {
 							</motion.div>
 						)
 					)}
-					{/* Final Row */}
-					<div className='flex justify-center items-center p-10 bg-gradient-green-blue max-w-[400px] max-h-[400px] text-whitish text-3xl font-playfair font-semibold'>
-						Backend
-					</div>
 				</motion.div>
 			</div>
 		</section>
