@@ -1,9 +1,8 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 
-const links = [
+export const links = [
 	{
 		id: 1,
 		name: 'GitHub',
@@ -35,18 +34,4 @@ const links = [
 		),
 		href: 'mailto:saho.chu@gmail.com',
 	},
-	{
-		id: 4,
-		name: 'Resume',
-		icon: (
-			<>
-				<BsFillPersonLinesFill size={30} />
-			</>
-		),
-		href: '/sample.jpg',
-		style: 'rounded-br-md',
-		download: true,
-	},
 ];
-
-export {links};

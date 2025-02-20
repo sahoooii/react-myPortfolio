@@ -2,11 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
-import { BiDownload } from 'react-icons/bi';
 import useMediaQuery from 'hooks/useMediaQuery';
-import ProfileAnimation from 'components/ProfileAnimation';
+import ProfileAnimation from 'components/profile/ProfileAnimation';
+import ResumeButton from 'components/profile/ResumeButton';
 
-const Profile = ({ setSelectedPage }) => {
+const Profile = ({ setSelectedPage, isJp }) => {
 	const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
 
 	return (
@@ -80,7 +80,7 @@ const Profile = ({ setSelectedPage }) => {
 							</span>
 						</div>
 					</AnchorLink>
-					<a
+					{/* <a
 						href='/sample.jpg'
 						rel='noreferrer'
 						download={true}
@@ -92,7 +92,8 @@ const Profile = ({ setSelectedPage }) => {
 								<BiDownload size={25} className='ml-1' />
 							</span>
 						</div>
-					</a>
+					</a> */}
+					<ResumeButton isJp={isJp} />
 				</motion.div>
 			</div>
 		</section>

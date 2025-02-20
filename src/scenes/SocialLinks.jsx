@@ -43,7 +43,7 @@ const SocialLinks = () => {
 			) : (
 				<div className='flex justify-center mb-20'>
 					<ul className='flex gap-7'>
-						{links.map(({ id, name, icon, href, download }) => (
+						{links.map(({ id, name, icon, href }) => (
 							<motion.div
 								className='flex justify-center'
 								key={`${id}-${name}`}
@@ -60,7 +60,6 @@ const SocialLinks = () => {
 									<a
 										className='opacity-80'
 										href={href}
-										download={download}
 										target='_blank'
 										rel='noreferrer'
 									>

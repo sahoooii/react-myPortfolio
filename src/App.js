@@ -38,7 +38,7 @@ function App() {
 			/>
 
 			<div className='w-[80%] mx-auto md:h-full'>
-				<Profile setSelectedPage={setSelectedPage} />
+				<Profile setSelectedPage={setSelectedPage} isJp={isJp} />
 			</div>
 			<SocialLinks />
 
