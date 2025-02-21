@@ -2,6 +2,8 @@ import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 
+const email = process.env.REACT_APP_MY_EMAIL;
+
 export const links = [
 	{
 		id: 1,
@@ -32,6 +34,6 @@ export const links = [
 				<HiOutlineMail size={30} />
 			</>
 		),
-		href: 'mailto:saho.chu@gmail.com',
+		href: `mailto:${email}`,
 	},
 ];
