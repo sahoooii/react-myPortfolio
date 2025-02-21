@@ -59,7 +59,7 @@ const ContactForm = () => {
 				<div className='border-b-2 border-slate-500 sm:w-[300px] w-[150px] mx-auto'></div>
 				<div className='sm:mt-10 mt-5 flex items-center justify-center'>
 					<img
-						src='../assets/phone-icon.png'
+						src='assets/phone-icon.png'
 						alt='phone-icon'
 						className='sm:w-[80px] w-[60px] animate-heartbeat'
 					/>
@@ -68,7 +68,7 @@ const ContactForm = () => {
 				<form
 					target='_blank'
 					onSubmit={onSubmit}
-					action='https://formsubmit.co/d8ba071863b209c206352f351fbccf9e'
+					action={process.env.REACT_APP_FORM_SUBMIT}
 					method='POST'
 					className='mt-10'
 				>

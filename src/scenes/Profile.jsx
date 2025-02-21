@@ -80,19 +80,6 @@ const Profile = ({ setSelectedPage, isJp }) => {
 							</span>
 						</div>
 					</AnchorLink>
-					{/* <a
-						href='/sample.jpg'
-						rel='noreferrer'
-						download={true}
-						className='rounded-r-sm bg-gradient-purple-pink-orange py-0.5 pr-0.5'
-					>
-						<div className='dark:bg-bluish-black bg-whitish font-semibold hover:text-vivid-pink transition duration-500 w-full h-full flex items-center justify-center xs:px-8 px-6 font-playfair group'>
-							Resume
-							<span className='group-hover:translate-y-1 duration-300'>
-								<BiDownload size={25} className='ml-1' />
-							</span>
-						</div>
-					</a> */}
 					<ResumeButton isJp={isJp} />
 				</motion.div>
 			</div>
