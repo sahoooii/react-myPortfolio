@@ -69,7 +69,7 @@ const Profile = ({ setSelectedPage, isJp }) => {
 					}}
 				>
 					<AnchorLink
-						className='bg-gradient-rainbow py-3 xs:px-7 px-4 text-opaque-black rounded-sm font-semibold hover:bg-light-blue hover:text-white transition duration-500 font-opensans group'
+						className='bg-gradient-rainbow py-3 xs:px-7 px-4 text-opaque-black rounded-sm font-semibold hover:bg-light-blue hover:text-white transition duration-500 font-playfair group'
 						onClick={() => setSelectedPage('contact')}
 						href='#contact'
 					>
