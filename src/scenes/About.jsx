@@ -46,12 +46,14 @@ const About = ({ isJp }) => {
 							</span>
 							を活かし、ユーザー目線で使いやすく洗練されたサービスを作ることを大切にしています。
 							<br />
-							将来的には、
+							将来的には、最適な出会いを提供する
 							<span className={`${styleTaglineOrange}`}>
-								最適な出会いを提供するマッチングアプリの開発
+								マッチングアプリの開発
 							</span>
 							や、
-							<span className={`${styleTaglineOrange}`}>犬・猫のためのサービス</span>
+							<span className={`${styleTaglineOrange}`}>
+								犬・猫のためのサービス
+							</span>
 							を通じて、
 							<span className={`${styleTaglineBlue}`}>
 								人と動物がより幸せに暮らせる仕組み
@@ -64,7 +66,10 @@ const About = ({ isJp }) => {
 							<br />
 							実際に自分が関心を持ち、価値を提供できる分野でのサービスを形にしたいと思っています。
 							<br />
-							どんなに難しい課題にも粘り強く取り組み、サービスを通じて人や動物の生活をより良くできるエンジニアを目指しています。
+							<span className={`${styleTaglineOrange}`}>
+								どんなに難しい課題にも粘り強く取り組み
+							</span>
+							サービスを通じて人や動物の生活をより良くできるエンジニアを目指しています。
 						</p>
 					) : (
 						<p className={`${style} font-opensans`}>
