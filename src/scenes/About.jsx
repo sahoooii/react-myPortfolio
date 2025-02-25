@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import LineGradient from 'components/LineGradient';
 
 const About = ({ isJp }) => {
+	const style =
+		'md:mt-10 mt-5 px-2 text-start tracking-wide text-base sm:text-xl md:text-lg leading-7 sm:leading-8 md:leading-9';
 	return (
 		<section
 			id='about'
@@ -29,21 +31,20 @@ const About = ({ isJp }) => {
 					</div>
 
 					{isJp ? (
-						<p className='md:mt-10 mt-5 px-2 text-start tracking-wide md:text-xl text-lg md:leading-9 leading-7 font-jp'>
-							私は、アルバイトの時期も含めると、カスタマーサービス、接客業での約15年ほど経験があります。大学院の専攻がファッションマネージメントだったこともあり、ファッションの分野を中心に働いてきました。学校を卒業後、ハワイに渡り、ワイキキの真ん中にある小さなアパレルショップで6年ほど働いていました。そこでは、接客はもちろんのこと、Visual
-							Marketingや在庫管理、SNSを使ったマーケティングなど任されていました。
+						<p className={`${style} font-jp`}>
+							数年間、独学でプログラミングを学び、常に新しい技術を吸収しながらスキルを磨いてきました。フロントエンドでは
+							React・Next.js・TypeScriptを中心に、バックエンドではNode.js
+							を活用し、データベースと連携したAPI
+							開発も手がけています。フルスタックの視点を活かしながら、特に使いやすいUIデザインにこだわり、ユーザーにとって快適な体験を提供できるよう心がけ、Webサービスの開発からデプロイまで取り組んでいます。
 							<br />
-							プログラミングに最初に触れたのは、2019年頃になります。学生時代使っていた古いWindowsのPC片手に、何から始めたらいいかも分からないようなところから独学でスタートしました。
+							長年のカスタマーサービス経験を通じて培った「相手の考えを汲み取り行動する力」を活かし、ユーザー目線で使いやすく洗練されたサービスを作ることを大切にしています。
 							<br />
-							JavaScript, Node.js, PHP, MySQL, Mongo DBなどのデータベース。
-							その他のスキルを使うことができます。エンジニアになるため、他の言語も日々勉強しております。Laravel,
-							React, Tailwind CSS, MUI
-							などのライブラリやフレームワークも使うことができます。今は特にReactとTailWindを中心に勉強しているので、このポートフォリオはそれらを使って作成しました。他の言語を使って作成したものもあるのでポートフォリオセクションをぜひご覧ください。
+							将来的には、ユーザーのニーズに特化したWebサービスの開発に取り組みたいと考えています。例えば、最適な出会いを提供するマッチングアプリ、犬・猫とのおでかけマップや里親マッチングを支援するサービス、そしてハワイでの暮らしや観光情報をローカル視点でまとめたプラットフォームなど、実際に自分が関心を持ち、価値を提供できる分野でのサービスを形にしたいと思っています。
 							<br />
-							私の強みは高いコミュニケーションスキルと、誰に対しても柔軟な考え方、そしてハワイで培った「アロハスピリット」です。みなさんと一緒に働ける日を楽しみにしています!
+							どんなに難しい課題にも粘り強く取り組み、サービスを通じて人や動物の生活をより良くできるエンジニアを目指しています。
 						</p>
 					) : (
-						<p className='md:mt-10 mt-5 px-2 text-start tracking-wide md:text-xl text-lg md:leading-9 leading-7 font-opensans'>
+						<p className={`${style} font-opensans`}>
 							I've worked in the service industry for over 15 years, including a
 							part-time job. I worked most of my time in fashion. I've worked in
 							Hawaii in a small boutique in the middle of Waikiki for six years.
