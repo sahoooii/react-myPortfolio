@@ -5,6 +5,9 @@ import LineGradient from 'components/LineGradient';
 const About = ({ isJp }) => {
 	const style =
 		'md:mt-10 mt-5 px-2 text-start tracking-wide text-base sm:text-xl md:text-lg leading-7 sm:leading-8 md:leading-9';
+
+	const styleTaglineBlue = 'text-light-blue font-bold';
+	const styleTaglineOrange = 'text-orange-500 font-bold';
 	return (
 		<section
 			id='about'
@@ -37,9 +40,29 @@ const About = ({ isJp }) => {
 							を活用し、データベースと連携したAPI
 							開発も手がけています。フルスタックの視点を活かしながら、特に使いやすいUIデザインにこだわり、ユーザーにとって快適な体験を提供できるよう心がけ、Webサービスの開発からデプロイまで取り組んでいます。
 							<br />
-							長年のカスタマーサービス経験を通じて培った「相手の考えを汲み取り行動する力」を活かし、ユーザー目線で使いやすく洗練されたサービスを作ることを大切にしています。
+							長年のカスタマーサービス経験を通じて培った
+							<span className={`${styleTaglineBlue}`}>
+								「相手の考えを汲み取り行動する力」
+							</span>
+							を活かし、ユーザー目線で使いやすく洗練されたサービスを作ることを大切にしています。
 							<br />
-							将来的には、ユーザーのニーズに特化したWebサービスの開発に取り組みたいと考えています。例えば、最適な出会いを提供するマッチングアプリ、犬・猫とのおでかけマップや里親マッチングを支援するサービス、そしてハワイでの暮らしや観光情報をローカル視点でまとめたプラットフォームなど、実際に自分が関心を持ち、価値を提供できる分野でのサービスを形にしたいと思っています。
+							将来的には、
+							<span className={`${styleTaglineOrange}`}>
+								最適な出会いを提供するマッチングアプリの開発
+							</span>
+							や、
+							<span className={`${styleTaglineOrange}`}>犬・猫のためのサービス</span>
+							を通じて、
+							<span className={`${styleTaglineBlue}`}>
+								人と動物がより幸せに暮らせる仕組み
+							</span>
+							を作りたいと考えています。また、ハワイでの経験を活かし、
+							<span className={`${styleTaglineBlue}`}>
+								ローカル視点の観光情報を提供するサービス
+							</span>
+							にも挑戦したいです。
+							<br />
+							実際に自分が関心を持ち、価値を提供できる分野でのサービスを形にしたいと思っています。
 							<br />
 							どんなに難しい課題にも粘り強く取り組み、サービスを通じて人や動物の生活をより良くできるエンジニアを目指しています。
 						</p>
