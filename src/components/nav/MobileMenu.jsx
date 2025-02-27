@@ -95,7 +95,7 @@ const MobileMenu = ({ links, selectedPage, setSelectedPage }) => {
 								{links.map(({ id, link }) => (
 									<motion.li
 										key={`${id}-${link}`}
-										className='capitalize hover:scale-125'
+										className='capitalize hover:scale-125 tracking-wide'
 										variants={itemVariants}
 										whileHover={{ scale: 1.1 }}
 										whileTap={{ scale: 0.7 }}
