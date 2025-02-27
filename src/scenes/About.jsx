@@ -60,36 +60,65 @@ const About = ({ isJp }) => {
 							</span>
 							を作りたいと考えています。また、ハワイでの経験を活かし、
 							<span className={`${styleTaglineBlue}`}>
-								ローカル視点の観光情報を提供するサービス
+								ローカル視点で役立つ情報を提供するサービス
 							</span>
 							にも挑戦したいです。
 							<br />
-							実際に自分が関心を持ち、価値を提供できる分野でのサービスを形にしたいと思っています。
-							<br />
+							自分の経験を活かせる分野で、価値のあるサービスを生み出し、
 							<span className={`${styleTaglineOrange}`}>
-								どんなに難しい課題にも粘り強く取り組み
+								どんなに難しい課題にも粘り強く取り組み、
 							</span>
-							サービスを通じて人や動物の生活をより良くできるエンジニアを目指しています。
+							サービスを通じて人や動物の暮らしを支え、より良い未来を作れるエンジニアを目指しています。
 						</p>
 					) : (
 						<p className={`${style} font-opensans`}>
-							I've worked in the service industry for over 15 years, including a
-							part-time job. I worked most of my time in fashion. I've worked in
-							Hawaii in a small boutique in the middle of Waikiki for six years.
-							So I can speak regular conversations in English.
-							<br />I started studying programming on my own in 2019. At that
-							time, I had no idea where to start, Because I was not good at
-							tech. I only had an old Windows laptop. It's the beginning of my
-							journey to become an engineer.
-							<br /> I'm skilled with JavaScript, Node.js, PHP, some Database
-							and others. I'm trying to learn other programming languages step
-							by step. I can also use several libraries and frameworks. Like
-							Laravel, React, Tailwind CSS, MUI and others. I'm working on React
-							project now. So I built that portfolio with React and Tailwind.
-							Also I used other languages, so please see the below Portfolio
-							section. I have strong communication skills, I'm an open-minded
-							person, and I have an ALOHA spirit. I'm looking forward to working
-							with you!
+							I have been learning programming for several years, continuously
+							absorbing new technologies to enhance my skills. On the front end,
+							I primarily work with React, Next.js, and TypeScript, while on the
+							back end, I develop APIs and integrate databases using Node.js.
+							Approaching development from a full-stack perspective, I
+							specialize in creating user-friendly UI designs that provide a
+							seamless and enjoyable experience for all users. I take ownership
+							of everything from development to deployment.
+							<br />
+							With many years of customer service experience, I have learned to
+							<span className={`${styleTaglineBlue}`}>
+								{' '}
+								"Understand People's Needs And Take Action"{' '}
+							</span>
+							to support them. I value this skill and apply it to my
+							development, striving to create intuitive and well-designed
+							services.
+							<br />
+							Looking ahead, I have mapped out my career plan. I aspire to
+							<span className={`${styleTaglineBlue}`}>
+								{' '}
+								develop a Dating App{' '}
+							</span>
+							that truly helps users find{' '}
+							<span className={`${styleTaglineOrange}`}> "The One" </span>
+							and
+							<span className={`${styleTaglineBlue}`}>
+								{' '}
+								a service dedicated to improving the lives of{' '}
+							</span>
+							<span className={`${styleTaglineOrange}`}> Dogs and Cats. </span>
+							Additionally, having lived in Hawaii for a couple of years, I want
+							to create a platform that provides tourists with
+							<span className={`${styleTaglineBlue}`}>
+								{' '}
+								authentic, local insights into
+							</span>
+							<span className={`${styleTaglineOrange}`}> "Deep Hawaii." </span>
+							I aim to build meaningful services by leveraging my experiences.
+							<br />
+							<span className={`${styleTaglineOrange}`}>
+								{' '}
+								No matter how difficult the challenge, I stay committed to my
+								goals with passion and perseverance.{' '}
+							</span>
+							Through these services, I hope to contribute to a better future by
+							supporting both people and animals.
 						</p>
 					)}
 				</motion.div>

@@ -64,7 +64,7 @@ const Navbar = ({
 							{navLinks.map(({ id, link }) => (
 								<li
 									key={`${id}-${link}`}
-									className='capitalize hover:scale-125'
+									className='capitalize hover:scale-125 tracking-wide'
 								>
 									<Link
 										page={link}
