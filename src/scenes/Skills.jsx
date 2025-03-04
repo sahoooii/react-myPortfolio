@@ -11,8 +11,8 @@ const container = {
 		opacity: 1,
 		scale: 1,
 		transition: {
-			delayChildren: 0.5,
-			staggerChildren: 0.2,
+			delayChildren: 0.1,
+			staggerChildren: 0.1,
 		},
 	},
 };
@@ -66,7 +66,7 @@ const Skills = ({ isJp }) => {
 					className='sm:grid sm:grid-cols-2 gap-10'
 					initial='hidden'
 					whileInView='visible'
-					viewport={{ once: true, amount: 0.5 }}
+					viewport={{ once: true, amount: 0.2 }}
 					transition={{ delay: 0.2, duration: 0.8 }}
 					variants={{
 						hidden: { opacity: 0, y: -50 },
