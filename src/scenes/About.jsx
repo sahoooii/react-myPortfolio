@@ -4,7 +4,7 @@ import LineGradient from 'components/LineGradient';
 
 const About = ({ isJp }) => {
 	const style =
-		'md:mt-10 mt-5 px-4 py-8 text-start tracking-wide text-base sm:text-xl md:text-lg leading-7 sm:leading-8 md:leading-9 text-justify';
+		'md:mt-10 mt-5 px-4 py-8 text-start tracking-wide text-xl md:text-lg text-justify';
 
 	const styleTaglineBlue = 'text-light-blue font-bold';
 	const styleTaglineOrange = 'text-orange-500 font-bold';
@@ -34,7 +34,7 @@ const About = ({ isJp }) => {
 					</div>
 
 					{isJp ? (
-						<p className={`${style} font-jp`}>
+						<p className={`${style} font-jp leading-relaxed`}>
 							数年間、独学でプログラミングを学び、常に新しい技術を吸収しながらスキルを磨いてきました。フロントエンドでは
 							React・Next.js・TypeScriptを中心に、バックエンドではNode.js
 							を活用し、データベースと連携したAPI 開発も手がけています。
@@ -80,7 +80,9 @@ const About = ({ isJp }) => {
 							サービスを通じて人や動物の暮らしを支え、より良い未来を作れるエンジニアを目指しています。
 						</p>
 					) : (
-						<p className={`${style} font-opensans`}>
+						<p
+							className={`${style} font-opensans leading-8 md:leading-9`}
+						>
 							I have been learning programming for years, constantly exploring
 							new technologies.
 							<br />
