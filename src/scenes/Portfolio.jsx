@@ -7,7 +7,7 @@ import LineGradient from 'components/LineGradient';
 const container = {
 	hidden: {},
 	visible: {
-		transition: { staggerChildren: 0.2 },
+		transition: { staggerChildren: 0.1 },
 	},
 };
 
@@ -25,7 +25,7 @@ const Portfolio = ({ isJp }) => {
 				initial='hidden'
 				whileInView='visible'
 				viewport={{ once: true, amount: 0.2 }}
-				transition={{ duration: 1 }}
+				transition={{ duration: 0.8 }}
 				variants={{
 					hidden: { opacity: 0, y: -50 },
 					visible: { opacity: 1, y: 0 },
