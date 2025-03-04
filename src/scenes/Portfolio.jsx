@@ -43,9 +43,9 @@ const Portfolio = ({ isJp }) => {
 				{isJp ? (
 					<div>
 						<p className='mt-10 mb-14 tracking-wide md:text-lg leading-7 font-jp'>
-							いくつかの言語を使って作ったポートフォリオです。
+							様々な言語を使って作ったポートフォリオ
 							<br />
-							Frontend and Backend.
+							Frontend, Backend, and Full-Stack
 						</p>
 					</div>
 				) : (
@@ -53,7 +53,7 @@ const Portfolio = ({ isJp }) => {
 						<p className='mt-10 mb-14 tracking-wide md:text-lg leading-7 font-opensans'>
 							Here's my portfolio using multiple languages.
 							<br />
-							Frontend and Backend.
+							Frontend, Backend, and Full-Stack
 						</p>
 					</div>
 				)}
