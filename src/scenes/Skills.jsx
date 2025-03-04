@@ -30,7 +30,7 @@ const Skills = ({ isJp }) => {
 				className='md:w-1/2 m-auto text-center'
 				initial='hidden'
 				whileInView='visible'
-				viewport={{ once: true, amount: 0.5 }}
+				viewport={{ once: true, amount: 0.2 }}
 				transition={{ duration: 1 }}
 				variants={{
 					hidden: { opacity: 0, y: -50 },

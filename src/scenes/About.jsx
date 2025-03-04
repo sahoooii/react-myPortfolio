@@ -4,7 +4,7 @@ import LineGradient from 'components/LineGradient';
 
 const About = ({ isJp }) => {
 	const style =
-		'md:mt-10 mt-5 px-4 py-8 text-start tracking-wide text-xl md:text-lg text-justify';
+		'md:mt-10 mt-5 px-4 py-8 text-start tracking-wide text-xl md:text-lg text-left';
 
 	const styleTaglineBlue = 'text-light-blue font-bold';
 	const styleTaglineOrange = 'text-orange-500 font-bold';
@@ -17,7 +17,7 @@ const About = ({ isJp }) => {
 				<motion.div
 					initial='hidden'
 					whileInView='visible'
-					viewport={{ once: true, amount: 0.5 }}
+					viewport={{ once: true, amount: 0.2 }}
 					transition={{ duration: 1 }}
 					variants={{
 						hidden: { opacity: 0, x: -50 },
