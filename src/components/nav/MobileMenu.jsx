@@ -1,12 +1,19 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Dimensions from './Dimensions';
 import Link from './Link';
 
 const MobileMenu = ({ links, selectedPage, setSelectedPage }) => {
-	//hamburger Menu
+	//For hamburger Menu
 	const [isMenuToggled, setIsMenuToggled] = useState(false);
+	const [isLoaded, setIsLoaded] = useState(false);
+
+	// After load a page, show hamburger icon
+	useEffect(() => {
+		setIsLoaded(true);
+	}, []);
+
 	const containerRef = useRef(null);
 	const { height } = Dimensions(containerRef);
 
@@ -59,7 +66,9 @@ const MobileMenu = ({ links, selectedPage, setSelectedPage }) => {
 			<div className='flex items-center w-full justify-end'>
 				<button
 					onClick={() => setIsMenuToggled(!isMenuToggled)}
-					className='dark:bg-indigo-500 bg-red-300 p-2.5 rounded-full'
+					className={`dark:bg-indigo-500 bg-red-300 p-2.5 rounded-full transition-opacity duration-500 ${
+						isLoaded ? 'opacity-100' : 'opacity-0'
+					}`}
 				>
 					<FaBars size={24} className='dark:text-white text-white' />
 				</button>
@@ -81,7 +90,9 @@ const MobileMenu = ({ links, selectedPage, setSelectedPage }) => {
 			>
 				{/* bg */}
 				<motion.div
-					className='fixed top-0 right-0 bottom-0 dark:bg-indigo-500 bg-red-300 text-white w-2/3 z-10'
+					className={`fixed top-0 right-0 bottom-0 dark:bg-indigo-500 bg-red-300 text-white w-2/3 z-10 ${
+						isMenuToggled ? 'block' : 'hidden'
+					}`}
 					variants={sidebarVariants}
 					onClick={() => setIsMenuToggled(!isMenuToggled)}
 				>

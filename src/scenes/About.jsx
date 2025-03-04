@@ -4,14 +4,14 @@ import LineGradient from 'components/LineGradient';
 
 const About = ({ isJp }) => {
 	const style =
-		'md:mt-10 mt-5 px-2 text-start tracking-wide text-base sm:text-xl md:text-lg leading-7 sm:leading-8 md:leading-9';
+		'md:mt-10 mt-5 px-2 py-8 text-start tracking-wide text-base sm:text-xl md:text-lg leading-7 sm:leading-8 md:leading-9';
 
 	const styleTaglineBlue = 'text-light-blue font-bold';
 	const styleTaglineOrange = 'text-orange-500 font-bold';
 	return (
 		<section
 			id='about'
-			className='sm:pt-40 pt-10 pb-28 sm:text-start text-center md:h-full'
+			className='sm:pt-40 pt-20 pb-28 sm:text-start text-center md:h-full'
 		>
 			<div className='w-full'>
 				<motion.div
@@ -72,10 +72,11 @@ const About = ({ isJp }) => {
 						</p>
 					) : (
 						<p className={`${style} font-opensans`}>
-							I have been learning programming for several years, continuously
-							absorbing new technologies to enhance my skills. On the front end,
-							I primarily work with React, Next.js, and TypeScript, while on the
-							back end, I develop APIs and integrate databases using Node.js.
+							I have been learning programming for years, continuously exploring
+							new technologies. On the front end, I primarily work with React,
+							Next.js, and TypeScript, while on the back end, I develop APIs and
+							integrate databases using Node.js.
+							<br />
 							Approaching development from a full-stack perspective, I
 							specialize in creating user-friendly UI designs that provide a
 							seamless and enjoyable experience for all users. I take ownership
