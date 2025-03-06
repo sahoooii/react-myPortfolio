@@ -90,7 +90,7 @@ const Portfolio = ({ isJp }) => {
 										id === 1 || id === 5 || id === 8 ? (
 											<></>
 										) : (
-											'hover:opacity-90 transition duration-500'
+											'hover:opacity-80 transition duration-500'
 										)
 									} `}
 								>
@@ -102,11 +102,11 @@ const Portfolio = ({ isJp }) => {
 									</p>
 
 									{isJp ? (
-										<p className='md:mt-3 mt-2 md:text-base text-[12px] font-jp'>
+										<p className='md:mt-3 mt-2 md:text-base text-[14px] font-jp'>
 											{describeJp}
 										</p>
 									) : (
-										<p className='md:mt-3 mt-2 md:text-base text-[12px] font-jp'>
+										<p className='md:mt-3 mt-2 md:text-lg text-[14px] font-jp'>
 											{describeEn}
 										</p>
 									)}
@@ -119,7 +119,7 @@ const Portfolio = ({ isJp }) => {
 											target='_blank'
 											rel='noreferrer'
 										>
-											<FaGithub size={30} />
+											<FaGithub size={28} />
 										</a>
 										{link === '' ? (
 											<div></div>
@@ -130,7 +130,7 @@ const Portfolio = ({ isJp }) => {
 												target='_blank'
 												rel='noreferrer'
 											>
-												<FaLink size={30} />
+												<FaLink size={28} />
 											</a>
 										)}
 										<a
@@ -139,7 +139,7 @@ const Portfolio = ({ isJp }) => {
 											target='_blank'
 											rel='noreferrer'
 										>
-											<FaPlayCircle size={30} />
+											<FaPlayCircle size={28} />
 										</a>
 									</div>
 								</div>
