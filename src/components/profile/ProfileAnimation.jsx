@@ -19,7 +19,7 @@ const ProfileAnimation = () => {
 						cursorStyle='_'
 						typeSpeed={70}
 						deleteSpeed={50}
-						delaySpeed={1000}
+						delaySpeed={700}
 					/>
 				</span>
 			</h1>

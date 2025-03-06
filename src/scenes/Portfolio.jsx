@@ -17,6 +17,8 @@ const projectVariants = {
 };
 
 const Portfolio = ({ isJp }) => {
+	const describeStyle =
+		'md:mt-3 mt-2 md:text-lg text-sm leading-5';
 	return (
 		<section id='portfolio' className='sm:pt-40 pt-20 pb-40'>
 			{/* Heading */}
@@ -102,11 +104,11 @@ const Portfolio = ({ isJp }) => {
 									</p>
 
 									{isJp ? (
-										<p className='md:mt-3 mt-2 md:text-base text-[14px] font-jp'>
+										<p className={`${describeStyle} font-jp`}>
 											{describeJp}
 										</p>
 									) : (
-										<p className='md:mt-3 mt-2 md:text-lg text-[14px] font-jp'>
+										<p className={`${describeStyle} font-opensans`}>
 											{describeEn}
 										</p>
 									)}
