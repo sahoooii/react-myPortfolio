@@ -90,10 +90,10 @@ const MobileMenu = ({ links, selectedPage, setSelectedPage }) => {
 			>
 				{/* bg */}
 				<motion.div
-					className={`fixed top-0 right-0 bottom-0 dark:bg-indigo-500 bg-red-300 text-white w-2/3 z-10 ${
-						isMenuToggled ? 'block' : 'hidden'
-					}`}
+					className='fixed top-0 right-0 bottom-0 dark:bg-indigo-500 bg-red-300 text-white w-2/3 z-10'
 					variants={sidebarVariants}
+					initial='closed'
+					animate={isMenuToggled ? 'open' : 'closed'}
 					onClick={() => setIsMenuToggled(!isMenuToggled)}
 				>
 					<div className='relative w-full h-full'>
