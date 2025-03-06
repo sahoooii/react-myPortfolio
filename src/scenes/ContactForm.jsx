@@ -4,6 +4,8 @@ import { useForm } from 'react-hook-form';
 import LineGradient from 'components/LineGradient';
 
 const ContactForm = () => {
+	const style = 'border-b-2 border-slate-500 mx-auto sm:w-[90%] w-full';
+
 	const {
 		register,
 		trigger,
@@ -43,7 +45,7 @@ const ContactForm = () => {
 
 			{/* form */}
 			<motion.div
-				className='mt-20 border-2 border-slate-500 w-[85%] max-w-[750px] mx-auto p-10'
+				className='mt-20 border-2 border-slate-500 w-[95%] md:w-[85%] max-w-[750px] mx-auto py-10 px-6'
 				initial='hidden'
 				whileInView='visible'
 				viewport={{ once: true, amount: 0.5 }}
@@ -73,14 +75,14 @@ const ContactForm = () => {
 					className='mt-10'
 				>
 					<div className='md:grid-cols-2 grid gap-y-6'>
-						<div className='border-b-2 border-slate-500 mx-auto md:w-[80%] sm:w-[90%] w-full'>
+						<div className={`${style} md:w-[80%]`}>
 							<label htmlFor='name'></label>
 							<input
 								type='text'
 								autoComplete='on'
 								placeholder='My name is'
 								name='name'
-								className='dark:bg-bluish-black bg-whitish w-full p-2 outline-none font-opensans  placeholder:uppercase'
+								className='dark:bg-bluish-black bg-whitish w-full p-2 outline-none font-opensans placeholder:uppercase'
 								{...register('name', {
 									required: true,
 									maxLength: 100,
@@ -94,7 +96,7 @@ const ContactForm = () => {
 								</p>
 							)}
 						</div>
-						<div className='border-b-2 border-slate-500 md:w-[80%] sm:w-[90%] w-full mx-auto'>
+						<div className={`${style} md:w-[80%]`}>
 							<label htmlFor='phone'></label>
 							<input
 								type='text'
@@ -120,82 +122,77 @@ const ContactForm = () => {
 						</div>
 					</div>
 
-					<div className='mt-6'>
-						<div className='border-b-2 border-slate-500 sm:w-[90%] w-full mx-auto'>
-							<label htmlFor='email'></label>
-							<input
-								type='email'
-								placeholder='My e-mail is'
-								name='email'
-								autoComplete='on'
-								className='dark:bg-bluish-black bg-whitish w-full p-2 outline-none font-opensans placeholder:uppercase'
-								{...register('email', {
-									required: true,
-									pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-								})}
-							/>
-							{errors.email && (
-								<p className='text-red-600 mt-1'>
-									{errors.email.type === 'required' &&
-										'Please enter your email'}
-									{errors.email.type === 'pattern' && 'Invalid email address.'}
-								</p>
-							)}
-						</div>
-
-						<div className='mt-6 border-b-2 border-slate-500 sm:w-[90%] w-full mx-auto'>
-							<label htmlFor='subject'></label>
-							<select
-								className='dark:bg-bluish-black bg-whitish p-2 outline-none w-full font-opensans'
-								defaultValue={'DEFAULT'}
-								name='subject'
-								{...register('subject', {
-									required: true,
-								})}
-								required
-							>
-								<option hidden value=''>
-									SELECT FROM HERE
-								</option>
-								<option value='offer'>I'd like to offer you a job</option>
-								<option value='question'>I'd like to ask a question</option>
-								<option value='interview'>
-									I'd like to have a casual interview with you
-								</option>
-							</select>
-							{errors.subject && (
-								<p className='text-red-600 mt-1'>
-									{errors.subject.type === 'required' &&
-										'This field is required.'}
-								</p>
-							)}
-						</div>
-
-						<div className='mt-6 border-b-2 border-slate-500 sm:w-[90%] w-full mx-auto'>
-							<label htmlFor='message'></label>
-							<textarea
-								name='message'
-								placeholder="I'd like to chat about..."
-								className='dark:bg-bluish-black bg-whitish p-2 outline-none w-full font-opensans placeholder:uppercase'
-								cols='50'
-								rows='5'
-								{...register('message', {
-									required: true,
-									maxLength: 5000,
-								})}
-							></textarea>
-							{errors.message && (
-								<p className='text-red-600 mt-1'>
-									{errors.message.type === 'required' &&
-										'Please leave some messages'}
-									{errors.message.type === 'maxLength' &&
-										'Max length is 5000 char.'}
-								</p>
-							)}
-						</div>
+					<div className={`${style} mt-6`}>
+						<label htmlFor='email'></label>
+						<input
+							type='email'
+							placeholder='My e-mail is'
+							name='email'
+							autoComplete='on'
+							className='dark:bg-bluish-black bg-whitish w-full p-2 outline-none font-opensans placeholder:uppercase'
+							{...register('email', {
+								required: true,
+								pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+							})}
+						/>
+						{errors.email && (
+							<p className='text-red-600 mt-1'>
+								{errors.email.type === 'required' && 'Please enter your email'}
+								{errors.email.type === 'pattern' && 'Invalid email address.'}
+							</p>
+						)}
+					</div>
+					<div className={`${style} mt-6`}>
+						<label htmlFor='subject'></label>
+						<select
+							className='dark:bg-bluish-black bg-whitish p-2 outline-none w-full font-opensans'
+							defaultValue={'DEFAULT'}
+							name='subject'
+							{...register('subject', {
+								required: true,
+							})}
+							required
+						>
+							<option hidden value=''>
+								SELECT FROM HERE
+							</option>
+							<option value='offer'>Job Offer</option>
+							<option value='question'>Ask Question</option>
+							<option value='interview'>
+								Casual Interview
+							</option>
+						</select>
+						{errors.subject && (
+							<p className='text-red-600 mt-1'>
+								{errors.subject.type === 'required' &&
+									'This field is required.'}
+							</p>
+						)}
+					</div>
+					<div className={`${style} mt-6`}>
+						<label htmlFor='message'></label>
+						<textarea
+							name='message'
+							placeholder="I'd like to chat about..."
+							className='dark:bg-bluish-black bg-whitish p-2 outline-none w-full font-opensans placeholder:uppercase'
+							cols='50'
+							rows='5'
+							{...register('message', {
+								required: true,
+								maxLength: 5000,
+							})}
+						></textarea>
+						{errors.message && (
+							<p className='text-red-600 mt-1'>
+								{errors.message.type === 'required' &&
+									'Please leave some messages'}
+								{errors.message.type === 'maxLength' &&
+									'Max length is 5000 char.'}
+							</p>
+						)}
 					</div>
 
-					<div className='m-12 rounded-sm md:w-[45%] w-full mx-auto bg-gradient-purple-pink-orange p-0.5 hover:translate-y-0.5 transition duration-500 group'>
+					<div className='m-12 rounded-sm sm:w-[55%] w-full mx-auto bg-gradient-purple-pink-orange p-0.5 hover:translate-y-0.5 transition duration-500 group'>
 						<input
 							type='submit'
 							value='SEND MESSAGE'

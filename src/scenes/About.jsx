@@ -4,7 +4,7 @@ import LineGradient from 'components/LineGradient';
 
 const About = ({ isJp }) => {
 	const style =
-		'md:mt-10 mt-5 px-4 py-8 text-start tracking-wide text-xl md:text-lg text-left';
+		'md:mt-10 mt-5 px-3 py-8 text-start tracking-wide text-xl md:text-lg text-left';
 
 	const styleTaglineBlue = 'text-light-blue font-bold';
 	const styleTaglineOrange = 'text-orange-500 font-bold';

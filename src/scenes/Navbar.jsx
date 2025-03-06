@@ -1,5 +1,6 @@
 import React from 'react';
 import useMediaQuery from 'hooks/useMediaQuery';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { motion } from 'framer-motion';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import MobileMenu from 'components/nav/MobileMenu';
@@ -24,17 +25,22 @@ const Navbar = ({
 
 	const selectEN = isJp
 		? 'dark:text-white'
-		: 'dark:text-light-blue text-vivid-pink scale-125';
+		: 'dark:text-light-blue text-vivid-pink font-bold scale-125';
 
 	const selectJP = isJp
-		? 'dark:text-light-blue text-vivid-pink scale-125'
+		? 'dark:text-light-blue text-vivid-pink font-bold scale-125'
 		: 'dark:text-white';
 
 	return (
 		<nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
 			<div className='flex items-center justify-between mx-auto w-5/6'>
 				<div className='flex items-center justify-between md:gap-4 gap-2'>
-					<h4 className='font-signature text-3xl font-bold'>Saho</h4>
+					<AnchorLink
+						onClick={() => setSelectedPage('home')}
+						href='#home'
+					>
+						<h4 className='font-signature text-3xl font-bold'>Saho</h4>
+					</AnchorLink>
 					{/* Dark or Day Mode */}
 					<BsFillMoonStarsFill
 						onClick={() => setDarkMode(!darkMode)}
@@ -43,7 +49,7 @@ const Navbar = ({
 
 					{/* Language select  */}
 					<div className='flex items-center'>
-						<h2 className={`${selectEN} font-patric md:text-lg`}>EN</h2>
+						<h2 className={`${selectEN} font-patric text-lg`}>EN</h2>
 						<div
 							className={`${isChangedLang} md:w-14 w-10 md:h-6 h-4 dark:bg-whitish bg-bluish-black opacity-60 flex items-center justify-start rounded-3xl p-1 cursor-pointer mr-2 ml-2`}
 							onClick={() => setIsJp(!isJp)}
@@ -53,7 +59,7 @@ const Navbar = ({
 								transition={{ type: 'spring', duration: 1 }}
 							/>
 						</div>
-						<h2 className={`${selectJP} font-patric md:text-lg`}>JP</h2>
+						<h2 className={`${selectJP} font-patric text-lg`}>JP</h2>
 					</div>
 				</div>
 

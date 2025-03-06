@@ -9,10 +9,10 @@ const ProfileAnimation = () => {
 				<span className='xs:mt-10 xs:mb-8 mt-8 mb-4 text-xl text-center md:text-start text-light-blue font-solitreo'>
 					<Typewriter
 						words={[
-							'a programmer with front-end and back-end skills 💻 ',
-							'on my journey to becoming a full-stack developer 💨',
-							'a very responsible person 🧐💨 ',
-							'always pushing forward, step by step 🏃‍♀️',
+							'a programmer skilled in front-end and back-end development 💻💪 ',
+							'on my journey to mastering full-stack development 🎓💨',
+							'a highly responsible and reliable person 🧐💨 ',
+							'constantly pushing forward, step by step 🏃‍♀️📚 ',
 						]}
 						loop={5}
 						cursor
