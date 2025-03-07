@@ -23,6 +23,8 @@ const item = {
 };
 
 const Skills = ({ isJp }) => {
+	const subTitleStyle =
+		'mt-10 md:mb-14 mb-7 tracking-wide text-lg sm:text-xl leading-7';
 	return (
 		<section id='skills' className='sm:pt-40 pt-20 pb-40'>
 			{/* Heading */}
@@ -48,13 +50,13 @@ const Skills = ({ isJp }) => {
 
 				{isJp ? (
 					<div>
-						<p className='mt-10 md:mb-14 mb-7 tracking-wide md:text-lg leading-7 font-jp'>
-							使える言語、ライブラリ、フレームワーク。
+						<p className={`${subTitleStyle} font-jp`}>
+							使用できる言語、ライブラリ、フレームワーク。
 						</p>
 					</div>
 				) : (
 					<div>
-						<p className='mt-10 md:mb-14 mb-7 tracking-wide md:text-lg leading-7 font-opensans'>
+						<p className={`${subTitleStyle} font-opensans`}>
 							These Languages Libraries and Frameworks are what I could use.
 						</p>
 					</div>

@@ -17,8 +17,7 @@ const projectVariants = {
 };
 
 const Portfolio = ({ isJp }) => {
-	const describeStyle =
-		'md:mt-3 mt-2 md:text-lg text-sm leading-5';
+	const describeStyle = 'md:mt-3 mt-2 md:text-lg text-sm leading-relaxed';
 	return (
 		<section id='portfolio' className='sm:pt-40 pt-20 pb-40'>
 			{/* Heading */}
@@ -44,8 +43,8 @@ const Portfolio = ({ isJp }) => {
 
 				{isJp ? (
 					<div>
-						<p className='mt-10 mb-14 tracking-wide md:text-lg leading-7 font-jp'>
-							様々な言語を使って作ったポートフォリオ
+						<p className='mt-10 mb-14 tracking-wide text-lg sm:text-xl leading-7 font-jp'>
+							様々な言語を使用して作成
 							<br />
 							Frontend, Backend, and Full-Stack
 						</p>

@@ -4,9 +4,9 @@ import { Typewriter } from 'react-simple-typewriter';
 const ProfileAnimation = () => {
 	return (
 		<div className='App'>
-			<h1 className='xs:mt-20 xs:mb-8 mt-8 mb-4 text-lg text-center md:text-start font-solitreo h-12'>
+			<h1 className='xs:mt-20 mt-8 mb-10 text-lg text-center md:text-start font-solitreo h-12'>
 				I'm{' '}
-				<span className='xs:mt-10 xs:mb-8 mt-8 mb-4 text-xl text-center md:text-start text-light-blue font-solitreo'>
+				<span className='text-xl text-center md:text-start text-light-blue font-solitreo'>
 					<Typewriter
 						words={[
 							'a programmer skilled in front-end and back-end development 💻💪 ',
