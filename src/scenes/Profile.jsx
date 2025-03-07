@@ -20,14 +20,14 @@ const Profile = ({ setSelectedPage, isJp }) => {
 					<div className='relative z-0 ml-20'>
 						<img
 							className='rounded-2xl mb-6 hover:filter hover:saturate-200 transition duration-500 z-10 md:w-full max-w-[400px] md:max-w-[600px] shadow-md dark:shadow-white shadow-opaque-black animate-wiggle'
-							src='assets/profile/profile_img.jpg'
+							src='../assets/profile/profile_img.jpg'
 							alt='Profile_picture'
 						/>
 					</div>
 				) : (
 					<img
 						className='rounded-t-[400px] mb-4 hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]'
-						src='assets/profile/profile_img.jpg'
+						src='../assets/profile/profile_img.jpg'
 						alt='Profile_picture'
 					/>
 				)}
