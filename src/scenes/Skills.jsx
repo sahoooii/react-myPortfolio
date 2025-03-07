@@ -25,6 +25,7 @@ const item = {
 const Skills = ({ isJp }) => {
 	const subTitleStyle =
 		'mt-10 md:mb-14 mb-7 tracking-wide text-lg sm:text-xl leading-7';
+
 	return (
 		<section id='skills' className='sm:pt-40 pt-20 pb-40'>
 			{/* Heading */}
@@ -57,7 +58,7 @@ const Skills = ({ isJp }) => {
 				) : (
 					<div>
 						<p className={`${subTitleStyle} font-opensans`}>
-							These Languages Libraries and Frameworks are what I could use.
+							Languages, Libraries, and Frameworks I use.
 						</p>
 					</div>
 				)}
