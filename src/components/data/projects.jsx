@@ -65,7 +65,7 @@ const projects = [
 		describeEn:
 			'My first full-stack project, built with PHP from scratch. A Twitter-like social media app with CRUD and an admin panel. Originally created in 2019, I refactored it in 2024 to improve design and security while showcasing my growth as a developer.',
 		describeJp:
-			'最初のPHPフルスタックプロジェクト。ライブラリやフレームワークを使わず開発。Twitterのようなソーシャルメディアアプリで、CRUD機能とAdminページを搭載。2019年に作成し、2024年にデザインとセキュリティを向上させるためリファクタリング。スキルの成長を示すため、基本構造は開発当時を維持。',
+			'最初のPHPフルスタックプロジェクト。ライブラリやフレームワークを使わず開発。Twitterのようなソーシャルメディアアプリ。CRUD機能やAdminページを搭載。2019年に作成し、2024年にリファクタリング。デザインとセキュリティを向上。成長を示すため、基本構造は維持。',
 		code: 'https://github.com/sahoooii/php-chill',
 		demo: 'assets/gif/chill.gif',
 		link: '',
@@ -96,7 +96,7 @@ const projects = [
 		describeEn:
 			'Athleisure Styles is a MERN stack eCommerce platform with Redux and Material UI. Features a fully responsive design and a shopping cart with PayPal and card payments for a seamless experience.',
 		describeJp:
-			'MERNスタックとReduxで構築したeコマースプラットフォーム。デザインにはMaterial UIとTailwind CSSを使用。アイテムのCRUD機能を搭載し、Adminシステムから管理が可能。PayPalやクレジット/デビット決済に対応し、注文履歴管理などの機能も備えた、実用的なショッピングサイト。',
+			'MERNスタックとReduxで構築したeコマースプラットフォーム。デザインにはMaterial UIとTailwind CSSを使用。アイテムのCRUD機能やAdminシステムも構築。PayPalやクレジット/デビット決済に対応し、注文履歴管理などの機能も備えた、実用的なショッピングサイト。',
 		code: 'https://github.com/sahoooii/MERN_AthleisureStyles',
 		demo: 'assets/gif/athleisureStyles.gif',
 		link: 'https://athleisurestyles.onrender.com/',
