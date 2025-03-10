@@ -10,6 +10,10 @@
 
 <p>etc...</p>
 
+## Link
+
+[My Portfolio](https://react-my-portfolio-vert.vercel.app/)
+
 ## Demo
 
 ### Dark Mode
@@ -22,13 +26,19 @@
 
 ## Describe
 
-"react-myPortfolio" was built React and Tailwind. And I used some frameworks for a bunch of animations. I also added the "Dark Mode" and "Day Mode" systems. And you can pick languages English or Japanese. Of course, fully responsive design. <br />
-Particularly noteworthy is the Portfolio section. I created these using many languages and frameworks and took a lot of time. I deployed most of these, so you can see easily and have fun. <br />
-If you see my portfolio, you will get to know my personality and my skills.
+"react-myPortfolio" is built with React and Tailwind CSS, incorporating various frameworks to enhance animations. It features a dark mode and light mode switch, as well as language options for English and Japanese. The design is fully responsive for seamless viewing across devices.
 
-"react-myPortfolio" は React と Tailwind を使用して作成しました。アニメーションを追加するために、いくつかのフレームワークも使用しました。さらにダークモードとデイモードや英語か日本語なども選択できるので、お好みでご覧ください。全てレスポンシブ対応デザインです。<br />
-特に注目して見ていただきたいのは、ポートフォリオセクションです。色々な言語やフレームワークを多用し、たくさんの時間を費やしました。ほとんどがデプロイしてあるので、簡単にご覧いただけます。<br >
-このポートフォリオを見て頂ければ、私のことや、スキルなどが簡単に分かっていただけると思います。
+A highlight of this portfolio is the Portfolio section, where I showcase projects developed using multiple languages and frameworks. Each project represents significant time and effort, with most of them deployed for easy access.
+
+Through this portfolio, you can gain insight into both my technical skills and my approach to development.
+<br />
+<br />
+
+"react-myPortfolio" は、React と Tailwind CSS を使用し、アニメーションの表現力を高めるために、複数のフレームワークを活用して構築しました。ダークモードとライトモードの切り替え、英語・日本語の言語選択にも対応しており、どのデバイスでも快適に閲覧できるようレスポンシブデザインを採用しています。
+
+特に注目していただきたいのは、ポートフォリオセクションです。さまざまな言語やフレームワークを活用して開発したプロジェクトを掲載しており、それぞれに多くの時間と労力を費やしました。ほとんどのプロジェクトはデプロイ済みで、実際に動作を確認できます。また、GitHub のリポジトリも公開しています。
+
+このポートフォリオを通じて、私の技術力と開発に対する姿勢を感じていただければ幸いです。
 
 ## Features
 
@@ -48,32 +58,31 @@ If you see my portfolio, you will get to know my personality and my skills.
 - [React Hook Form](https://react-hook-form.com)
 - [GET Form](https://getform.io)
 
-## Getting Started
+## Installation
 
-### Env Variables
+1. Clone this repository
 
-Rename the `example.env` file to `.env` and add the following
+   ```bash
+   git clone https://github.com/sahoooii/react-myPortfolio.git
+   ```
 
-```
-REACT_APP_GOOGLE_DRIVE_LINK_JP=ADD_YOUR_GOOGLE_DOCUMENT_LINK_IN_JAPANESE_VER
-REACT_APP_GOOGLE_DRIVE_LINK_EN=ADD_YOUR_GOOGLE_DOCUMENT_LINK_IN_ENGLISH_VER
+2. Navigate to the project folder
+   ```bash
+   cd react-myPortfolio
+   ```
+3. Install dependencies
+   ```bash
+   npm install
+   ```
+4. Create a .env file and add required environment variables.<br /><br >
+   Rename the `example.env` file to `.env` and add the following
 
-REACT_APP_FORM_SUBMIT=ADD_YOUR_GET_FORM_INFO
-REACT_APP_MY_EMAIL=ADD_YOUR_OWN_EMAIL
+   ```bash
+   REACT_APP_GOOGLE_DRIVE_LINK_JP=ADD_YOUR_GOOGLE_DOCUMENT_LINK_IN_JAPANESE_VER
+   REACT_APP_GOOGLE_DRIVE_LINK_EN=ADD_YOUR_GOOGLE_DOCUMENT_LINK_IN_ENGLISH_VER
 
-```
-
-To get started, clone the repository and run the following commands:
-
-```
-npm install
-npm run dev
-```
-
-### Run the Development Server
-
-```
-npm start
-```
-
-Open http://localhost:3000 with your browser to see the result.
+   REACT_APP_FORM_SUBMIT=ADD_YOUR_GET_FORM_INFO
+   REACT_APP_MY_EMAIL=ADD_YOUR_OWN_EMAIL
+5. Start the development server
+   ```bash
+	npm run dev
