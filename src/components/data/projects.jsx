@@ -99,7 +99,7 @@ const projects = [
 			'MERNスタックとReduxで構築したeコマースプラットフォーム。デザインにはMaterial UIとTailwind CSSを使用。アイテムのCRUD機能やAdminシステムも構築。PayPalやクレジット/デビット決済に対応し、注文履歴管理などの機能も備えた、実用的なショッピングサイト。',
 		code: 'https://github.com/sahoooii/MERN_AthleisureStyles',
 		demo: 'assets/gif/athleisureStyles.gif',
-		link: 'https://athleisurestyles.onrender.com/',
+		link: 'https://mern-athleisure-styles.vercel.app/',
 	},
 	{
 		id: 10,
