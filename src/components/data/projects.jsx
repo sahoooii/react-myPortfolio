@@ -30,15 +30,15 @@ const projects = [
 	{
 		id: 3,
 		title: 'Weather App',
-		subtitle: 'React × API × Tailwind',
+		subtitle: 'React × Express × API × Tailwind',
 		src: weatherApp,
 		describeEn:
-			'A weather app using React and the OpenWeather API to display current conditions and a three-hourly forecast. Features a dynamic loading animation, city/country search, and unit toggle between Celsius and Fahrenheit.',
+			'A weather app built with React and Tailwind CSS that displays current weather and 3-hour forecasts. Includes city/country search, unit toggling, and a backend API proxy for secure data handling.',
 		describeJp:
-			'ReactとOpenWeather APIを使用して現在の天気と3時間ごとの予報を表示する天気アプリ。動的なローディングアニメーションや、都市、国検索、摂氏と華氏の単位切り替えなどの機能を構築。気温の変化に応じて、背景色が自動で切り替わるデザインを実装。',
+			'ReactとOpenWeather API、Tailwind CSSで構築した天気予報アプリ。現在の天気と3時間ごとの予報を表示。都市・国の検索、摂氏/華氏の切替に対応し、バックエンドAPIプロキシによって安全なデータ取得を実現。',
 		code: 'https://github.com/sahoooii/react-weatherApp-3houley',
 		demo: 'assets/gif/weatherApp.gif',
-		link: 'https://react-weatherapp-3hourly.onrender.com',
+		link: 'https://weatherapp-frontend-shnz.onrender.com/',
 	},
 	{
 		id: 4,
