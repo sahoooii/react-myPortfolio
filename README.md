@@ -12,7 +12,7 @@
 
 ## Link
 
-[My Portfolio](https://react-my-portfolio-vert.vercel.app/)
+[🎨 My Portfolio](https://react-my-portfolio-vert.vercel.app/)
 
 ## Demo
 
@@ -24,7 +24,11 @@
 
 ![myPortfolioDay](https://github.com/user-attachments/assets/cd1dcb5c-1861-4e8f-9552-7ae02d98e04b)
 
-## Describe
+<br />
+
+## What is this project?
+
+**(EN)**
 
 "react-myPortfolio" is built with React and Tailwind CSS, incorporating various frameworks to enhance animations. It features a dark mode and light mode switch, as well as language options for English and Japanese. The design is fully responsive for seamless viewing across devices.
 
@@ -33,6 +37,8 @@ A highlight of this portfolio is the Portfolio section, where I showcase project
 Through this portfolio, you can gain insight into both my technical skills and my approach to development.
 <br />
 <br />
+
+**(JP)**
 
 "react-myPortfolio" は、React と Tailwind CSS を使用し、アニメーションの表現力を高めるために、複数のフレームワークを活用して構築しました。ダークモードとライトモードの切り替え、英語・日本語の言語選択にも対応しており、どのデバイスでも快適に閲覧できるようレスポンシブデザインを採用しています。
 
@@ -58,6 +64,8 @@ Through this portfolio, you can gain insight into both my technical skills and m
 - [React Hook Form](https://react-hook-form.com)
 - [GET Form](https://getform.io)
 
+## Usage 🚀
+
 ## Installation
 
 1. Clone this repository
@@ -74,7 +82,8 @@ Through this portfolio, you can gain insight into both my technical skills and m
    ```bash
    npm install
    ```
-4. Create a .env file and add required environment variables.<br /><br >
+4. Create a .env file and add required environment variables.
+   <br />
    Rename the `example.env` file to `.env` and add the following
 
    ```bash
@@ -83,6 +92,9 @@ Through this portfolio, you can gain insight into both my technical skills and m
 
    REACT_APP_FORM_SUBMIT=ADD_YOUR_GET_FORM_INFO
    REACT_APP_MY_EMAIL=ADD_YOUR_OWN_EMAIL
+   ```
+
 5. Start the development server
    ```bash
-	npm run dev
+   npm run dev
+   ```
