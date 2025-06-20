@@ -1,10 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import LineGradient from 'components/LineGradient';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-const About = ({ isJp }) => {
-	const style =
-		'md:mt-10 mt-5 px-3 py-8 text-start tracking-wide text-xl text-left';
+const About = ({ isJp, setSelectedPage }) => {
+	const styleJp =
+		'px-3 text-start tracking-wide text-xl text-left sm:leading-loose leading-relaxed font-jp';
+	const styleEn =
+		'px-3 text-start tracking-wide text-xl text-left sm:leading-loose leading-relaxed font-opensans';
 
 	const styleTaglineBlue = 'text-light-blue font-bold';
 	const styleTaglineOrange = 'text-orange-500 font-bold';
@@ -34,55 +37,135 @@ const About = ({ isJp }) => {
 					</div>
 
 					{isJp ? (
-						<p className={`${style} font-jp leading-relaxed`}>
-							数年間、独学でプログラミングを学び、常に新しい技術を吸収しながらスキルを磨いてきました。フロントエンドでは
-							React・Next.js・TypeScriptを中心に、バックエンドではNode.js
-							を活用し、データベースと連携したAPI 開発も手がけています。
-							<span className={`${styleTaglineBlue}`}>フルスタックの視点</span>
-							を活かしながら、特に
-							<span className={`${styleTaglineOrange}`}>
-								使いやすいUIデザイン
-							</span>
-							にこだわり、ユーザーにとって快適な体験を提供できるよう心がけ、Webサービスの開発からデプロイまで取り組んでいます。
+						<div className='py-8 mt-5'>
+							<p className={styleJp}>
+								数年間、独学でプログラミングを学びながら、常に新しい技術を取り入れ、英語のドキュメントや海外のリソースも活用してスキルを磨いてきました。
+								<br />
+								<br />
+								得意分野は、
+								<span className={`${styleTaglineOrange}`}>
+									フロントエンドを中心としたフルスタック開発
+								</span>
+								です。ポートフォリオには、
+								<a
+									href='https://mern-athleisure-styles.vercel.app/'
+									target='_blank'
+									rel='noreferrer'
+									className='underline underline-offset-4 hover:opacity-70'
+								>
+									MERN Stack を用いた
+									<span className={`${styleTaglineBlue}`}>
+										ショッピングサイト
+									</span>
+								</a>
+								や、
+								<a
+									href='https://next-aloha-estate.vercel.app/'
+									target='_blank'
+									rel='noreferrer'
+									className='underline underline-offset-4 hover:opacity-70'
+								>
+									Next.js を活用して
+									<span className={`${styleTaglineBlue}`}>
+										Airbnb風のバケーションレンタルサイト
+									</span>
+								</a>
+								を掲載しており、いずれも認証機能や決済機能を備えた、実際のユースケースを意識した、機能性とスケールを兼ね備えた構成となっています。
+								<br />
+								<br />
+								開発において特に大切にしているのは、
+								<span className={`${styleTaglineBlue}`}>
+									「直感的な操作性」
+								</span>
+								と
+								<span className={`${styleTaglineBlue}`}>
+									「誰でもすぐに使いこなせるインターフェース」
+								</span>
+								です。配色・フォント・レスポンシブ対応・ロゴ設計など細部までこだわり、実際のサービスをリサーチし、繰り返し検証を重ねながら、ユーザー視点で細部まで設計して開発しています。
+								<br />
+								<br />
+								長年のカスタマーサービスの経験を通じて培った、
+								<span className={`${styleTaglineBlue}`}>
+									「相手の気持ちを汲み取る力」
+								</span>
+								や
+								<span className={`${styleTaglineBlue}`}>
+									「状況に応じた対応力」
+								</span>
+								を、開発にも活かすよう努めています。また、 ハワイで働いた経験
+								から、
+								<span className={`font-bold`}>
+									グローバルな視点とコミュニケーション力
+								</span>
+								も身につけており、
+								<span className={`${styleTaglineBlue}`}>
+									「誰のために、なぜ作るのか」
+								</span>
+								を常に意識した提案型の開発を心がけています。
+								<br />
+								<br />
+							</p>
+							<p className={`${styleJp} mb-4`}>
+								将来的には、以下のようなサービス開発に挑戦したいと考えています：
+							</p>
+							<ul className={`${styleJp} list-disc pl-6 space-y-1.5 text-lg`}>
+								<li className='underline underline-offset-4'>
+									ユーザーの行動やニーズに特化した
+									<span className={`${styleTaglineOrange}`}>
+										マッチングアプリ
+									</span>
+								</li>
+								<li className='underline underline-offset-4'>
+									ハワイのローカル視点を活かした
+									<span className={`${styleTaglineOrange}`}>
+										観光ガイド総合プラットフォーム
+									</span>
+								</li>
+								<li className='underline underline-offset-4'>
+									犬と人がより幸せに暮らせる社会を支える、
+									<span className={`${styleTaglineOrange}`}>
+										ペット向けの総合サービス
+									</span>
+								</li>
+							</ul>
 							<br />
-							<br />
-							長年のカスタマーサービス経験を通じて培った
-							<span className={`${styleTaglineBlue}`}>
-								"相手の考えを汲み取り行動する力"
-							</span>
-							を活かし、ユーザー目線で使いやすく洗練されたサービスを作ることを大切にしています。
-							<br />
-							将来的には、最高の出会いを提供する
-							<span className={`${styleTaglineOrange}`}>
-								マッチングアプリの開発
-							</span>
-							や、
-							<span className={`${styleTaglineOrange}`}>
-								犬・猫のためのサービス
-							</span>
-							を通じて、
-							<span className={`${styleTaglineBlue}`}>
-								人と動物がより幸せに暮らせる仕組み
-							</span>
-							を作りたいと考えています。また、ハワイでの経験を活かし、
-							<span className={`${styleTaglineOrange}`}>"Deep Hawaii"</span>
-							をテーマに
-							<span className={`${styleTaglineBlue}`}>
-								ローカル視点で役立つ情報を提供するプラットフォームサービス
-							</span>
-							の構築にも挑戦したいです。
-							<br />
-							<br />
-							<span className={`${styleTaglineOrange}`}>
-								どんなに難しい課題にも粘り強く取り組み、
-							</span>
-							自分の経験を活かせる分野で、価値のあるサービスを生み出し、
-							サービスを通じて人や動物の暮らしを支え、より良い未来を作れるエンジニアを目指しています。
-						</p>
+							<p className={`${styleJp}`}>
+								ペット向けの総合サービスでは、愛犬との日々の中で感じた実体験を元に、「動物病院の検索」「犬の親戚探し」「飼い主同士のSNS機能」など、
+								愛犬との暮らしをまるごとサポートする、実用的なサービスを目指しています。
+								<span className={`${styleTaglineBlue}`}>
+									“日々の暮らしに本当に役立つ機能”
+								</span>
+								を1つにまとめた、安心と幸せを届ける
+								<span className={`${styleTaglineBlue}`}>
+									「愛犬と飼い主のためのアプリ」
+								</span>
+								の実現を目指しています。
+								<br />
+								こうした構想に通じるテーマを取り入れたプロジェクトは、すでに
+								<AnchorLink
+									onClick={() => setSelectedPage('portfolio')}
+									href='#portfolio'
+									className={`${styleTaglineOrange} underline underline-offset-4`}
+								>
+									ポートフォリオ
+								</AnchorLink>
+								でも紹介しており、今後さらに広げていきたいと考えています。
+								<br />
+								<br />
+								私の強みは、どんな困難にも粘り強く向き合えること、そして
+								<span className={`${styleTaglineBlue}`}>
+									「自分が作ったもので誰かを喜ばせたい」
+								</span>
+								という想いを行動に移せることです。
+								人や動物の暮らしを技術で支え、
+								<span className={`${styleTaglineBlue}`}>
+									「あってよかった」と思ってもらえるようなサービス
+								</span>
+								を作り続けていきたいと考えています。
+							</p>
+						</div>
 					) : (
-						<p
-							className={`${style} font-opensans leading-8 md:leading-9`}
-						>
+						<p className={`${styleEn} py-8 mt-5`}>
 							I have been learning programming for years, constantly exploring
 							new technologies.
 							<br />

@@ -44,7 +44,10 @@ function App() {
 
 			<LineGradient />
 			<div className='w-[80%] mx-auto md:h-full'>
-				<About isJp={isJp} />
+				<About
+					isJp={isJp}
+					setSelectedPage={setSelectedPage}
+				/>
 			</div>
 
 			<LineGradient />
