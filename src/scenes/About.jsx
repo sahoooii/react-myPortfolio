@@ -39,7 +39,7 @@ const About = ({ isJp, setSelectedPage }) => {
 					{isJp ? (
 						<div className='py-8 mt-5'>
 							<p className={styleJp}>
-								数年間、独学でプログラミングを学びながら、常に新しい技術を取り入れ、英語のドキュメントや海外のリソースも活用してスキルを磨いてきました。
+								数年間、独学でプログラミングを学びながら、常に新しい技術を取り入れつつ、英語のドキュメントや海外リソースも積極的に活用し、実践的なスキルを磨いてきました。
 								<br />
 								<br />
 								得意分野は、
@@ -65,12 +65,20 @@ const About = ({ isJp, setSelectedPage }) => {
 									rel='noreferrer'
 									className='underline underline-offset-4 hover:opacity-70'
 								>
-									Next.js を活用して
+									Next.jsで構築した
 									<span className={`${styleTaglineBlue}`}>
 										Airbnb風のバケーションレンタルサイト
 									</span>
 								</a>
-								を掲載しており、いずれも認証機能や決済機能を備えた、実際のユースケースを意識した、機能性とスケールを兼ね備えた構成となっています。
+								を掲載しており、いずれも
+								<span className={`${styleTaglineBlue}`}>
+									認証機能や決済機能
+								</span>
+								を備え、実際のユースケースを意識した、
+								<span className={`${styleTaglineBlue}`}>
+									機能性と拡張性の高い構成
+								</span>
+								を実現しています。
 								<br />
 								<br />
 								開発において特に大切にしているのは、
@@ -81,7 +89,11 @@ const About = ({ isJp, setSelectedPage }) => {
 								<span className={`${styleTaglineBlue}`}>
 									「誰でもすぐに使いこなせるインターフェース」
 								</span>
-								です。配色・フォント・レスポンシブ対応・ロゴ設計など細部までこだわり、実際のサービスをリサーチし、繰り返し検証を重ねながら、ユーザー視点で細部まで設計して開発しています。
+								です。
+								<span className={`${styleTaglineOrange}`}>
+									配色・フォント・レスポンシブ対応・ロゴ設計
+								</span>
+								など細部までこだわり、実際のサービスをリサーチ・分析しながら、ユーザー視点で細部まで設計・改善を重ねています。
 								<br />
 								<br />
 								長年のカスタマーサービスの経験を通じて培った、
@@ -92,16 +104,15 @@ const About = ({ isJp, setSelectedPage }) => {
 								<span className={`${styleTaglineBlue}`}>
 									「状況に応じた対応力」
 								</span>
-								を、開発にも活かすよう努めています。また、 ハワイで働いた経験
-								から、
-								<span className={`font-bold`}>
+								を、開発にも積極的に活かしています。また、ハワイでの就労経験から、
+								<span className={`${styleTaglineOrange}`}>
 									グローバルな視点とコミュニケーション力
 								</span>
 								も身につけており、
 								<span className={`${styleTaglineBlue}`}>
 									「誰のために、なぜ作るのか」
 								</span>
-								を常に意識した提案型の開発を心がけています。
+								を常に意識し、ユーザーに寄り添った開発を心がけています。
 								<br />
 								<br />
 							</p>
@@ -109,19 +120,19 @@ const About = ({ isJp, setSelectedPage }) => {
 								将来的には、以下のようなサービス開発に挑戦したいと考えています：
 							</p>
 							<ul className={`${styleJp} list-disc pl-6 space-y-1.5 text-lg`}>
-								<li className='underline underline-offset-4'>
+								<li className='underline underline-offset-4 text-start'>
 									ユーザーの行動やニーズに特化した
 									<span className={`${styleTaglineOrange}`}>
 										マッチングアプリ
 									</span>
 								</li>
-								<li className='underline underline-offset-4'>
+								<li className='underline underline-offset-4 text-start'>
 									ハワイのローカル視点を活かした
 									<span className={`${styleTaglineOrange}`}>
 										観光ガイド総合プラットフォーム
 									</span>
 								</li>
-								<li className='underline underline-offset-4'>
+								<li className='underline underline-offset-4 text-start'>
 									犬と人がより幸せに暮らせる社会を支える、
 									<span className={`${styleTaglineOrange}`}>
 										ペット向けの総合サービス
@@ -130,7 +141,11 @@ const About = ({ isJp, setSelectedPage }) => {
 							</ul>
 							<br />
 							<p className={`${styleJp}`}>
-								ペット向けの総合サービスでは、愛犬との日々の中で感じた実体験を元に、「動物病院の検索」「犬の親戚探し」「飼い主同士のSNS機能」など、
+								ペット向けの総合サービスでは、愛犬との日々の中で感じた実体験を元に、
+								<span className={`${styleTaglineOrange}`}>
+									「動物病院の検索」「犬の親戚探し」「飼い主同士のSNS機能」
+								</span>
+								など、
 								愛犬との暮らしをまるごとサポートする、実用的なサービスを目指しています。
 								<span className={`${styleTaglineBlue}`}>
 									“日々の暮らしに本当に役立つ機能”
