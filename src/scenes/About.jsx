@@ -180,68 +180,186 @@ const About = ({ isJp, setSelectedPage }) => {
 							</p>
 						</div>
 					) : (
-						<p className={`${styleEn} py-8 mt-5`}>
-							I have been learning programming for years, constantly exploring
-							new technologies.
+						<div className='py-8 mt-5'>
+							<p className={styleEn}>
+								Passionate about web development, with several years of
+								self-taught experience and a strong commitment to keeping up
+								with the latest technologies. Leveraging English documentation
+								and global resources has played a key role in developing
+								practical, real-world skills.
+								<br />
+								<br />
+								Specializing in
+								<span className={`${styleTaglineOrange}`}>
+									{' '}
+									full-stack development with a focus on front-end
+								</span>
+								. The portfolio section showcases
+								<a
+									href='https://mern-athleisure-styles.vercel.app/'
+									target='_blank'
+									rel='noreferrer'
+									className='underline underline-offset-4 hover:opacity-70'
+								>
+									{' '}
+									a MERN stack
+									<span className={`${styleTaglineBlue}`}>
+										{' '}
+										e-commerce platform
+									</span>
+								</a>{' '}
+								and
+								<a
+									href='https://next-aloha-estate.vercel.app/'
+									target='_blank'
+									rel='noreferrer'
+									className='underline underline-offset-4 hover:opacity-70'
+								>
+									{' '}
+									a full-stack{' '}
+									<span className={`${styleTaglineBlue}`}>
+										vacation rental application
+									</span>{' '}
+									built with Next.js.
+								</a>{' '}
+								Both feature
+								<span className={`${styleTaglineBlue}`}>
+									{' '}
+									user authentication
+								</span>{' '}
+								and
+								<span className={`${styleTaglineBlue}`}>
+									{' '}
+									payment integration
+								</span>
+								, designed to reflect real-world use cases with
+								<span className={`${styleTaglineBlue}`}>
+									{' '}
+									functionality
+								</span>{' '}
+								and
+								<span className={`${styleTaglineBlue}`}> scalability</span> in
+								mind.
+								<br />
+								<br />I prioritize
+								<span className={`${styleTaglineBlue}`}> intuitive UX </span>
+								and
+								<span className={`${styleTaglineBlue}`}>
+									{' '}
+									user-friendly interfaces
+								</span>
+								. Each element—from
+								<span className={`${styleTaglineOrange}`}>
+									{' '}
+									color scheme to layout
+								</span>{' '}
+								—is carefully crafted from the user's perspective, and
+								continuously refined based on real-world service research and
+								analysis.
+								<br />
+								<br />
+								My experience in customer service taught me the importance of
+								<span className={`${styleTaglineBlue}`}>
+									{' '}
+									empathy and adaptability
+								</span>{' '}
+								—both of which now shape my approach to building user-centered
+								services. Working in Hawaii also nurtured
+								<span className={`${styleTaglineOrange}`}>
+									{' '}
+									a global perspective
+								</span>{' '}
+								and
+								<span className={`${styleTaglineOrange}`}>
+									{' '}
+									strong communication skills
+								</span>
+								.
+								<br />I always ask,
+								<span className={`${styleTaglineBlue}`}>
+									{' '}
+									“Who is this for, and why does it matter?”
+								</span>{' '}
+								—keeping the user’s needs at the heart of every project.
+							</p>
 							<br />
-							On the front end, I primarily work with React, Next.js, and
-							TypeScript, while on the back end, I develop APIs and integrate
-							databases using Node.js.
 							<br />
-							Approaching development from a
-							<span className={`${styleTaglineBlue}`}>
-								{' '}
-								full-stack perspective,{' '}
-							</span>
-							I specialize in creating
-							<span className={`${styleTaglineOrange}`}>
-								{' '}
-								user-friendly UI designs{' '}
-							</span>
-							that provide a seamless and enjoyable experience for all users. I
-							take ownership of everything from development to deployment.
+							<p className={`${styleEn} mb-4`}>
+								Future goals include building:
+							</p>
+							<ul className={`${styleEn} list-disc pl-6 space-y-1.5`}>
+								<li className='underline underline-offset-4 text-start'>
+									<span className={`${styleTaglineOrange}`}>A dating app</span>{' '}
+									tailored to user behavior and needs
+								</li>
+								<li className='underline underline-offset-4 text-start'>
+									<span className={`${styleTaglineOrange}`}>
+										A travel guide platform
+									</span>{' '}
+									that highlights local perspectives in Hawaii
+								</li>
+								<li className='underline underline-offset-4 text-start'>
+									<span className={`${styleTaglineOrange}`}>
+										A comprehensive pet platform
+									</span>{' '}
+									to support the lives of dogs and their owners
+								</li>
+							</ul>
 							<br />
-							<br />
-							With many years of customer service experience, I have learned to
-							<span className={`${styleTaglineBlue}`}>
-								{' '}
-								"Understand People's Needs And Take Action".{' '}
-							</span>
-							I value this skill and apply it to my development, striving to
-							create intuitive and well-designed services.
-							<br />
-							Looking ahead, I have mapped out my career plan. I aspire to
-							<span className={`${styleTaglineBlue}`}>
-								{' '}
-								develop a Dating App{' '}
-							</span>
-							that truly helps users find{' '}
-							<span className={`${styleTaglineOrange}`}> "The One" </span>
-							and
-							<span className={`${styleTaglineBlue}`}>
-								{' '}
-								a service dedicated to improving the lives of{' '}
-							</span>
-							<span className={`${styleTaglineOrange}`}> Dogs and Cats. </span>
-							<br />
-							Having lived in Hawaii for a couple of years, I want to build a
-							platform offering tourists
-							<span className={`${styleTaglineBlue}`}>
-								{' '}
-								authentic, local insights into
-							</span>
-							<span className={`${styleTaglineOrange}`}> "Deep Hawaii." </span>
-							I aim to build meaningful services by leveraging my experiences.
-							<br />
-							<br />
-							<span className={`${styleTaglineOrange}`}>
-								{' '}
-								No matter how difficult the challenge, I stay committed to my
-								goals with passion and perseverance.{' '}
-							</span>
-							Through these services, I hope to contribute to a better future by
-							supporting both people and animals.
-						</p>
+							<p className={`${styleEn}`}>
+								Inspired by real-life experiences with my dog, the pet platform
+								idea includes features such as
+								<span className={`${styleTaglineOrange}`}>
+									{' '}
+									a local vet search
+								</span>
+								,
+								<span className={`${styleTaglineOrange}`}>
+									{' '}
+									family tree matching for dogs
+								</span>
+								, and{' '}
+								<span className={`${styleTaglineOrange}`}>
+									a social network for pet owners
+								</span>
+								.
+								<br />
+								The goal is to offer
+								<span className={`${styleTaglineBlue}`}>
+									{' '}
+									practical, everyday tools in a single app
+								</span>{' '}
+								that brings{' '}
+								<span className={`${styleTaglineBlue}`}>
+									peace of mind and joy
+								</span>{' '}
+								to both dogs and their humans.
+								<br />
+								<AnchorLink
+									onClick={() => setSelectedPage('portfolio')}
+									href='#portfolio'
+									className={`${styleTaglineOrange} underline underline-offset-4`}
+								>
+									The portfolio section
+								</AnchorLink>{' '}
+								already features projects inspired by these ideas, and I plan to
+								further expand on them.
+								<br />
+								<br />
+								Determination in the face of challenges and the
+								<span className={`${styleTaglineBlue}`}>
+									{' '}
+									desire to build something truly meaningful
+								</span>{' '}
+								—these are the forces that drive me. I aim to create services
+								that genuinely enrich the lives of people and pets—something
+								that makes them feel,
+								<span className={`${styleTaglineBlue}`}>
+									{' '}
+									“I’m really glad this exists.”
+								</span>
+							</p>
+						</div>
 					)}
 				</motion.div>
 			</div>
