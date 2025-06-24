@@ -4,13 +4,11 @@ import LineGradient from 'components/LineGradient';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const About = ({ isJp, setSelectedPage }) => {
-	const styleJp =
-		'px-3 text-start tracking-wide text-xl text-left sm:leading-loose leading-relaxed font-jp';
-	const styleEn =
-		'px-3 text-start tracking-wide text-xl text-left sm:leading-loose leading-relaxed font-opensans';
-
+	const style =
+		'px-3 text-start tracking-wide text-xl text-left sm:leading-loose leading-relaxed';
 	const styleTaglineBlue = 'text-light-blue font-bold';
 	const styleTaglineOrange = 'text-orange-500 font-bold';
+
 	return (
 		<section
 			id='about'
@@ -37,8 +35,8 @@ const About = ({ isJp, setSelectedPage }) => {
 					</div>
 
 					{isJp ? (
-						<div className='py-8 mt-5'>
-							<p className={styleJp}>
+						<div className={`${style} font-jp py-14`}>
+							<p>
 								数年間、独学でプログラミングを学びながら、常に新しい技術を取り入れつつ、英語のドキュメントや海外リソースも積極的に活用し、実践的なスキルを磨いてきました。
 								<br />
 								<br />
@@ -51,7 +49,7 @@ const About = ({ isJp, setSelectedPage }) => {
 									href='https://mern-athleisure-styles.vercel.app/'
 									target='_blank'
 									rel='noreferrer'
-									className='underline underline-offset-4 hover:opacity-70'
+									className='underline underline-offset-4 hover:text-blue-400'
 								>
 									MERN Stack を用いた
 									<span className={`${styleTaglineBlue}`}>
@@ -63,7 +61,7 @@ const About = ({ isJp, setSelectedPage }) => {
 									href='https://next-aloha-estate.vercel.app/'
 									target='_blank'
 									rel='noreferrer'
-									className='underline underline-offset-4 hover:opacity-70'
+									className='underline underline-offset-4 hover:text-blue-400'
 								>
 									Next.jsで構築した
 									<span className={`${styleTaglineBlue}`}>
@@ -116,10 +114,10 @@ const About = ({ isJp, setSelectedPage }) => {
 								<br />
 								<br />
 							</p>
-							<p className={`${styleJp} mb-4`}>
+							<p className='mb-4'>
 								将来的には、以下のようなサービス開発に挑戦したいと考えています：
 							</p>
-							<ul className={`${styleJp} list-disc pl-6 space-y-1.5 text-lg`}>
+							<ul className='list-disc pl-6 space-y-1.5 text-lg'>
 								<li className='underline underline-offset-4 text-start'>
 									ユーザーの行動やニーズに特化した
 									<span className={`${styleTaglineOrange}`}>
@@ -140,7 +138,7 @@ const About = ({ isJp, setSelectedPage }) => {
 								</li>
 							</ul>
 							<br />
-							<p className={`${styleJp}`}>
+							<p>
 								ペット向けの総合サービスでは、愛犬との日々の中で感じた実体験を元に、
 								<span className={`${styleTaglineOrange}`}>
 									「動物病院の検索」「犬の親戚探し」「飼い主同士のSNS機能」
@@ -180,13 +178,31 @@ const About = ({ isJp, setSelectedPage }) => {
 							</p>
 						</div>
 					) : (
-						<div className='py-8 mt-5'>
-							<p className={styleEn}>
-								Passionate about web development, with several years of
-								self-taught experience and a strong commitment to keeping up
-								with the latest technologies. Leveraging English documentation
-								and global resources has played a key role in developing
-								practical, real-world skills.
+						<div className={`${style} font-opensans py-14`}>
+							<p>
+								<span className={styleTaglineOrange}>
+									Passionate about web development
+								</span>
+								, with several years of
+								<span className={styleTaglineBlue}>
+									{' '}
+									self-taught experience
+								</span>{' '}
+								and a strong commitment to keeping up with the
+								<span className={styleTaglineBlue}> latest technologies</span>.
+								Leveraging
+								<span className={styleTaglineBlue}>
+									{' '}
+									English documentation
+								</span>{' '}
+								and
+								<span className={styleTaglineBlue}> global resources</span> has
+								played a key role in developing
+								<span className={styleTaglineOrange}>
+									{' '}
+									practical, real-world skills
+								</span>
+								.
 								<br />
 								<br />
 								Specializing in
@@ -199,7 +215,7 @@ const About = ({ isJp, setSelectedPage }) => {
 									href='https://mern-athleisure-styles.vercel.app/'
 									target='_blank'
 									rel='noreferrer'
-									className='underline underline-offset-4 hover:opacity-70'
+									className='underline underline-offset-4 hover:text-blue-400'
 								>
 									{' '}
 									a MERN stack
@@ -213,7 +229,7 @@ const About = ({ isJp, setSelectedPage }) => {
 									href='https://next-aloha-estate.vercel.app/'
 									target='_blank'
 									rel='noreferrer'
-									className='underline underline-offset-4 hover:opacity-70'
+									className='underline underline-offset-4 hover:text-blue-400'
 								>
 									{' '}
 									a full-stack{' '}
@@ -284,10 +300,8 @@ const About = ({ isJp, setSelectedPage }) => {
 							</p>
 							<br />
 							<br />
-							<p className={`${styleEn} mb-4`}>
-								Future goals include building:
-							</p>
-							<ul className={`${styleEn} list-disc pl-6 space-y-1.5`}>
+							<p className='mb-4'>Future goals include building:</p>
+							<ul className='list-disc pl-6 space-y-1.5'>
 								<li className='underline underline-offset-4 text-start'>
 									<span className={`${styleTaglineOrange}`}>A dating app</span>{' '}
 									tailored to user behavior and needs
@@ -306,7 +320,7 @@ const About = ({ isJp, setSelectedPage }) => {
 								</li>
 							</ul>
 							<br />
-							<p className={`${styleEn}`}>
+							<p>
 								Inspired by real-life experiences with my dog, the pet platform
 								idea includes features such as
 								<span className={`${styleTaglineOrange}`}>

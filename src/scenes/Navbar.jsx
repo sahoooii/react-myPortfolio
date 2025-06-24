@@ -49,17 +49,17 @@ const Navbar = ({
 
 					{/* Language select  */}
 					<div className='flex items-center'>
-						<h2 className={`${selectEN} font-patric text-xl`}>EN</h2>
+						<h2 className={`${selectEN} font-patric text-2xl`}>EN</h2>
 						<div
-							className={`${isChangedLang} md:w-14 w-10 md:h-6 h-4 dark:bg-whitish bg-bluish-black opacity-60 flex items-center justify-start rounded-3xl p-1 cursor-pointer mr-2 ml-2`}
+							className={`${isChangedLang} md:w-14 w-12 md:h-6 h-6 dark:bg-whitish bg-bluish-black opacity-60 flex items-center justify-start rounded-3xl p-1 cursor-pointer mr-2 ml-2`}
 							onClick={() => setIsJp(!isJp)}
 						>
 							<motion.div
-								className='md:w-6 md:h-6 w-4 h-4 rounded-[50%] dark:bg-bluish-black bg-white'
+								className='md:w-6 md:h-6 w-5 h-5 rounded-[50%] dark:bg-bluish-black bg-white'
 								transition={{ type: 'spring', duration: 1 }}
 							/>
 						</div>
-						<h2 className={`${selectJP} font-patric text-xl`}>JP</h2>
+						<h2 className={`${selectJP} font-patric text-2xl`}>JP</h2>
 					</div>
 				</div>
 
