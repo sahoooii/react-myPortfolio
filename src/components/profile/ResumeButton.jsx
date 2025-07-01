@@ -4,6 +4,7 @@ import { BiDownload } from 'react-icons/bi';
 const ResumeButton = ({ isJp }) => {
 	const resumeJPLink = process.env.REACT_APP_GOOGLE_DRIVE_LINK_JP;
 	const resumeENLink = process.env.REACT_APP_GOOGLE_DRIVE_LINK_EN;
+	
 	const resumeLink = isJp ? resumeJPLink : resumeENLink;
 
 	if (!resumeLink) {
