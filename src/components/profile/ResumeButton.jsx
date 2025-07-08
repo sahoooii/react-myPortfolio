@@ -2,9 +2,9 @@ import React from 'react';
 import { BiDownload } from 'react-icons/bi';
 
 const ResumeButton = ({ isJp }) => {
-	const resumeJPLink = process.env.REACT_APP_GOOGLE_DRIVE_LINK_JP;
-	const resumeENLink = process.env.REACT_APP_GOOGLE_DRIVE_LINK_EN;
-	
+	const resumeJPLink = 'assets/pdf/JP_CreativeResume.pdf';
+	const resumeENLink = 'assets/pdf/EN_CreativeResume.pdf';
+
 	const resumeLink = isJp ? resumeJPLink : resumeENLink;
 
 	if (!resumeLink) {
@@ -14,7 +14,7 @@ const ResumeButton = ({ isJp }) => {
 	return (
 		<a
 			href={isJp ? resumeJPLink : resumeENLink}
-			rel='noreferrer'
+			rel='noopener noreferrer'
 			target='_blank'
 			className='rounded-r-sm bg-gradient-purple-pink-orange py-0.5 pr-0.5'
 		>
