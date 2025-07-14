@@ -24,7 +24,7 @@ export const links = [
 				<FaLinkedin size={30} />
 			</>
 		),
-		href: 'https://linkedin.com',
+		href: 'https://www.linkedin.com/in/saho-dev',
 	},
 	{
 		id: 3,
