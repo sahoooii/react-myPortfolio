@@ -12,7 +12,7 @@ import Footer from './scenes/Footer';
 function App() {
 	const [selectedPage, setSelectedPage] = useState('home');
 	const [darkMode, setDarkMode] = useState(true);
-	const [isJp, setIsJp] = useState(false); //to Japanese
+	const [isJp, setIsJp] = useState(true); //to Japanese
 	const [isTopOfPage, setIsTopOfPage] = useState(true);
 
 	useEffect(() => {
