@@ -1,26 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import frontend from 'components/data/frontend';
-import backend from 'components/data/backend';
 import LineGradient from 'components/LineGradient';
-import SkillsData from 'components/skills/SkillsData';
-
-const container = {
-	hidden: {},
-	visible: {
-		opacity: 1,
-		scale: 1,
-		transition: {
-			delayChildren: 0.1,
-			staggerChildren: 0.1,
-		},
-	},
-};
-
-const item = {
-	hidden: { y: -500, opacity: 0 },
-	visible: { y: 0, opacity: 1 },
-};
+import SkillCategory from 'components/skills/SkillCategory';
+import skillCategories from 'components/data/skills/skillCategories';
 
 const Skills = ({ isJp }) => {
 	const subTitleStyle =
@@ -66,7 +48,7 @@ const Skills = ({ isJp }) => {
 
 			<div className='flex justify-center'>
 				<motion.div
-					className='sm:grid sm:grid-cols-2 gap-10'
+					className='grid md:grid-cols-2 gap-10 items-stretch'
 					initial='hidden'
 					whileInView='visible'
 					viewport={{ once: true, amount: 0.2 }}
@@ -76,25 +58,14 @@ const Skills = ({ isJp }) => {
 						visible: { opacity: 1, y: 0 },
 					}}
 				>
-					{/* frontend */}
-					<div className='md:p-10 p-5 md:w-[450px] md:h-[500px] w-[300px] font-playfair font-semibold mt-10 rounded-lg'>
-						<div className='text-center text-3xl mb-2'>
-							<h3>Frontend</h3>
-						</div>
-						<SkillsData
-							languages={frontend}
-							container={container}
-							item={item}
+					{/* Skills categories */}
+					{skillCategories.map((category) => (
+						<SkillCategory
+							key={category.title}
+							title={category.title}
+							languages={category.languages}
 						/>
-					</div>
-
-					{/* Backend */}
-					<div className='md:p-10 p-5 md:w-[450px] md:h-[500px] w-[300px] font-playfair font-semibold mt-10 rounded-lg'>
-						<div className='text-center text-3xl mb-2'>
-							<h3>Backend</h3>
-						</div>
-						<SkillsData languages={backend} container={container} item={item} />
-					</div>
+					))}
 				</motion.div>
 			</div>
 		</section>
