@@ -1,8 +1,7 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import LineGradient from 'components/LineGradient';
-import { AboutMeJp } from 'components/anoutMe/AboutMeJp';
-import AboutMeEn from 'components/anoutMe/AboutMeEn';
+import { AboutMeJp } from 'components/aboutMe/AboutMeJp';
+import AboutMeEn from 'components/aboutMe/AboutMeEn';
 
 const About = ({ isJp }) => {
 	const style =

@@ -1,6 +1,6 @@
+import frontend from './frontend';
 import backend from './backend';
 import database from './database';
-import frontend from './frontend';
 import tools from './tools';
 
 const skillCategories = [
