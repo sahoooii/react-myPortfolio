@@ -67,9 +67,9 @@ const Navbar = ({
 				{isAboveSmallScreens ? (
 					<div className='flex justify-between gap-16 font-signature text-xl font-semibold'>
 						<ul className='flex justify-between gap-12 sm:gap-8'>
-							{navLinks.map(({ id, link }) => (
+							{navLinks.map(({link }) => (
 								<li
-									key={`${id}-${link}`}
+									key={link}
 									className='capitalize hover:scale-125 tracking-wide sm:text-[22px] md:text-[24px]'
 								>
 									<Link

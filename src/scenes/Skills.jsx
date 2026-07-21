@@ -34,13 +34,13 @@ const Skills = ({ isJp }) => {
 				{isJp ? (
 					<div>
 						<p className={`${subTitleStyle} font-jp`}>
-							使用できる言語、ライブラリ、フレームワーク。
+							現在の開発で使用している主要な技術とツール
 						</p>
 					</div>
 				) : (
 					<div>
 						<p className={`${subTitleStyle} font-opensans`}>
-							Languages, Libraries, and Frameworks I use.
+							Core technologies and tools behind my development workflow.
 						</p>
 					</div>
 				)}
