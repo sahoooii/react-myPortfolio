@@ -1,8 +1,7 @@
 import github from 'assets/skills/tools/github.png';
 import git from 'assets/skills/tools/git.png';
 import vercel from 'assets/skills/tools/vercel.png';
-import render from 'assets/skills/tools/render.png';
-import { SiRender } from 'react-icons/si';
+import render from 'assets/skills/tools/render.jpg';
 import postman from 'assets/skills/tools/postman.png';
 
 const tools = [
@@ -22,7 +21,7 @@ const tools = [
 		style: 'shadow-slate-400',
 	},
 	{
-		icon: SiRender,
+		src: render,
 		name: 'Render',
 		style: 'shadow-slate-600',
 	},

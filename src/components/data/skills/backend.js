@@ -16,7 +16,6 @@ const backend = [
 		style: 'shadow-gray-600 text-gray-400',
 	},
 	{
-		// mongoose
 		src: mongoose,
 		name: 'mongoose',
 		style: 'shadow-red-700',
