@@ -1,13 +1,17 @@
 import frontend from 'assets/portfolio/frontend.png';
 import backend from 'assets/portfolio/backend.png';
 import fullStack from 'assets/portfolio/fullStack.png';
+
+import athleisureStyles from 'assets/portfolio/athleisureStyles.jpg';
+import alohaEstate from 'assets/portfolio/alohaestate.png';
+import theOne from 'assets/portfolio/the-one.jpeg';
+
 import memoryGame from 'assets/portfolio/memoryGame.jpg';
 import weatherApp from 'assets/portfolio/weatherApp.jpg';
 import dogation from 'assets/portfolio/dogation.jpg';
-import chill from 'assets/portfolio/chill.jpg';
+
+// import chill from 'assets/portfolio/chill.jpg';
 import tinder from 'assets/portfolio/tinder.jpg';
-import athleisureStyles from 'assets/portfolio/athleisureStyles.jpg';
-import alohaEstate from 'assets/portfolio/alohaestate.png';
 
 const projects = [
 	{
@@ -18,16 +22,16 @@ const projects = [
 	{
 		type: 'project',
 		category: 'fullStack',
-		title: 'Vacation Rental App',
+		title: 'Dating App',
 		subtitle: 'Next.js × TypeScript',
-		src: alohaEstate,
+		src: theOne,
 		describeEn:
-			'A full-stack vacation rental app built with Next.js and TypeScript. Designed with shadcn/ui and Tailwind CSS for a simple yet functional experience to find the perfect vacation rental. Check it out!',
+			'A full-stack dating app built with Next.js and TypeScript. Designed for meaningful connections rather than casual swiping, with profile discovery, mutual matching, real-time messaging, and personalized member discovery. Explore The One and find someone worth getting to know.',
 		describeJp:
-			'Next.jsとTypeScriptを使用して構築された Airbnbのようなフルスタックのバケーションレンタルアプリ。shadcn/uiとTailwind CSSを使用してUIを設計。シンプルでありながら機能的、完璧なバケーションレンタルを見つけるのに十分な機能を構築。please browse!',
-		code: 'https://github.com/sahoooii/next-alohaEstate',
-		demo: 'assets/gif/alohaEstate.gif',
-		link: 'https://next-aloha-estate.vercel.app',
+			'Next.jsとTypeScriptで構築したフルスタックのマッチングアプリ。「気軽なスワイプ」ではなく、相手を知ることから始める出会いをコンセプトに、プロフィール検索・相互マッチング・リアルタイムメッセージ・条件に基づいたMember Discoveryなどを実装。',
+		code: 'https://github.com/sahoooii/next-theOne',
+		demo: 'assets/gif/the-one.gif',
+		link: 'https://next-the-one.vercel.app/',
 	},
 	{
 		type: 'project',
@@ -42,6 +46,20 @@ const projects = [
 		code: 'https://github.com/sahoooii/MERN_AthleisureStyles',
 		demo: 'assets/gif/athleisureStyles.gif',
 		link: 'https://mern-athleisure-styles.vercel.app/',
+	},
+	{
+		type: 'project',
+		category: 'fullStack',
+		title: 'Vacation Rental App',
+		subtitle: 'Next.js × TypeScript',
+		src: alohaEstate,
+		describeEn:
+			'A full-stack vacation rental app built with Next.js and TypeScript. Designed with shadcn/ui and Tailwind CSS for a simple yet functional experience to find the perfect vacation rental. Check it out!',
+		describeJp:
+			'Next.jsとTypeScriptを使用して構築された Airbnbのようなフルスタックのバケーションレンタルアプリ。shadcn/uiとTailwind CSSを使用してUIを設計。シンプルでありながら機能的、完璧なバケーションレンタルを見つけるのに十分な機能を構築。please browse!',
+		code: 'https://github.com/sahoooii/next-alohaEstate',
+		demo: 'assets/gif/alohaEstate.gif',
+		link: 'https://next-aloha-estate.vercel.app',
 	},
 	{
 		type: 'header',
@@ -109,20 +127,20 @@ const projects = [
 		demo: 'assets/gif/tinder.gif',
 		link: '',
 	},
-	{
-		type: 'project',
-		category: 'backend',
-		title: 'Social Media App',
-		subtitle: 'PHP × HTML × CSS × MySQL',
-		src: chill,
-		describeEn:
-			'My first full-stack project, built with PHP from scratch. A Twitter-like social media app with CRUD and an admin panel. Originally created in 2019, I refactored it in 2024 to improve design and security while showcasing my growth as a developer.',
-		describeJp:
-			'最初のPHPフルスタックプロジェクト。ライブラリやフレームワークを使わず開発。Twitterのようなソーシャルメディアアプリ。CRUD機能やAdminページを搭載。2019年に作成し、2024年にリファクタリング。デザインとセキュリティを向上。成長を示すため、基本構造は維持。',
-		code: 'https://github.com/sahoooii/php-chill',
-		demo: 'assets/gif/chill.gif',
-		link: '',
-	},
+	// {
+	// 	type: 'project',
+	// 	category: 'backend',
+	// 	title: 'Social Media App',
+	// 	subtitle: 'PHP × HTML × CSS × MySQL',
+	// 	src: chill,
+	// 	describeEn:
+	// 		'My first full-stack project, built with PHP from scratch. A Twitter-like social media app with CRUD and an admin panel. Originally created in 2019, I refactored it in 2024 to improve design and security while showcasing my growth as a developer.',
+	// 	describeJp:
+	// 		'最初のPHPフルスタックプロジェクト。ライブラリやフレームワークを使わず開発。Twitterのようなソーシャルメディアアプリ。CRUD機能やAdminページを搭載。2019年に作成し、2024年にリファクタリング。デザインとセキュリティを向上。成長を示すため、基本構造は維持。',
+	// 	code: 'https://github.com/sahoooii/php-chill',
+	// 	demo: 'assets/gif/chill.gif',
+	// 	link: '',
+	// },
 ];
 
 export default projects;

@@ -54,17 +54,13 @@ This portfolio showcases the technologies I’ve used throughout my projects —
 
 ---
 
-- 🔹 **Matching System with Swipe UI**
+- 🔹 **The One: Dating App**
+   - [The One: Matching App](https://next-the-one.vercel.app/)
 
-  Implemented in [Tinder-style Matching App (GitHub)](https://github.com/sahoooii/laravel_tinderApp)
+-
+- 🔹 **Aloha Estate: Booking & Messaging Features**
 
-  Matching logic with real-time pairing, dynamic swipe interface, and mobile-first layout to simulate a dating app experience.
-
----
-
-- 🔹 **Booking & Messaging Features**
-
-  Implemented in [Airbnb-style Real Estate App](https://next-aloha-estate.vercel.app/)
+  Implemented in [Aloha Estate: Vacation rentals App](https://next-aloha-estate.vercel.app/)
 
   Key features include:
 
@@ -83,8 +79,6 @@ This portfolio showcases the technologies I’ve used throughout my projects —
 ---
 
 - 🔹 **Back-End Experience**
-
-  - 📂 [Twitter-style bulletin board (PHP & MySQL) [GitHub]](https://github.com/sahoooii/php-chill)
 
   - 📂 [Laravel-based Matching App [GitHub]](https://github.com/sahoooii/laravel_tinderApp)
 
@@ -128,24 +122,23 @@ From project setup and styling to data modeling, debugging, deployment, and perf
 
 #### 🔹 **実装機能例**：
 
-- **マッチング機能**（スワイプ UI、条件に合った相手とリアルタイムでマッチング）
+#### Next.js / TypeScript / Prisma フルスタックDatingアプリ（リアルタイム通信・マッチング・状態管理）
 
-  - [Tinder-style Matching App (GitHub)](https://github.com/sahoooii/laravel_tinderApp)
+  - [The One: Matching App](https://next-the-one.vercel.app/)
 
-- **物件の検索＆予約システム**（条件を組み合わせて検索できるフィルター、カレンダー連携）
-- **チャット機能**(物件オーナーに直接、またはチャットでメッセージを送信)
+#### MERNスタックECサイト開発（React / Node.js / MongoDB / Express）
 
-  - [Airbnb-style Real Estate App](https://next-aloha-estate.vercel.app/)
+  - [Athleisure Styles: E-Commerce](https://mern-athleisure-styles.vercel.app/)
 
-- **API キーの漏洩を防ぐ**ために、**フロントエンドと分離したサーバー**を通じてリクエストを送信（Node.js & Express）
-  - [Weather Forecast App](https://weatherapp-frontend-shnz.onrender.com/)
+#### Next.js / TypeScript / Mongo DB バケーションレンタルサイト（予約 / Stripe決済 / チャット機能）
+
+  - [Aloha Estate: Real Estate App](https://next-aloha-estate.vercel.app/)
+
     <br />
 
 ### 🔹 **バックエンド**
 
 一部のバックエンドプロジェクトは未デプロイですが、GitHub にソースコードを公開しています。
-
-- 📂 [Twitter-style bulletin board (PHP & MySQL) [GitHub]](https://github.com/sahoooii/php-chill)
 
 - 📂 [Laravel-based Matching App [GitHub]](https://github.com/sahoooii/laravel_tinderApp)
 

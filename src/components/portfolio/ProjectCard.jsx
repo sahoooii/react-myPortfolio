@@ -1,6 +1,5 @@
 import { FaGithub, FaPlayCircle, FaLink } from 'react-icons/fa';
 
-
 const ProjectCard = ({ project, isJp, describeStyle }) => {
 	const { title, subtitle, src, describeJp, describeEn, code, demo, link } =
 		project;
