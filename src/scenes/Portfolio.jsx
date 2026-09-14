@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+
 import projects from 'components/data/projects';
 import LineGradient from 'components/LineGradient';
 import ProjectHeader from 'components/portfolio/ProjectHeader';
