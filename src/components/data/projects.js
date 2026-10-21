@@ -1,5 +1,5 @@
 import frontend from 'assets/portfolio/frontend.png';
-import backend from 'assets/portfolio/backend.png';
+// import backend from 'assets/portfolio/backend.png';
 import fullStack from 'assets/portfolio/fullStack.png';
 
 import athleisureStyles from 'assets/portfolio/athleisureStyles.jpg';
@@ -11,7 +11,7 @@ import weatherApp from 'assets/portfolio/weatherApp.jpg';
 import dogation from 'assets/portfolio/dogation.jpg';
 
 // import chill from 'assets/portfolio/chill.jpg';
-import tinder from 'assets/portfolio/tinder.jpg';
+// import tinder from 'assets/portfolio/tinder.jpg';
 
 const projects = [
 	{
@@ -108,25 +108,25 @@ const projects = [
 		demo: 'assets/gif/memoryGame.gif',
 		link: 'https://js-whereismydog.onrender.com/',
 	},
-	{
-		type: 'header',
-		category: 'backend',
-		src: backend,
-	},
-	{
-		type: 'project',
-		category: 'backend',
-		title: 'Dating App',
-		subtitle: 'Laravel × Bootstrap × MySQL',
-		src: tinder,
-		describeEn:
-			'A Tinder-like dating app built with Laravel, MySQL, and Bootstrap. Refactored in 2024 with an admin page and improved design. Added more dummy data for profile-based swiping. Users can register, set preferences, and match to view profiles.',
-		describeJp:
-			'Laravel, MySQL, Bootstrapで開発したTinder風のマッチングアプリ。2024年にリファクタリングし、Adminページを追加し、デザインも改善。ダミーデータを増やし、プロフィール設定に基づくスワイプ機能を強化。マッチすると相手のプロフィールを閲覧可能。',
-		code: 'https://github.com/sahoooii/laravel_tinderApp',
-		demo: 'assets/gif/tinder.gif',
-		link: '',
-	},
+	// {
+	// 	type: 'header',
+	// 	category: 'backend',
+	// 	src: backend,
+	// },
+	// {
+	// 	type: 'project',
+	// 	category: 'backend',
+	// 	title: 'Dating App',
+	// 	subtitle: 'Laravel × Bootstrap × MySQL',
+	// 	src: tinder,
+	// 	describeEn:
+	// 		'A Tinder-like dating app built with Laravel, MySQL, and Bootstrap. Refactored in 2024 with an admin page and improved design. Added more dummy data for profile-based swiping. Users can register, set preferences, and match to view profiles.',
+	// 	describeJp:
+	// 		'Laravel, MySQL, Bootstrapで開発したTinder風のマッチングアプリ。2024年にリファクタリングし、Adminページを追加し、デザインも改善。ダミーデータを増やし、プロフィール設定に基づくスワイプ機能を強化。マッチすると相手のプロフィールを閲覧可能。',
+	// 	code: 'https://github.com/sahoooii/laravel_tinderApp',
+	// 	demo: 'assets/gif/tinder.gif',
+	// 	link: '',
+	// },
 	// {
 	// 	type: 'project',
 	// 	category: 'backend',
